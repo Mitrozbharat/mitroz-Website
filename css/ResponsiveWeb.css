@@ -1,0 +1,936 @@
+
+
+/* Extra small devices (phones) */
+@media (max-width: 575.98px) {
+    .font-size-16 {
+      text-align: center;
+      font-size: 16px;
+      color: whitesmoke;
+    }
+  
+    .land-gap>a {
+      font-size: 20px;
+    }
+  
+    .land-heading {
+      line-height: 35px;
+      font-size: 26px;
+      font-family: Century751 SeBd BT;
+      font-weight: 900;
+    }
+  
+    /* #land-padding {
+          max-width: 100%;
+          height: auto;
+          padding: 0px 10px;
+          /* padding-bottom: 50px; */
+  
+          #land-padding {
+            max-width: 100%;
+            height: auto;
+            padding: 5px 0px 10px 0px;
+          }
+  
+    .btn-all-ser {
+      margin: 16px 0px;
+      color: black;
+    }
+  
+    .btn-Home {
+      margin: 20px 0px;
+      display: grid;
+  
+    }
+  
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+      padding: 10px 15px 19px 15px;
+  }
+  
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+      width: 100%;
+      /* padding-right: 26px; */
+      /* padding-left: 24px; */
+      margin-right: auto;
+      margin-left: auto;
+      /* padding: 20px 25px; */
+    }
+  
+    .card-form {
+      border-radius: 8px;
+      height: 450px;
+      width: 100%;
+      padding: 30px 0px;
+      margin: 30px 0px;
+    }
+  
+    .card-radius-21 {
+      background-color: #f7f7f7;
+      border-radius: 20px;
+      padding: 25px 2px;
+      aspect-ratio: 2 / 2;
+      color: #000;
+      margin: 20px -2px;
+    }
+  
+    h2 {
+      text-align: center;
+    }
+  
+    .getStartedContent div h4 {
+      background-color: aqua;
+    }
+  
+    .mar-tb {
+      margin: 22px 0px;
+      padding: 0px;
+      font-size: 22px;
+      font-weight: 300;
+    }
+  
+    /* .mar-tb {
+    margin: 0px 12px -2px 20px;
+    padding: 54px 0px;
+    font-weight: 300;
+   } */
+  
+    .shadow-ups {
+      border-radius: 15px;
+      aspect-ratio: 3 / 3;
+      margin-top: 27px;
+      width: 100%;
+      margin: 0px 0px 0px 0px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+  
+    #bg-palevioletred {
+      background-color: palevioletred;
+      border-radius: 25px;
+      display: flex;
+      align-items: center;
+  
+    }
+  
+    .tech-container {
+      position: relative;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-left: 25px;
+    }
+  
+    #mobTechContent,
+    #webTechContent {
+      margin: 0px 40px 0px 0px;
+  
+    }
+  
+    .img-div {
+      flex-basis: 50%;
+      gap: 1%;
+    }
+  
+    .img-tech {
+      flex-basis: 48%;
+      gap: 1%;
+    }
+  
+    section,
+    section.extra-big-section {
+      padding: 20px 0;
+  
+    }
+  
+    .usp-card {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .ups-heading {
+      text-align: center;
+    }
+  
+    .description>p {
+      display: flex;
+      justify-content: center;
+      text-align: justify;
+  
+    }
+  
+    .description span:first-child {
+      margin-top: 5px;
+      display: flex;
+      justify-content: center;
+      color: #1E90ff;
+      font-weight: 800;
+      font-size: 20px;
+      bottom: 0;
+      /* Add any other styles you want to apply */
+    }
+  
+    .ups-img {
+      max-height: 100px;
+      padding: 10px 0px;
+    }
+  
+    .h-six {
+      font-size: 30px;
+      line-height: 37px;
+      padding: 36px 0px 0px 15px;
+    }
+  
+    .h-six-p {
+      padding: 0px 0px 0px 15px;
+    }
+  
+    .h-six-px {
+      padding: 0px 0px 0px 0px;
+    }
+  
+    .h-six-px img {
+      width: 12%;
+      visibility: hidden;
+    }
+  
+    .free-get-quate {
+      background: rgb(27, 98, 216);
+      border-top-left-radius: 80px 80px;
+      padding-bottom: 50px;
+    }
+  
+    .btn-quate {
+      border-radius: 0px 30px 30px 30px;
+      padding: 13px;
+      background-color: whitesmoke;
+      margin: 30px 0px 0px 20px;
+      color: #1E90ff;
+    }
+  
+    .free-get-quate a {
+      margin-top: 30px;
+    }
+  
+    #btnMobTech,
+    #btnWebTech {
+      width: 80%;
+    }
+  
+    .text-extra-large {
+      font-size: 14px;
+      line-height: 26px;
+      text-wrap: pretty;
+    }
+  
+    .text-qutes {
+      background: rgb(27, 98, 216);
+      border-top-left-radius: 80px 80px;
+      padding-top: 20px;
+      height: 780px;
+    }
+  
+    .panel .panel-body {
+      font-size: 14px;
+    }
+  
+    .panel-title span {
+      font-size: 16px;
+    }
+  
+    .panel-body {
+      font-size: 14px;
+    }
+  
+    .text-pro {
+      margin-left: 10px;
+    }
+  
+    .text-pro-text {
+      margin: 10px 0px 20px -36px;
+      font-size: 20px;
+  
+    }
+  
+    .Schedule-call-x {
+      margin-left: 10px;
+      width: 50%;
+    }
+  
+    .btn-Schedule {
+      width: 100%;
+      margin-left: 010px;
+    }
+  
+    h2 {
+      font-size: 32px;
+    }
+  
+    .description p:nth-child(2) {
+      font-size: 14px;
+      /* CSS styles for the second <p> element within .description */
+    }
+  
+    .card-text:last-child {
+      font-size: 16px;
+    }
+  
+    .Schedule-call-x {
+      left: 0;
+      font-size: 32px;
+      /* margin: auto; */
+      width: 50%;
+    }
+  }
+  
+  /* Small devices (tablets) */
+  @media (min-width: 576px) and (max-width: 767.98px) {
+    .btn-Home {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .description p:nth-child(2) {
+      font-size: 14px;
+      /* CSS styles for the second <p> element within .description */
+    }
+  
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+      padding: 10px 10px 19px 20px;
+    }
+  
+    .btn-all-ser {
+      margin: 30px 0px;
+      padding: 15px;
+    }
+  
+    .land-gap>a {
+      font-size: 20px;
+    }
+  
+    .land-heading {
+      line-height: 35px;
+      font-size: 26px;
+      font-family: Century751 SeBd BT;
+      font-weight: 900;
+    }
+  
+    /* #land-padding {
+            max-width: 100%;
+            height: auto;
+            padding: 0px 10px;
+            /* padding-bottom: 50px; */
+  
+    #land-padding {
+      max-width: 92%;
+      height: auto;
+      padding: 5px 0px 10px 18px;
+  
+    }
+  
+    .btn-all-ser {
+      margin: 16px 0px;
+      color: black;
+    }
+  
+    .btn-Home {
+      margin: 20px 0px;
+      display: grid;
+  
+    }
+  
+    .img-fluid {
+      max-width: 100%;
+      height: auto;
+      padding: 10px 10px 19px 20px;
+    }
+  
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+      width: 100%;
+      /* padding-right: 26px; */
+      /* padding-left: 24px; */
+      margin-right: auto;
+      margin-left: auto;
+      /* padding: 20px 25px; */
+    }
+  
+    .card-form {
+      border-radius: 8px;
+      height: 450px;
+      width: 100%;
+      padding: 30px 0px;
+      margin: 30px 0px;
+    }
+  
+    .card-radius-21 {
+      background-color: #f7f7f7;
+      border-radius: 20px;
+      padding: 25px 2px;
+      aspect-ratio: 2 / 2;
+      color: #000;
+      margin: 20px -2px;
+    }
+  
+    h2 {
+      text-align: center;
+    }
+  
+    .getStartedContent div h4 {
+      background-color: aqua;
+    }
+  
+    .mar-tb {
+      margin: 22px 0px;
+      padding: 0px;
+      font-size: 26px;
+      font-weight: 300;
+    }
+  
+    /* .mar-tb {
+      margin: 0px 12px -2px 20px;
+      padding: 54px 0px;
+      font-weight: 300;
+     } */
+  
+    .shadow-ups {
+      border-radius: 15px;
+      aspect-ratio: 3 / 3;
+      margin-top: 27px;
+      width: 94%;
+      margin: 0px 0px 0px 4px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+  
+    #bg-palevioletred {
+      background-color: palevioletred;
+      border-radius: 25px;
+  
+    }
+  
+  
+    .tech-container {
+      position: relative;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-left: 25px;
+    }
+  
+    #mobTechContent,
+    #webTechContent {
+      margin: 0px 40px 0px 0px;
+  
+    }
+  
+    .img-div {
+      flex-basis: 50%;
+      gap: 1%;
+    }
+  
+    .img-tech {
+      flex-basis: 48%;
+      gap: 1%;
+    }
+  
+    section,
+    section.extra-big-section {
+      padding: 20px 0;
+  
+    }
+  
+    .usp-card {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .ups-heading {
+      text-align: center;
+    }
+  
+    .description>p {
+      display: flex;
+      justify-content: center;
+      text-align: justify;
+  
+    }
+  
+    .description span:first-child {
+      margin-top: 5px;
+      display: flex;
+      justify-content: center;
+      color: #1E90ff;
+      font-weight: 800;
+      font-size: 20px;
+      bottom: 0;
+      /* Add any other styles you want to apply */
+    }
+  
+    .ups-img {
+      max-height: 100px;
+      padding: 10px 0px;
+    }
+  
+    .h-six {
+      font-size: 30px;
+      line-height: 37px;
+      padding: 36px 0px 0px 15px;
+    }
+  
+    .h-six-p {
+      padding: 0px 0px 0px 15px;
+    }
+  
+    .h-six-px {
+      padding: 0px 0px 0px 0px;
+    }
+  
+    .h-six-px img {
+      width: 12%;
+      visibility: hidden;
+    }
+  
+    .free-get-quate {
+      background: rgb(27, 98, 216);
+      border-top-left-radius: 80px 80px;
+      padding-bottom: 50px;
+    }
+  
+    .btn-quate {
+      border-radius: 0px 30px 30px 30px;
+      padding: 13px;
+      background-color: whitesmoke;
+      margin: 30px 0px 0px 20px;
+      color: #1E90ff;
+    }
+  
+    .free-get-quate a {
+      margin-top: 30px;
+    }
+  
+    #btnMobTech,
+    #btnWebTech {
+      width: 50%;
+    }
+  
+    .text-extra-large {
+      font-size: 14px;
+      line-height: 26px;
+      text-wrap: pretty;
+    }
+  
+    .text-qutes {
+      background: rgb(27, 98, 216);
+      border-top-left-radius: 80px 80px;
+      padding-top: 20px;
+      height: 615px;
+    }
+  
+    .panel .panel-body {
+      font-size: 14px;
+    }
+  
+    .panel-title span {
+      font-size: 16px;
+    }
+  
+    .panel-body {
+      font-size: 14px;
+    }
+  
+    .text-pro {
+      margin-left: 10px;
+    }
+  
+    .text-pro-text {
+      margin: 20px;
+      font-size: 20px;
+  
+    }
+  
+    .Schedule-call-x {
+      margin-left: 10px;
+      width: 50%;
+    }
+  
+    .btn-Schedule {
+      width: 120%;
+      margin-left: 010px;
+    }
+  
+    h2 {
+      font-size: 32px;
+    }
+  
+    .description p {
+      font-size: 14px;
+      /* CSS styles for the second <p> element within .description */
+    }
+  
+    .card-text:last-child {
+      font-size: 16px;
+    }
+  
+    #btnMobTech,
+    #btnWebTech {
+      width: 40%;
+    }
+  
+  }
+  
+  /* Medium devices (small laptops) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+  
+    #btnMobTech,
+    #btnWebTech {
+      width: 40%;
+    }
+  
+    .panel-title span {
+      font-size: 14px;
+    }
+  
+    .panel-body {
+      font-size: 14px;
+    }
+  
+    .text-pro {
+      margin-left: 10px;
+    }
+  
+    .Schedule-call-x {
+      left: 0;
+      margin: auto;
+      width: 100%;
+    }
+  
+    .text-pro-text {
+      margin-left: -65px;
+      margin-top: 20px;
+    }
+  
+    .btn-Schedule {
+      width: 55%;
+      margin-left: 64px;
+    }
+  
+    .btn-Home {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 20px;
+    }
+  
+    .project-img {
+      display: none;
+    }
+  
+    /* 
+      .description p:nth-child(2) {
+        font-size: 16px;
+     } */
+    .ups-img {
+      margin: 20px 0px;
+    }
+  
+    .shadow-ups {
+      border-radius: 15px;
+      aspect-ratio: 4 / 4;
+      /* margin-top: 27px; */
+      width: 100%;
+      margin: 0px 0px 0px 4px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+  
+    #bg-pink {
+      background-color: palevioletred;
+      border-radius: 25px;
+    }
+  
+    .btn-all-ser {
+      background-color: #f7f7f7;
+      /* padding: 11px 40px; */
+    }
+  
+  
+    .usp-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .description span:first-child {
+      margin-top: 5px;
+      color: #1E90ff;
+      font-weight: 800;
+      font-size: 20px;
+      bottom: 0;
+      /* Add any other styles you want to apply */
+    }
+  
+    .land-gap>a {
+      font-size: 20px;
+    }
+  
+    .land-heading {
+      line-height: 56px;
+      font-size: 49px;
+      font-family: Century751 SeBd BT;
+      font-weight: 800;
+    }
+  
+    /* #land-padding {
+            max-width: 100%;
+            height: auto;
+            padding: 0px 10px;
+            /* padding-bottom: 50px; */
+  
+    #land-padding {
+      max-width: 92%;
+      height: auto;
+      padding: 5px 0px 10px 18px;
+  
+    }
+  
+    .btn-all-ser {
+      margin: 16px 0px;
+      color: black;
+    }
+  
+    .btn-Home {
+      margin: 20px 0px;
+      /* display: grid; */
+  
+    }
+  
+    #card-md {
+      display: flex;
+      justify-content: center;
+    }
+  
+    .img-fluid {
+      max-width: 95%;
+      height: auto;
+      padding: 0px px 0px px;
+    }
+  
+    .form-md {
+      max-width: 720px;
+      display: flex;
+      justify-content: center;
+  
+    }
+  
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl {
+      width: 100%;
+      /* padding-right: 26px; */
+      /* padding-left: 24px; */
+      margin-right: auto;
+      margin-left: auto;
+      /* padding: 20px 25px; */
+    }
+  
+    .card-form {
+      border-radius: 8px;
+      height: 450px;
+      width: 100%;
+      padding: 30px 0px;
+      margin: 30px 0px;
+    }
+  
+    .card-radius-21 {
+      background-color: #f7f7f7;
+      border-radius: 20px;
+      padding: 20px 2px;
+      aspect-ratio: 2 / 3;
+      color: #000;
+      margin: 28px -2px;
+    }
+  
+    h2 {
+      text-align: center;
+    }
+  
+    .getStartedContent div h4 {
+      background-color: aqua;
+    }
+  
+    .mar-tb {
+      margin: 22px 0px;
+      padding: 0px;
+      font-size: 26px;
+      font-weight: 300;
+    }
+  
+  
+    /* .mar-tb {
+      margin: 0px 12px -2px 20px;
+      padding: 54px 0px;
+      font-weight: 300;
+     } */
+  
+  
+    .shadow-ups {
+      border-radius: 15px;
+      aspect-ratio: 2/2;
+      /* margin-top: 27px; */
+      width: 100%;
+      margin: 0px 0px 0px 4px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+  
+    #bg-palevioletred {
+      background-color: palevioletred;
+      border-radius: 25px;
+  
+    }
+  
+  
+  
+    .description span:first-child {
+      margin-top: 5px;
+      display: flex;
+      justify-content: center;
+      color: #1E90ff;
+      font-weight: 800;
+      font-size: 20px;
+      text-align: center;
+      bottom: 0;
+      /* Add any other styles you want to apply */
+    }
+  
+    .usp-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: auto;
+    }
+  
+    .Schedule-call-x {
+      left: 0;
+      margin: auto;
+      width: 100%;
+  
+    }
+  
+  }
+  
+  /* Large devices (desktops) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .font-size-16 {
+      margin-left: 10px;
+    }
+  
+    .Schedule-call-x {
+      left: 0;
+      margin: auto;
+      width: 100%;
+    }
+  
+    .text-pro {
+      margin-left: 10px;
+    }
+  
+    .btn-Home {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .project-img {
+      display: none;
+    }
+  
+  
+    .Schedule-call-x {
+      left: 0;
+      margin: auto;
+      width: 50%;
+    }
+  
+    .btn-all-ser {
+      background-color: #f7f7f7;
+      /* padding: 11px 40px; */
+    }
+  
+    .shadow-ups {
+      border-radius: 15px;
+      aspect-ratio: 4 / 5;
+      /* margin-top: 27px; */
+      width: 100%;
+      margin: 0px 0px 0px 4px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+  
+    .description span:first-child {
+      margin-top: 5px;
+      color: #1E90ff;
+      font-weight: 800;
+      font-size: 20px;
+      bottom: 0;
+      /* Add any other styles you want to apply */
+    }
+  
+    .description p {
+      font-size: 14px
+    }
+  
+  
+  }
+  
+  /* Extra large devices (large desktops) */
+  @media (min-width: 1200px) {
+    .btn-Home {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .btn-all-ser {
+      background-color: #f7f7f7;
+      padding: 11px 40px;
+  
+    }
+  
+    .description span:first-child {
+      margin-top: 5px;
+      color: #1E90ff;
+      font-weight: 800;
+      font-size: 20px;
+      bottom: 0;
+      /* Add any other styles you want to apply */
+    }
+  
+    .btn-quate {
+      border-radius: 0px 30px 30px 30px;
+      padding: 11px 25px;
+      background-color: whitesmoke;
+      margin: -10px 00px 0px 24px;
+      color: #1E90ff;
+      border: 1px solid rgb(255, 255, 255);
+  }
+    .usp-card {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .shadow-ups {
+      display: flex;
+    }
+  
+  }
