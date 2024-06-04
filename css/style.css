@@ -319,6 +319,12 @@ h6 {
     font-size: 11rem;
     line-height: 11rem
 }
+.text-md{
+    .text-big {
+        font-size: 120px;
+        line-height: 120px
+    }
+}
 .text-big {
     font-size: 200px;
     line-height: 200px
@@ -5187,6 +5193,7 @@ input.btn:focus {
 .padding-3-rem-all {
     padding: 3rem
 }
+
 .padding-3-half-rem-all {
     padding: 3.5rem
 }
@@ -19640,3 +19647,6 @@ footer ul li.ins{
 footer ul li.twt{
     background: url(../images/twiiter-f.png) no-repeat 0 6px;
 }
+.text-sky{
+    color: #4285f4;
+  }

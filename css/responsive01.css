@@ -92,7 +92,11 @@
   text-decoration: none;
   color: #fff;
   padding: 0px;
-}
+}.finttch-btn{
+  margin: 30px;
+  margin-left: 50px;
+  background-color: #f4f3f2;
+  }
 }
 /* Styles for screens from 480px to 767px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -159,7 +163,11 @@
   text-decoration: none;
   color: #fff;
   padding: 25px;
-}
+}.finttch-btn{
+  margin: 30px;
+  margin-left: 50px;
+  background-color: #f4f3f2;
+  }
 }
 /* Styles for screens from 768px to 991px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -214,7 +222,11 @@
   text-decoration: none;
   color: #fff;
   padding: 0px;
-}
+}.finttch-btn{
+  margin: 30px;
+  margin-left: 50px;
+  background-color: #f4f3f2;
+  }
 }
 /* Styles for screens from 992px to 1199px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -261,7 +273,11 @@
 .md-margin-5-rem-bottom {
   margin-bottom: 5rem;
   margin-left: 90px;
-}
+}.finttch-btn{
+  margin: 30px;
+  margin-left: 50px;
+  background-color: #f4f3f2;
+  }
 }
 /* Styles for screens from 1200px to 1399px */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -309,7 +325,11 @@
 .bg-img-padding{
   margin:100px;
   border-radius: 50px;
-}
+}.finttch-btn{
+  margin: 30px;
+  margin-left: 50px;
+  background-color: #f4f3f2;
+  }
 }
 /* Styles for screens from 1400px to 1699px */
 @media only screen and (min-width: 1400px) and (max-width: 1699px) {
@@ -361,6 +381,12 @@
 .head-padding{
   padding: 0px 250px;
 }
+.finttch-btn{
+  margin: 30px;
+  color: #4285f4;
+  margin-left: 50px;
+  background-color: #f4f3f2;
+  }
 }
 /* Styles for screens from 1700px and above */
 @media only screen and (min-width: 1700px) {
@@ -407,4 +433,13 @@
 .head-padding{
   padding: 0px 250px;
 }
+
+.text-sky{
+  color: #4285f4;
+}
+.finttch-btn{
+  margin: 30px;
+  margin-left: 50px;
+  background-color: #f4f3f2;
+  }
 }

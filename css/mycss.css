@@ -37,4 +37,9 @@ left: 0;
     
   
 }
-  
+.overlay{
+  opacity: 0.4;
+  background: #080909;
+  height: 100%;
+  width: 100%;
+}
