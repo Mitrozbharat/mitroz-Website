@@ -326,7 +326,7 @@ h6 {
     }
 }
 .text-big {
-    font-size: 200px;
+    font-size: 150px;
     line-height: 200px
 }
 .text-extra-big {
@@ -5732,7 +5732,7 @@ input.btn:focus {
     padding-right: 2.5rem
 }
 .padding-3-rem-right {
-    padding-right: 3rem
+    padding-right: 0rem
 }
 .padding-3-half-rem-right {
     padding-right: 3.5rem
