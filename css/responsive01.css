@@ -97,6 +97,9 @@
   margin-left: 50px;
   background-color: #f4f3f2;
   }
+  .contact-margin{
+    margin-left: 18%;
+  }
 }
 /* Styles for screens from 480px to 767px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -168,6 +171,9 @@
   margin-left: 50px;
   background-color: #f4f3f2;
   }
+  .contact-margin{
+    margin-left: 18%;
+  }
 }
 /* Styles for screens from 768px to 991px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -227,6 +233,9 @@
   margin-left: 50px;
   background-color: #f4f3f2;
   }
+  .contact-margin{
+    margin-left: 18%;
+  }
 }
 /* Styles for screens from 992px to 1199px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -277,6 +286,9 @@
   margin: 30px;
   margin-left: 50px;
   background-color: #f4f3f2;
+  }
+  .contact-margin{
+    margin-left: 25%;
   }
 }
 /* Styles for screens from 1200px to 1399px */
@@ -329,6 +341,9 @@
   margin: 30px;
   margin-left: 50px;
   background-color: #f4f3f2;
+  }
+  .contact-margin{
+    margin-left: 18%;
   }
 }
 /* Styles for screens from 1400px to 1699px */
@@ -387,10 +402,18 @@
   margin-left: 50px;
   background-color: #f4f3f2;
   }
+  .contact-margin{
+    margin-left: 27%;
+  }
 }
 /* Styles for screens from 1700px and above */
 @media only screen and (min-width: 1700px) {
   /* Styles for screens in this range */
+
+  .contact-margin{
+    margin-left: 27%;
+  }
+
 .btn-Consultation{
   background: #4285f4 !important; 
   width: 30%;

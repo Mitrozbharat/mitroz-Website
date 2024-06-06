@@ -469,7 +469,7 @@ a.text-radical-red-hover:hover {
 .btn-link.text-golden,
 .text-golden,
 a.text-golden-hover:hover {
-    color: #ca943d
+    color:#4285f4;
 }
 .btn-link.text-golden-yellow,
 .text-golden-yellow,
@@ -1223,7 +1223,7 @@ a.text-gradient-fuego-turquoise-hover:hover {
     background-color: #ff6437
 }
 .bg-neon-orange {
-    background-color: #ff7a56
+    background-color: #00aced;
 }
 .bg-very-light-orange {
     background-color: #fff9f6
@@ -1433,7 +1433,7 @@ a.text-gradient-fuego-turquoise-hover:hover {
     background-image: linear-gradient(to right top, #e42464, #ed3c5f, #f44f5c, #fa6259, #ff7357)
 }
 .bg-gradient-magenta-orange-2 {
-    background-image: linear-gradient(to right top, #ec606c, #ee6362, #ee6757, #ed6c4d, #eb7242)
+    background-image: linear-gradient(to right top, #4285f4, #4285f4, #4285f4, #4285f4, #4285f4)
 }
 .bg-gradient-purple-magenta {
     background-image: linear-gradient(to right top, #502970, #7f2977, #ac2775, #d42d6b, #f34259)
