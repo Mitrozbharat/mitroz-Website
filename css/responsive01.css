@@ -174,6 +174,16 @@
   .contact-margin{
     margin-left: 18%;
   }
+   
+.tilt-box{
+  display: flex;
+  justify-content: center;
+} 
+ 
+.tilt-box img{
+
+   height: 450px;
+}
 }
 /* Styles for screens from 768px to 991px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -290,6 +300,17 @@
   .contact-margin{
     margin-left: 25%;
   }
+
+   
+.tilt-box{
+  display: flex;
+  justify-content: center;
+} 
+ 
+.tilt-box img{
+
+   height: 450px;
+}
 }
 /* Styles for screens from 1200px to 1399px */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -345,6 +366,17 @@
   .contact-margin{
     margin-left: 18%;
   }
+
+   
+.tilt-box{
+  display: flex;
+  justify-content: center;
+} 
+ 
+.tilt-box img{
+
+   height: 600px;
+}
 }
 /* Styles for screens from 1400px to 1699px */
 @media only screen and (min-width: 1400px) and (max-width: 1699px) {
@@ -405,6 +437,16 @@
   .contact-margin{
     margin-left: 27%;
   }
+   
+.tilt-box{
+  display: flex;
+  justify-content: center;
+} 
+ 
+.tilt-box img{
+
+   height: 600px;
+}
 }
 /* Styles for screens from 1700px and above */
 @media only screen and (min-width: 1700px) {
@@ -465,4 +507,14 @@
   margin-left: 50px;
   background-color: #f4f3f2;
   }
+  
+.tilt-box{
+  display: flex;
+  justify-content: center;
+} 
+ 
+.tilt-box img{
+
+   height: 600px;
+}
 }
