@@ -1,3 +1,6 @@
+ /* <!----==================================Small screens and MoBile=====================================---> */
+
+
 /* Styles for screens from 320px to 479px */
 @media screen and (min-width: 320px) and (max-width: 479px)
 {
@@ -247,6 +250,12 @@
     margin-left: 18%;
   }
 }
+
+
+
+ /* <!----==================================Tablet=====================================---> */
+
+
 /* Styles for screens from 992px to 1199px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* Styles for screens in this range */
@@ -312,6 +321,11 @@
    height: 450px;
 }
 }
+
+
+ /* <!----==================================Laptop =====================================---> */
+
+
 /* Styles for screens from 1200px to 1399px */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   /* Styles for screens in this range */
@@ -376,6 +390,10 @@
 .tilt-box img{
 
    height: 600px;
+}
+.tech-heading{
+  line-height: 20px;
+   padding-top: 100px;
 }
 }
 /* Styles for screens from 1400px to 1699px */
@@ -447,7 +465,14 @@
 
    height: 600px;
 }
+.tech-heading{
+  line-height: 20px;
+   padding-top: 100px;
 }
+}
+
+ /* <!----==================================Large screen=====================================---> */
+
 /* Styles for screens from 1700px and above */
 @media only screen and (min-width: 1700px) {
   /* Styles for screens in this range */
@@ -516,5 +541,9 @@
 .tilt-box img{
 
    height: 600px;
+}
+.tech-heading{
+  line-height: 20px;
+   padding-top: 100px;
 }
 }
