@@ -100,7 +100,60 @@
   .contact-margin{
     margin-left: 18%;
   }
+
+  .btn-cuncultation{
+    display: flex;
+    justify-content: center;
+  }
+.techno_rb{
+  background: #4285f4 !important;
+  width: 75%;
+  margin-top: 2%;
+  border-radius: 6px;
+  margin-bottom: 40px; 
+
 }
+
+.techno_rh {
+  line-height: 35px;
+  margin-left: 15%;
+}
+.techno_r {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 71%;
+  margin-left: 16%;
+}
+
+
+.dotnet-img {
+  width: 60%;
+  margin-top: -33%;
+  margin-left: 19%;
+  margin-bottom: 18%;
+}
+
+
+.techno_rp {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    width: 74%;
+    margin-left: 16%;
+
+}
+
+#rev-div{
+  
+        display: flex;
+        flex-direction: column-reverse; /* Reverse the order of children */
+    
+}
+
+}
+
+
 /* Styles for screens from 480px to 767px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   /* Styles for screens in this range */
@@ -174,13 +227,38 @@
   .contact-margin{
     margin-left: 18%;
   }
+   
+.tilt-box{
+  display: flex;
+  justify-content: center;
+} 
+ 
+.tilt-box img{
+
+   height: 450px;
+}
+
+
 }
 /* Styles for screens from 768px to 991px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* Styles for screens in this range */
   .decade-size{
     font-size: 24px;
+ 
   }
+  
+.dotnet-img {
+  width: 60%;
+  margin-top: -50px;
+  margin-left: 19%;
+  margin-bottom: 18%;
+}
+/*   
+  .dotnet-img {
+    width: 96%;
+    margin: 0px 0px 200px 0px
+} */ */
   
 .map-size{
   width: 100%;
@@ -244,6 +322,12 @@
     font-size: 26px;
   }
   
+.dotnet-img {
+  width: 60%;
+  margin-top: -33%;
+  margin-left: 19%;
+  margin-bottom: 18%;
+}
 .map-size{
   width: 100%;
   margin-left: auto;
@@ -290,6 +374,17 @@
   .contact-margin{
     margin-left: 25%;
   }
+
+   
+.tilt-box{
+  display: flex;
+  justify-content: center;
+} 
+ 
+.tilt-box img{
+
+   height: 450px;
+}
 }
 /* Styles for screens from 1200px to 1399px */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
@@ -345,6 +440,27 @@
   .contact-margin{
     margin-left: 18%;
   }
+
+   
+.tilt-box{
+  display: flex;
+  justify-content: center;
+} 
+ 
+.tilt-box img{
+
+   height: 600px;
+}
+.techno_r{
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+  
+}
+
+
+
 }
 /* Styles for screens from 1400px to 1699px */
 @media only screen and (min-width: 1400px) and (max-width: 1699px) {
@@ -405,9 +521,67 @@
   .contact-margin{
     margin-left: 27%;
   }
+   
+.tilt-box{
+  display: flex;
+  justify-content: center;
+} 
+ 
+.tilt-box img{
+
+   height: 600px;
+}
+
+.techno_r{
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+  
+}
+
+
+.techno_rb{
+  background: #4285f4 !important;
+                    width: 40%;
+                    margin-top: 2%;
+                    border-radius: 6px;
+                    margin-bottom: 150px; 
+
+}
+.techno_rh{
+  line-height: 20px; 
+  padding-top: 100px;
+}
+
+
+.techno_r{
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+  
+}
+.techno_rp{
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+}
+
+.fi{
+  font-size:16px;
+  margin-left: 10px;
+}
+
+
+
+
+
 }
 /* Styles for screens from 1700px and above */
-@media only screen and (min-width: 1700px) {
+@media only screen and (min-width: 1700px)
+ {
   /* Styles for screens in this range */
 
   .contact-margin{
@@ -465,4 +639,24 @@
   margin-left: 50px;
   background-color: #f4f3f2;
   }
+  
+.tilt-box{
+  display: flex;
+  justify-content: center;
+} 
+ 
+.tilt-box img{
+
+   height: 600px;
+}
+
+
+.techno_r{
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+  
+}
+
 }
