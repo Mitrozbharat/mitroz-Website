@@ -43,6 +43,37 @@ left: 0;
   height: 100%;
   width: 100%;
 }
+
+/* 
+.techno_rh{
+  line-height: 20px; 
+  padding-top: 100px;
+} */
+
+
+.techno_r{
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+  
+}
+.techno_rp{
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+}
+
+.fi{
+  font-size:16px;
+  margin-left: 10px;
+}
+
+
+
+
+
 /* 
 .tilt-box{
   display: flex;
