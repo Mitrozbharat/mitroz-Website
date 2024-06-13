@@ -1,6 +1,3 @@
- /* <!----==================================Small screens and MoBile=====================================---> */
-
-
 /* Styles for screens from 320px to 479px */
 @media screen and (min-width: 320px) and (max-width: 479px)
 {
@@ -103,7 +100,60 @@
   .contact-margin{
     margin-left: 18%;
   }
+
+  .btn-cuncultation{
+    display: flex;
+    justify-content: center;
+  }
+.techno_rb{
+  background: #4285f4 !important;
+  width: 75%;
+  margin-top: 2%;
+  border-radius: 6px;
+  margin-bottom: 40px; 
+
 }
+
+.techno_rh {
+  line-height: 35px;
+  margin-left: 15%;
+}
+.techno_r {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 71%;
+  margin-left: 16%;
+}
+
+
+.dotnet-img {
+  width: 60%;
+  margin-top: -33%;
+  margin-left: 19%;
+  margin-bottom: 18%;
+}
+
+
+.techno_rp {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    width: 74%;
+    margin-left: 16%;
+
+}
+
+#rev-div{
+  
+        display: flex;
+        flex-direction: column-reverse; /* Reverse the order of children */
+    
+}
+
+}
+
+
 /* Styles for screens from 480px to 767px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   /* Styles for screens in this range */
@@ -187,13 +237,28 @@
 
    height: 450px;
 }
+
+
 }
 /* Styles for screens from 768px to 991px */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   /* Styles for screens in this range */
   .decade-size{
     font-size: 24px;
+ 
   }
+  
+.dotnet-img {
+  width: 60%;
+  margin-top: -50px;
+  margin-left: 19%;
+  margin-bottom: 18%;
+}
+/*   
+  .dotnet-img {
+    width: 96%;
+    margin: 0px 0px 200px 0px
+} */ */
   
 .map-size{
   width: 100%;
@@ -250,12 +315,6 @@
     margin-left: 18%;
   }
 }
-
-
-
- /* <!----==================================Tablet=====================================---> */
-
-
 /* Styles for screens from 992px to 1199px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   /* Styles for screens in this range */
@@ -263,6 +322,12 @@
     font-size: 26px;
   }
   
+.dotnet-img {
+  width: 60%;
+  margin-top: -33%;
+  margin-left: 19%;
+  margin-bottom: 18%;
+}
 .map-size{
   width: 100%;
   margin-left: auto;
@@ -321,11 +386,6 @@
    height: 450px;
 }
 }
-
-
- /* <!----==================================Laptop =====================================---> */
-
-
 /* Styles for screens from 1200px to 1399px */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   /* Styles for screens in this range */
@@ -391,10 +451,16 @@
 
    height: 600px;
 }
-.tech-heading{
-  line-height: 20px;
-   padding-top: 100px;
+.techno_r{
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+  
 }
+
+
+
 }
 /* Styles for screens from 1400px to 1699px */
 @media only screen and (min-width: 1400px) and (max-width: 1699px) {
@@ -465,16 +531,57 @@
 
    height: 600px;
 }
-.tech-heading{
-  line-height: 20px;
-   padding-top: 100px;
-}
+
+.techno_r{
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+  
 }
 
- /* <!----==================================Large screen=====================================---> */
 
+.techno_rb{
+  background: #4285f4 !important;
+                    width: 40%;
+                    margin-top: 2%;
+                    border-radius: 6px;
+                    margin-bottom: 150px; 
+
+}
+.techno_rh{
+  line-height: 20px; 
+  padding-top: 100px;
+}
+
+
+.techno_r{
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+  
+}
+.techno_rp{
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+}
+
+.fi{
+  font-size:16px;
+  margin-left: 10px;
+}
+
+
+
+
+
+}
 /* Styles for screens from 1700px and above */
-@media only screen and (min-width: 1700px) {
+@media only screen and (min-width: 1700px)
+ {
   /* Styles for screens in this range */
 
   .contact-margin{
@@ -542,8 +649,14 @@
 
    height: 600px;
 }
-.tech-heading{
-  line-height: 20px;
-   padding-top: 100px;
+
+
+.techno_r{
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+  
 }
+
 }
