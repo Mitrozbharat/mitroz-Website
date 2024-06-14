@@ -3947,6 +3947,9 @@ input.btn:focus {
 .margin-100px-top {
     margin-top: 100px
 }
+.margin-150px-top {
+    margin-top: 150px
+}
 .margin-1-rem-top {
     margin-top: 1rem
 }
@@ -9881,7 +9884,7 @@ header.sticky .navbar.header-dark .navbar-toggler-line {
       .stories-card-btn{
         border-radius: 2px;
         padding: 10px 20px;
-        color: #fff !important;
+        color: black !important;
       }
 @media (width >= 420px) {
   .banner > img {
