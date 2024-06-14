@@ -18,6 +18,8 @@
 }
 
 @media (max-width:1600px) {
+    
+    
     .xl-last-order {
         order: 10
     }
