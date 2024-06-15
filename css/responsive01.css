@@ -105,14 +105,15 @@
     display: flex;
     justify-content: center;
   }
-.techno_rb{
-  background: #4285f4 !important;
-  width: 75%;
-  margin-top: 2%;
-  border-radius: 6px;
-  margin-bottom: 40px; 
-
-}
+  .techno_rb{
+    background: #4285f4 !important;
+    width: 53%;
+    margin-top: 2%;
+    border-radius: 6px;
+    margin-bottom: 40px;
+    margin-left: 14%;
+  
+  }
 
 .techno_rh {
   line-height: 35px;
@@ -152,7 +153,6 @@
 }
 
 }
-
 
 /* Styles for screens from 480px to 767px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
@@ -238,6 +238,53 @@
    height: 450px;
 }
 
+.techno_rb{
+  background: #4285f4 !important;
+  width: 53%;
+  margin-top: 2%;
+  border-radius: 6px;
+  margin-bottom: 40px;
+  margin-left: 14%;
+
+}
+
+.techno_rh {
+  line-height: 35px;
+  margin-left: 15%;
+}
+.techno_r {
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 71%;
+  margin-left: 16%;
+}
+
+
+.dotnet-img {
+  width: 60%;
+  margin-top: -33%;
+  margin-left: 19%;
+  margin-bottom: 18%;
+}
+
+
+.techno_rp {
+    font-size: 12px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    width: 74%;
+    margin-left: 16%;
+
+}
+
+#rev-div{
+  
+        display: flex;
+        flex-direction: column-reverse; /* Reverse the order of children */
+    
+}
+
 
 }
 /* Styles for screens from 768px to 991px */
@@ -248,12 +295,12 @@
  
   }
   
-.dotnet-img {
-  width: 60%;
-  margin-top: -50px;
-  margin-left: 19%;
-  margin-bottom: 18%;
-}
+  .dotnet-img {
+    width: 86%;
+    margin-top: 35%;
+    margin-left: 0%;
+    margin-bottom: 18%;
+  }
 /*   
   .dotnet-img {
     width: 96%;
@@ -314,6 +361,44 @@
   .contact-margin{
     margin-left: 18%;
   }
+  .techno_r{
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    width: 74%;
+    
+  }
+  
+  
+  .techno_rb{
+    
+      background: #4285f4 !important;
+      width: 43%;
+      margin-top: 5%;
+      border-radius: 6px;
+      margin-bottom: 150px;
+  }
+  .techno_rh{
+    line-height: 20px; 
+    padding-top: 100px;
+  }
+  
+  
+  .techno_r{
+    font-size: 15px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    width: 74%;
+    
+  }
+  .techno_rp{
+    font-size: 13px;
+    letter-spacing: 1px;
+    line-height: 25px;
+    width: 74%;
+  }
+
+
 }
 /* Styles for screens from 992px to 1199px */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -323,9 +408,9 @@
   }
   
 .dotnet-img {
-  width: 60%;
-  margin-top: -33%;
-  margin-left: 19%;
+  width: 86%;
+  margin-top: 35%;
+  margin-left: 0%;
   margin-bottom: 18%;
 }
 .map-size{
@@ -381,6 +466,44 @@
   justify-content: center;
 } 
  
+.techno_r{
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+  
+}
+
+
+.techno_rb{
+  
+    background: #4285f4 !important;
+    width: 43%;
+    margin-top: 5%;
+    border-radius: 6px;
+    margin-bottom: 150px;
+}
+.techno_rh{
+  line-height: 20px; 
+  padding-top: 100px;
+}
+
+
+.techno_r{
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+  
+}
+.techno_rp{
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+}
+
+
 .tilt-box img{
 
    height: 450px;
@@ -389,6 +512,10 @@
 /* Styles for screens from 1200px to 1399px */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   /* Styles for screens in this range */
+
+  .nav-item menu{
+   width: 90%;
+  }
   .decade-size{
     font-size: 26px;
   }
@@ -458,6 +585,36 @@
   width: 74%;
   
 }
+
+
+.techno_rb{
+  background: #4285f4 !important;
+                    width: 40%;
+                    margin-top: 20%;
+                    border-radius: 6px;
+                    margin-bottom: 150px; 
+
+}
+.techno_rh{
+  line-height: 20px; 
+  padding-top: 100px;
+}
+
+
+.techno_r{
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+  
+}
+.techno_rp{
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+}
+
 
 
 
@@ -580,7 +737,7 @@
 
 }
 /* Styles for screens from 1700px and above */
-@media only screen and (min-width: 1700px)
+@media only screen and (min-width: 1700px) 
  {
   /* Styles for screens in this range */
 
@@ -659,4 +816,35 @@
   
 }
 
+
+.techno_rb{
+  background: #4285f4 !important;
+                    width: 40%;
+                    margin-top: 2%;
+                    border-radius: 6px;
+                    margin-bottom: 150px; 
+
 }
+.techno_rh{
+  line-height: 20px; 
+  padding-top: 100px;
+}
+
+
+.techno_r{
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+  
+}
+.techno_rp{
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  width: 74%;
+}
+
+}
+
+
