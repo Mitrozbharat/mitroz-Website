@@ -153,7 +153,6 @@
 
 }
 
-
 /* Styles for screens from 480px to 767px */
 @media only screen and (min-width: 480px) and (max-width: 767px) {
   /* Styles for screens in this range */
@@ -389,6 +388,10 @@
 /* Styles for screens from 1200px to 1399px */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   /* Styles for screens in this range */
+
+  .nav-item menu{
+   width: 90%;
+  }
   .decade-size{
     font-size: 26px;
   }
