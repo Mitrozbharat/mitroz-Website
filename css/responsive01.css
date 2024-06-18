@@ -294,7 +294,12 @@
     font-size: 24px;
  
   }
-  
+  .btnsize{
+    width: 30%;
+    font-size:  ;
+    margin-top: -5px;
+
+  }
   .dotnet-img {
     width: 86%;
     margin-top: 35%;
