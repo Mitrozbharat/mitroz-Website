@@ -347,15 +347,16 @@
             </div>
             <div class="col-12 col-lg-6 col-md-8">
                 <h4 class="alt-font text-black font-weight-600">Let's get in touch with us</h4>
-                <form action="https://bywordhr.com/email-templates/contact-form.php" method="post" class="alt-font text-extra-dark-gray">
-                    <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required" type="text" name="name" placeholder="Your name" />
-                    <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required" type="email" name="email" placeholder="Your email address" />
-                    <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px" type="tel" name="phone" placeholder="Mobile no" />
-                    <textarea class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-35px-bottom border-radius-0px" name="comment" rows="5" placeholder="How can we help you?"></textarea>
+                <form id="myForm" action="https://bywordhr.com/email-templates/contact-form.php" method="post" class="alt-font text-extra-dark-gray">
+                    <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required" type="text" id="Name" Name="name" placeholder="Your name" />
+                    <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required" type="email" id="Email" name="Email" placeholder="Your email address" />
+                    <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px" type="tel" id="Phone" name="Phone" placeholder="Mobile no" />
+                    <textarea class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-35px-bottom border-radius-0px" id="Message" name="Message" rows="5" placeholder="How can we help you?"></textarea>
                     <div class="g-recaptcha margin-35px-bottom" data-sitekey="6LdFf9kZAAAAAFEQ49P0-U3fLPXe-IpwH6Hk8_IW"></div>
                     <input type="hidden" name="redirect" value="">
                     <button class="btn btn-medium btn-fancy btn-transparent-fast-blue mb-0 submit" type="submit">send message</button>
                     <div class="form-results d-none"></div>
+                    <center><span id="magalert" style="display:none;"><i class="bi bi-check-circle" style="color: green;"></i>&nbsp;<span style="color:green;">Your request have been sent. Thank You ...</span></span> </center>
                 </form>
             </div>
         </div>
@@ -630,6 +631,77 @@
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/theme-vendors.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+
+        <script>
+        
+            var form = document.getElementById('myForm');
+                form.addEventListener('submit', function(event) {
+                event.preventDefault();
+                
+                 var formData = new FormData(form);
+                
+            
+                  var  Name= formData.get("Name");
+                  var  Email= formData.get("Email");
+                  var  Phone=formData.get("Phone");
+                  var  Message= formData.get("Message");
+            
+              //  console.log(data);
+                // send the form data as JSON using AJAX
+                 $.ajax({
+                    
+                    url: "https://mitroz-email-api.mitroztech.com/api/Email/send-text-email",
+                    type: "POST",
+                     data: JSON.stringify({Name: Name, Email: Email, Phone:Phone, Message: Message }),
+                     dataType: "json",
+                     contentType: "application/json; charset=utf-8",                                           
+                   success: function(response) {
+                       
+                    }
+                 });
+                       document.getElementById("Name").value="";
+                        document.getElementById("Email").value="";
+                        document.getElementById("Phone").value="";
+                        document.getElementById("Message").value="";
+                       // window.location.href = "thank-you.html";
+                         document.getElementById("magalert").style.display="block";
+    
+                        setTimeout(function() {
+                            document.getElementById("magalert").style.display="none";
+                         }, 6000);
+                        
+             });
+               
+    
+    
+        </script>
+        
+        <script>
+            "use strict";
+            
+            !function() {
+              var t = window.driftt = window.drift = window.driftt || [];
+              if (!t.init) {
+                if (t.invoked) return void (window.console && console.error && console.error("Drift snippet included twice."));
+                t.invoked = !0, t.methods = [ "identify", "config", "track", "reset", "debug", "show", "ping", "page", "hide", "off", "on" ], 
+                t.factory = function(e) {
+                  return function() {
+                    var n = Array.prototype.slice.call(arguments);
+                    return n.unshift(e), t.push(n), t;
+                  };
+                }, t.methods.forEach(function(e) {
+                  t[e] = t.factory(e);
+                }), t.load = function(t) {
+                  var e = 3e5, n = Math.ceil(new Date() / e) * e, o = document.createElement("script");
+                  o.type = "text/javascript", o.async = !0, o.crossorigin = "anonymous", o.src = "https://js.driftt.com/include/" + n + "/" + t + ".js";
+                  var i = document.getElementsByTagName("script")[0];
+                  i.parentNode.insertBefore(o, i);
+                };
+              }
+            }();
+            drift.SNIPPET_VERSION = '0.3.1';
+            drift.load('h845a7n37dfb');
+            </script>
     </body>
 
 <!-- Mirrored from bywordhr.com/our-story.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Apr 2024 14:37:03 GMT -->
