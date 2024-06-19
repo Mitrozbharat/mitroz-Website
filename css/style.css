@@ -2830,14 +2830,14 @@ input.btn:focus {
     color: #374162
 }
 .btn.btn-neon-orange {
-    background: #ff7a56;
-    border-color: #ff7a56;
-    color: #fff
+    background: #0064ffe6;
+    border-color: #709bf8;
+    color: #fff;
 }
 .btn.btn-neon-orange:focus,
 .btn.btn-neon-orange:hover {
     background: 0 0;
-    color: #ff7a56
+    color: #0064ffe6
 }
 .btn.btn-salmon-rose {
     background: #ea9d8d;
