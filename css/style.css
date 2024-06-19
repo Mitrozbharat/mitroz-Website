@@ -18631,7 +18631,7 @@ footer .instafeed-grid.gutter-double-extra-large {
     margin-right: -50vw
 }
 .required.error {
-    border: 1px solid red!important
+    border: 1px solid blue!important
 }
 input[type=checkbox].error {
     box-shadow: 0 0 0 1px rgb(255 0 0), 1px 1px 0 0 rgb(255 0 0)
