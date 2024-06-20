@@ -48,10 +48,15 @@ textarea {
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out
 }
+imgcd3 {
+    max-width: 69% !important ;
+    height: auto
+}
 img {
     max-width: 100%;
     height: auto
 }
+
 video {
     background-size: cover;
     display: table-cell;
@@ -906,6 +911,10 @@ a.text-gradient-fuego-turquoise-hover:hover {
 .line-height-none {
     line-height: 0
 }
+
+
+
+
 .text-decoration-line-through {
     text-decoration: line-through
 }
@@ -2087,9 +2096,10 @@ blockquote footer {
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out
 }
+
 .box-shadow-large,
 .box-shadow-large-hover:hover {
-    box-shadow: 0 0 30px rgba(0, 0, 0, .08);
+    /* box-shadow: 0 0 30px rgba(0, 0, 0, .08); */
     transition: all .3s ease-in-out;
     -moz-transition: all .3s ease-in-out;
     -webkit-transition: all .3s ease-in-out;
@@ -2739,10 +2749,10 @@ input.btn:focus {
     border-color: #dbdbdb;
     color: #dbdbdb
 }
+
 .btn.btn-fast-blue {
-    
-    border-color: #CE9605;
-    color: #fff
+    border-color: #0a1dca;
+    color: #080df4;
 }
 .btn.btn-fast-blue:focus,
 .btn.btn-fast-blue:hover {
@@ -4073,8 +4083,10 @@ input.btn:focus {
 .margin-5px-bottom {
     margin-bottom: 5px
 }
-.margin-10px-bottom {
-    margin-bottom: 10px
+.process-content .margin-10px-bottom {
+    margin-bottom: 10px;
+    font-size: 126% !important;
+    font-weight: 501 !important;
 }
 .margin-15px-bottom {
     margin-bottom: 15px

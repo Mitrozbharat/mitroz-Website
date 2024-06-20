@@ -23,10 +23,64 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive01.css">
     <link rel="stylesheet" type="text/css" href="css/mycss.css" />
+   
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <style>
+            .scrollable-container {
+            max-height: 600px; /* Adjust as necessary */
+            overflow-y: auto;
+            padding-right: 15px; /* To prevent scrollbar overlap */
+        }
+        .service-box {
+            padding: 15px;
+            background-color: #f8f9fa; /* Light gray background */
+            border-radius: 4px;
+        }
+        .scrollable-container {
+            max-height: 600px; /* Adjust as necessary */
+            overflow-y: auto;
+            padding-right: 15px; /* To prevent scrollbar overlap */
+            scrollbar-width: none; /* For Firefox */
+            -ms-overflow-style: none; /* For Internet Explorer and Edge */
+        }
+        .scrollable-container::-webkit-scrollbar {
+            display: none; /* For Chrome, Safari, and Opera */
+        }
+
+        .service-box {
+            padding: 20px;
+            background-color: #f8f9fa; /* Light gray background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            transition: transform 0.2s ease-in-out;
+        }
+
+
+        .margin-4-half-rem-bottom {
+            margin-bottom: 1.5rem;
+        }
+        .top-60px {
+            top: 120px;
+        }
+        @media (min-width: 1200px)
+         {
+        .offset-xl-1 {
+            margin-left: 0.333333% !important;
+        }
+       }
+       .slider-navigation-style-03.swiper-button-next {
+            right: inherit;
+            left: 56%!important;
+            margin-top: 0%;
+        }
+        .slider-navigation-style-03.swiper-button-prev {
+            left: 46% !important;
+            margin-top: 0%;
+        }
+
         .process-step-style-01 .process-step-icon {
             width: 100px !important;
             height: 1000px !important;
@@ -37,47 +91,7 @@
             vertical-align: middle;
         }
 
-        .service_inner {
-            text-align: center;
-            padding: 30px;
-        }
-
-        .service_cards {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            overflow: hidden;
-            padding: 20px;
-            background: #fff;
-            margin: 15px;
-        }
-
-        .service_card_inner figure img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .bg-light-blue {
-            background-color: #f0f8ff;
-            padding: 50px 0;
-        }
-
-        .feature-box {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-            overflow: hidden;
-            padding: 20px;
-            background: #fff;
-            margin: 15px;
-        }
-
-        .feature-box-icon i {
-            font-size: 30px;
-        }
-
-        .feature-box-content .alt-font {
-            font-size: 18px;
-            font-weight: 500;
-        }
+       
 
         .faq_gap {
             padding: 50px 0;
@@ -151,10 +165,10 @@
             display: block;
         }
 
-        h3 {
+        /* h3 {
             font-size: 1.4rem !important;
             line-height: 2.9rem !important;
-        }
+        } */
 
         h2 {
             font-size: 52px !important;
@@ -169,6 +183,8 @@
             text-align: center;
             /* Center-align text content */
         }
+        
+       
     </style>
 
 </head>
@@ -586,10 +602,10 @@
                                 class="line-icon-Full-Cart icon-large text-neon-blue margin-35px-bottom md-margin-15px-bottom"></i>
                         </div>
                         <h6 class="alt-font font-weight-600 w-70 d-block margin-20px-bottom xl-w-100"><a
-                                class="text-extra-dark-gray" href="#">Testing & Quality Assurance</a></h6>
+                                class="text-extra-dark-gray" href="#">SaaS Development</a></h6>
                         <span
                             class="interactive-banners-name alt-font text-medium font-weight-400 text-dark-gray d-inline-block margin-25px-bottom">
-                            At Mitroz Technologies, we walk with you throughout the project development journey. Our dedicated testing and QA team meticulously monitors and tracks your project's progress. This ensures a software solution that runs smoothly across all browsers and devices, guaranteeing an exceptional user experience.</span>
+                            At Mitroz Technologies, specializes in cost-effective, scalable, and robust SaaS solutions with great user experiences. Our top-certified developers can build SaaS from scratch, enhance existing applications, and develop cloud-based SaaS to drive your business growth.</span>
                         <!-- <a href="#"><i class="line-icon-Arrow-OutRight icon-medium align-middle text-extra-light-gray"></i></a> -->
                         <div class="cover-background interactive-banners-image position-absolute"
                             style="background-image:url('images/home-digital-agency-img-12.jpg');"></div>
@@ -625,9 +641,9 @@
                                 class="line-icon-Cloud-Computer icon-large text-neon-blue margin-35px-bottom md-margin-15px-bottom"></i>
                         </div>
                         <h6 class="alt-font font-weight-600 w-70 d-block margin-20px-bottom xl-w-100"><a
-                                class="text-extra-dark-gray" href="#">Mobile App Development</a></h6>
+                                class="text-extra-dark-gray" href="#">Product Customization</a></h6>
                         <span
-                            class="interactive-banners-name alt-font text-medium font-weight-400 text-dark-gray d-inline-block  margin-25px-bottom">Transform your ideas into powerful mobile applications with Mitroz Technologies' expertise. We leverage cutting-edge technologies to deliver intuitive, user-centric apps that drive engagement and growth. Our developers create mobile apps for iOS, Android, and other platforms, ensuring compatibility, usability, and performance across all devices.</span>
+                            class="interactive-banners-name alt-font text-medium font-weight-400 text-dark-gray d-inline-block  margin-25px-bottom">At Mitroz Technologies, we know that one size doesn't fit all. We'll revamp, modernize, and optimize your unique business solutions. With experience in customizing products for various industries, we use next-gen technologies like OpenAI and ChatGPT to meet your needs.</span>
                         <!-- <a href="#"><i class="line-icon-Arrow-OutRight icon-medium align-middle text-extra-light-gray"></i></a> -->
                         <div class="cover-background interactive-banners-image position-absolute"
                             style="background-image:url('images/home-digital-agency-img-10.jpg');"></div>
@@ -841,8 +857,8 @@
                                 <span class="process-step-number text-slate-blue alt-font font-weight-500"><span
                                         class="process-step-number-bfr bg-white"></span>1</span>
                             </div>
-                            <div class="process-content last-paragraph-no-margin">
-                                <span class="alt-font d-block font-weight-500 text-white margin-10px-bottom">Consult
+                            <div class="process-content last-paragraph-no-margin" >
+                                <span class="alt-font d-block font-weight-500 text-white margin-10px-bottom " >Consult
                                     your idea</span>
                                 <p class="text-white opacity-7">Setting the direction with our web development
                                     consultants</p>
@@ -1112,9 +1128,596 @@
         </div>
     </section>
 
-   
+    <section class="fix-background padding-100px-tb md-padding-75px-tb sm-padding-50px-tb"
+    style="background-image:url('images/home-corporate-img-05.jpg');">
+    <div class="opacity-full-dark bg-dark-slate-blue"></div>
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-xl-12 col-md-12 col-sm-12 text-center text-md-left sm-margin-30px-bottom">
+                <h4 class="alt-font font-weight-600 text-white mb-0" style="    text-align: center;
+            padding-bottom: 100px;">Lets hear from you</h4>
+            </div>
 
-    
+        </div>
+    </div>
+</section>
+<!-- end section -->
+
+
+<!-- start section -->
+<section class="bg-light-gray overflow-visible">
+    <div class="container">
+        <div class="row justify-content-center xs-no-margin-lr">
+            <div class="col-12 col-xl-12 col-lg-11 bg-white box-shadow-extra-large border-radius-6px overflow-hidden overlap-section-three-fourth wow animate__fadeInUp"
+                data-wow-delay="0.3s">
+                <div class="row">
+                    <div class="col-12 col-md-6 padding-3-rem-all md-padding-4-rem-all xs-padding-3-half-rem-all">
+                        <h5
+                            class="alt-font font-weight-700 text-slate-blue text-uppercase letter-spacing-minus-1px w-95">
+                            Get your project moving!</h5>
+                        <p class="w-90 lg-w-100">Our personal trainers are on hand to assist you with your training
+                            and inductions.</p>
+                        <form id="myForm" action="https://bywordhr.com/email-templates/contact-form.php" method="post"
+                            class="margin-15px-top d-inline-block w-100">
+                            <input
+                                class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
+                                type="text"id="Name" name="Name" placeholder="Your name" />
+                            <input
+                                class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
+                                type="text" id="Phone" name="Phone" placeholder="Your Contact Number" />
+                            <input
+                                class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
+                                type="email" id="Email" name="Email" placeholder="Your email address" />
+                            <input type="hidden" name="redirect" value="">
+
+                            <textarea class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"     name="Message"  id="Message" placeholder="Start typing..." rows="5" cols="50"></textarea>
+                            <input type="hidden" name="redirect" value="">
+
+                            <button class="btn btn-large btn-neon-orange btn-round-edge w-100 mb-0 submit"
+                                type="submit" name="submit-btn">Inquire Now
+                            </button>
+                            <center><span id="magalert" style="display:none;"><i class="bi bi-check-circle" style="color: green;"></i>&nbsp;<span style="color:green;">Your request have been sent. Thank You ...</span></span> </center>
+                            <div class="form-results border-radius-4px d-none"></div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-6 padding-50px-all" style="background: #f1f1f1;">
+
+                        <h5
+                            class="alt-font cd-headline font-weight-600 text-extra-dark-gray letter-spacing-minus-1px line-height-40px margin-40px-bottom cd-headline sm-w-75 sm-line-height-30px xs-w-80 xs-margin-20px-bottom">
+                            <span class="">You are at <span class="text-neon-blue">Right</span> place</span>
+
+                        </h5>
+                        <p class="w-90 md-w-100 margin-30px-bottom">Our company stands as the ideal partner for
+                            software architecture due to our adeptness in crafting scalable, robust, and efficient
+                            systems tailored to your unique needs. With a focus on innovation, collaboration, and
+                            client satisfaction, we ensure that your software architecture exceeds expectations and
+                            drives your business forward.</p>
+                        <ul
+                            class="w-90 list-style-01 font-weight-500 text-extra-dark-gray lg-w-100 sm-w-85 xs-w-100">
+                            <li><i class="fas fa-check text-extra-medium-gray"></i>Expertise in Varied Technologies
+                                <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
+                            </li>
+                            <li><i class="fas fa-check text-extra-medium-gray"></i>Proven Track Record
+                                <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
+                            </li>
+                            <li><i class="fas fa-check text-extra-medium-gray"></i>Client-Centric Approach
+                                <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
+                            </li>
+                            <li><i class="fas fa-check text-extra-medium-gray"></i>Continuous Innovation
+                                <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
+                            </li>
+                            <li><i class="fas fa-check text-extra-medium-gray"></i>Wide tech expertise
+                                <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
+                            </li>
+                            <li><i class="fas fa-check text-extra-medium-gray"></i>Radical Efficiency
+                                <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+
+<!-- end section -->
+ 
+
+<!-- start section -->
+<section class=" home-consulting big-section cover-background" style="background-image: url('images/home-consulting-about-bg.jpg');">
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-lg-6 col-md-10 md-margin-5-rem-bottom wow animate__fadeIn">
+                <h4 class="alt-font font-weight-500 text-extra-dark-gray letter-spacing-minus-1px margin-4-rem-bottom w-80 lg-w-90 md-margin-3-rem-bottom xs-margin-4-rem-bottom xs-w-100">Mastering Custom  <span class="text-neon-blue text-decoration-line-bottom-thick font-weight-600"> Software Development</span>Through Our Proven Process</h4>
+                <p class="w-70 margin-40px-bottom lg-w-90 md-margin-25px-bottom"></p>
+                <ul class="list-style-02">
+                    <li class="margin-15px-bottom"><i class="fas fa-check text-small text-neon-blue position-relative top-2px margin-10px-right" aria-hidden="true"></i><span> Define scope, gather requirements, and (UI/UX) considerations</span></li>
+                    <li class="margin-15px-bottom"><i class="fas fa-check text-small text-neon-blue position-relative top-2px margin-10px-right" aria-hidden="true"></i><span> Plan and prioritize development</span></li>
+                    <li class="margin-15px-bottom"><i class="fas fa-check text-small text-neon-blue position-relative top-2px margin-10px-right" aria-hidden="true"></i><span> Launch an MVP with core functionalities</span></li>
+                    <li class="margin-15px-bottom"><i class="fas fa-check text-small text-neon-blue position-relative top-2px margin-10px-right" aria-hidden="true"></i><span> Collaborate and gather feedback to iterate and improve</span></li>
+                    <li class="margin-15px-bottom"><i class="fas fa-check text-small text-neon-blue position-relative top-2px margin-10px-right" aria-hidden="true"></i><span>Test the software for quality assurance</span></li>
+                    <li class="margin-15px-bottom"><i class="fas fa-check text-small text-neon-blue position-relative top-2px margin-10px-right" aria-hidden="true"></i><span> Deploy the final product</span></li>
+                    <li class="margin-15px-bottom"><i class="fas fa-check text-small text-neon-blue position-relative top-2px margin-10px-right" aria-hidden="true"></i><span>Provide ongoing support and maintenance</span></li>
+                </ul>
+                <div class="margin-40px-top d-inline-block md-margin-25px-top">
+                    <a href="Contact.html" class="btn btn-fancy btn-small btn-transparent-fast-blue margin-35px-right xs-margin-10px-bottom">About company</a>
+                    <a href="Service.html" class="btn btn-link btn-extra-large text-extra-dark-gray top-minus-5px xs-margin-10px-bottom">Discover tour</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-5 offset-lg-1 col-md-10 wow animate__fadeIn" data-wow-delay="0.2s">
+                <div class="position-relative">
+                    <div class="opacity-very-light bg-dark-slate-blue"></div>
+                    <img class="w-100" src="images/home-consulting-01.jpg" alt="" />
+                    <a href="#" class="popup-youtube absolute-middle-center video-icon-box video-icon-double-large left-0px">
+                        <span>
+                            <span class="video-icon bg-white box-shadow-large">
+                                <i class="feather icon-feather-play icon-medium text-neon-blue"></i>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end section -->
+
+
+ <!-- start section -->
+
+<section class="bg-light-blue position-relative padding-thirteen-top lg-padding-nine-top">
+    <div class="container">
+        <div class="row justify-content-lg-center">
+
+            <div
+                class="col-12 col-lg-6 col-sm-8 text-lg-center margin-6-rem-bottom lg-margin-4-rem-bottom md-margin-3-rem-bottom xs-margin-5-rem-bottom wow animate__fadeIn">
+                <span
+                    class="alt-font font-weight-500 text-neon-blue text-uppercase d-block margin-20px-bottom">Mitroz
+                    Software Developement Company</span>
+                <h5
+                    class="alt-font font-weight-700 text-uppercase text-extra-dark-gray letter-spacing-minus-1px m-0">
+                    Why Should You Go For Web App Development?</h5>
+            </div>
+        </div>
+        <div class="row align-items-center" style="padding-bottom: 3%;">
+            
+            <div class="col-12 col-lg-8 offset-xl-1 wow animate__fadeInRight" data-wow-delay="0.4s">
+                <div class="testimonials-carousel-style-02 swiper-simple-arrow-style-2">
+                    <div class="swiper-container black-move"
+                        data-slider-options='{ "loop": true, "slidesPerView": 1, "spaceBetween": 0, "observer": true, "observeParents": true, "autoplay": { "delay": 3000, "disableOnInteraction": false },  "navigation": { "nextEl": ".swiper-button-next-nav-2", "prevEl": ".swiper-button-previous-nav-2" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 } }, "effect": "slide" }'>
+                        <div class="swiper-wrapper">
+                            <!-- start fancy text box slider item -->
+                            <div class="swiper-slide text-center padding-15px-all">
+                                <div
+                                    class="feature-box text-left feature-box-show-hover box-shadow-small-hover feature-box-bg-white-hover border-all border-color-black-transparent overflow-hidden">
+                                    <div
+                                        class="feature-box-move-bottom-top padding-3-rem-tb padding-4-rem-lr md-padding-2-rem-tb md-padding-2-half-rem-lr sm-padding-3-rem-tb sm-padding-4-half-rem-lr">
+                                        <h4
+                                            class="feature-box-icon alt-font font-weight-500 text-neon-blue margin-20px-bottom letter-spacing-minus-2px">
+                                            01</h4>
+                                        <div class="feature-box-content last-paragraph-no-margin">
+                                            <span
+                                                class="text-extra-dark-gray text-extra-medium font-weight-600 text-uppercase d-block margin-10px-bottom alt-font">Increase <br>Sales</span>
+                                            <p>Having a website can help businesses increase flexibility and gain credibility. In the US, 84% of customers think - a business with a website is more credible than one with social media presence.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end fancy text box slider item -->
+                            <!-- start fancy text box slider item -->
+                            <div class="swiper-slide text-center padding-15px-all">
+                                <div
+                                    class="feature-box text-left feature-box-show-hover box-shadow-small-hover feature-box-bg-white-hover border-all border-all border-color-black-transparent overflow-hidden last-paragraph-no-margin">
+                                    <div
+                                        class="feature-box-move-bottom-top padding-3-rem-tb padding-4-rem-lr md-padding-2-rem-tb md-padding-2-half-rem-lr sm-padding-3-rem-tb sm-padding-4-half-rem-lr">
+                                        <h4
+                                            class="feature-box-icon alt-font font-weight-500 text-neon-blue margin-20px-bottom letter-spacing-minus-2px">
+                                            02</h4>
+                                        <div class="feature-box-content last-paragraph-no-margin">
+                                            <span
+                                                class="text-extra-dark-gray text-extra-medium font-weight-600 text-uppercase d-block margin-10px-bottom alt-font">Wider Audience <br>Reach</span>
+                                            <p>Having a website helps you expand your target audience and make deals with customers who are far away from your business location. Also, a website can be accessible 24*7 without any breaks or holidays.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end fancy text box slider item -->
+                            <!-- start fancy text box slider item -->
+                            <div class="swiper-slide text-center padding-15px-all">
+                                <div
+                                    class="feature-box text-left feature-box-show-hover box-shadow-small-hover feature-box-bg-white-hover border-all border-all border-color-black-transparent overflow-hidden last-paragraph-no-margin">
+                                    <div
+                                        class="feature-box-move-bottom-top padding-3-rem-tb padding-4-rem-lr md-padding-2-rem-tb md-padding-2-half-rem-lr sm-padding-3-rem-tb sm-padding-4-half-rem-lr">
+                                        <h4
+                                            class="feature-box-icon alt-font font-weight-500 text-neon-blue margin-20px-bottom letter-spacing-minus-2px">
+                                            03</h4>
+                                        <div class="feature-box-content last-paragraph-no-margin">
+                                            <span
+                                                class="text-extra-dark-gray text-extra-medium font-weight-600 text-uppercase d-block margin-10px-bottom alt-font">Promote Your Business</span>
+                                            <p>The website has been proven to be the best way to market your business online. Compared to traditional marketing, online marketing through the website of your business is quicker, more efficient, and cost-effective.</p><br>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end fancy text box slider item -->
+                            <!-- start fancy text box slider item -->
+                            <div class="swiper-slide text-center padding-15px-all">
+                                <div
+                                    class="feature-box text-left feature-box-show-hover box-shadow-small-hover feature-box-bg-white-hover border-all border-all border-color-black-transparent overflow-hidden last-paragraph-no-margin">
+                                    <div
+                                        class="feature-box-move-bottom-top padding-3-rem-tb padding-4-rem-lr md-padding-2-rem-tb md-padding-2-half-rem-lr sm-padding-3-rem-tb sm-padding-4-half-rem-lr">
+                                        <h4
+                                            class="feature-box-icon alt-font font-weight-500 text-neon-blue margin-20px-bottom letter-spacing-minus-2px">
+                                            04</h4>
+                                        <div class="feature-box-content last-paragraph-no-margin">
+                                            <span
+                                                class="text-extra-dark-gray text-extra-medium font-weight-600 text-uppercase d-block margin-10px-bottom alt-font">Keep Track of Your Business</span>
+                                            <p>Another benefit of having a website is that you can keep track of your products or services in real time by checking web visitor data. You can find which products with the most attention.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide text-center padding-15px-all">
+                                <div
+                                    class="feature-box text-left feature-box-show-hover box-shadow-small-hover feature-box-bg-white-hover border-all border-all border-color-black-transparent overflow-hidden last-paragraph-no-margin">
+                                    <div
+                                        class="feature-box-move-bottom-top padding-3-rem-tb padding-4-rem-lr md-padding-2-rem-tb md-padding-2-half-rem-lr sm-padding-3-rem-tb sm-padding-4-half-rem-lr">
+                                        <h4
+                                            class="feature-box-icon alt-font font-weight-500 text-neon-blue margin-20px-bottom letter-spacing-minus-2px">
+                                            05</h4>
+                                        <div class="feature-box-content last-paragraph-no-margin">
+                                            <span
+                                                class="text-extra-dark-gray text-extra-medium font-weight-600 text-uppercase d-block margin-10px-bottom alt-font">Improve Customer Service</span>
+                                            <p>Customers always love instant feedback from businesses about the issues they face. A business website can help you improve your customer service by immediately processing customers.</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end fancy text box slider item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+           
+         
+
+            <div class="swiper-button-next-nav-2 swiper-button-next slider-navigation-style-03 rounded-circle white lg-margin-15px-bottom"><i class="feather         icon-feather-arrow-right"></i>
+            </div>
+            <div class="swiper-button-previous-nav-2 swiper-button-prev slider-navigation-style-03 rounded-circle white lg-margin-15px-bottom"><i class="feather icon-feather-arrow-left"></i>
+            </div>
+            
+    </div>
+</section>
+ <!-- end section -->
+
+<!-- start section -->
+<section class="bg-seashell py-lg-0 " >
+    <div class="container">
+        <div class="row align-items-center ">
+            <div class="col-12 col-xl-5 col-lg-6 col-md-10 padding-6-rem-tb lg-padding-5-rem-tb lg-padding-2-half-rem-right md-padding-15px-right md-no-padding-tb md-margin-5-rem-bottom">
+                <h5 class="alt-font font-weight-500 text-extra-dark-gray letter-spacing-minus-1px margin-4-half-rem-bottom md-margin-4-rem-bottom   wow animate__fadeInUp">Value Multipliers: Adding Strategic Value to Your Enterprise</h5>
+                <div class="panel-group accordion-event accordion-style-03 margin-4-rem-bottom lg-margin-2-rem-bottom" id="accordion2" data-active-icon="fa-angle-down" data-inactive-icon="fa-angle-right">
+                    <!-- start accordion item -->
+                    <div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeInUp" data-wow-delay="0.2s">
+                        <div class="panel-heading active-accordion">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFive" aria-expanded="false">
+                                <div class="panel-title">
+                                    <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500">Business Intelligence</span>
+                                    <i class="indicator fas fa-angle-down text-tussock icon-extra-small"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="collapseFive" class="panel-collapse collapse " data-parent="#accordion2">
+                            <div class="panel-body">Harness actionable insights with our Business Intelligence solutions as we implement advanced BI tools, custom dashboards, and predictive analytics to offer real-time data-driven decision support.</div>
+                        </div>
+                    </div>
+                    <!-- end accordion item -->
+                    <!-- start accordion item -->
+                    <div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeInUp" data-wow-delay="0.4s">
+                        <div class="panel-heading">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix" aria-expanded="false">
+                                <div class="panel-title">
+                                    <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500">Artificial Intelligence</span>
+                                    <i class="indicator fas fa-angle-right text-tussock icon-extra-small"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse" data-parent="#accordion2">
+                            <div class="panel-body">Develop AI-driven applications, automation frameworks, and predictive models, tailoring solutions to your unique business challenges and propelling your enterprise into the future with our AI solutions</div>
+                        </div>
+                    </div>
+                    <!-- end accordion item -->
+                    <!-- start accordion item -->
+                    <div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeInUp" data-wow-delay="0.6s">
+                        <div class="panel-heading">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven" aria-expanded="false">
+                                <div class="panel-title">
+                                    <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500">WorkFlow Automation</span>
+                                    <i class="indicator fas fa-angle-right text-tussock icon-extra-small"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse" data-parent="#accordion2">
+                            <div class="panel-body">With our Workflow Automation services, enterprises can boost productivity, streamline operations, and optimize processes through seamless integration and intelligent automation.</div>
+                        </div>
+                    </div>
+                    <!-- end accordion item -->
+                    <div class="panel bg-white box-shadow-small border-radius-5px wow animate__fadeInUp" data-wow-delay="0.6s">
+                        <div class="panel-heading">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseSevenn" aria-expanded="false">
+                                <div class="panel-title">
+                                    <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500">Domain Expertise</span>
+                                    <i class="indicator fas fa-angle-right text-tussock icon-extra-small"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="collapseSevenn" class="panel-collapse collapse" data-parent="#accordion2">
+                            <div class="panel-body">Leverage a team of seasoned professionals with domain-specific knowledge, creating customized solutions that align with industry-specific challenges and requirements.</div>
+                        </div>
+                    </div>
+                </div>
+                <p class="m-0 wow animate__fadeInUp" data-wow-delay="0.8s">Looking for someone in particular? <a href="Contact.html" class="text-extra-dark-gray text-tussock-hover font-weight-500 text-decoration-line-bottom">Get in touch</a></p>
+            </div>
+            <div class="col-12 col-lg-5 offset-xl-1 col-md-10 wow animate__fadeInRight" style="margin-left: 8.333333% !important" >
+                <div class="outside-box-right position-relative">
+                    <img src="images/home-consulting-provide-solution.jpg" class="overflow-hidden imgcd3" alt="" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- start section -->
+<section class="wow animate__fadeIn">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-12 col-lg-6 md-margin-50px-bottom wow animate__fadeIn">
+                <h5 class="alt-font text-extra-dark-gray font-weight-500">Get The Most Goal-oriented Software Experts on Your Team</h5>
+                <p>Leverage over two decades of industry-trusted, time-zone aligned development that caters to bespoke project needs. Build tailored capabilities that boost revenue, help retain existing clients, bring new investments and promote in-house collaboration:</p>
+                <!-- start slider -->
+                <div class="swiper-container white-move border-all border-width-12px border-color-white box-shadow-large border-radius-8px" data-slider-options='{ "slidesPerView": 1, "loop": true, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "keyboard": { "enabled": true, "onlyInViewport": true }, "effect": "slide" }'>
+                    <div class="swiper-wrapper">
+                        <!-- start slider item --><div class="swiper-slide"><img src="images/about-us-img-08.jpg" alt=""></div><!-- end slider item -->
+                        <!-- start slider item --><div class="swiper-slide"><img src="images/about-us-img-09.jpg" alt=""></div><!-- end slider item -->
+                        <!-- start slider item --><div class="swiper-slide"><img src="images/about-us-img-10.jpg" alt=""></div><!-- end slider item -->
+                    </div>  
+                    <!-- start slider navigation -->
+                    <div class="swiper-button-next-nav swiper-button-next slider-navigation-style-01 light"><i class="feather icon-feather-arrow-right" aria-hidden="true"></i></div>
+                    <div class="swiper-button-previous-nav swiper-button-prev slider-navigation-style-01 light"><i class="feather icon-feather-arrow-left" aria-hidden="true"></i></div>
+                    <!-- end slider navigation -->
+                </div>
+                <!-- end slider -->
+            </div>
+            <div class="col-12 col-lg-5 offset-lg-1 wow animate__fadeIn" data-wow-delay="0.2s">
+                
+                <ul class="p-0 list-style-02 margin-2-rem-top margin-3-rem-bottom">
+                    <li class="margin-15px-bottom"><i class="feather icon-feather-arrow-right-circle text-large text-fast-blue margin-10px-right" aria-hidden="true"></i><span class="text-extra-dark-gray alt-font">Discuss core requirements and points of concern</span></li>
+                    <li class="margin-15px-bottom"><i class="feather icon-feather-arrow-right-circle text-large text-fast-blue margin-10px-right" aria-hidden="true"></i><span class="text-extra-dark-gray alt-font">Explore our range of functional collaboration models for technical team augmentation</span></li>
+                    <li class="margin-15px-bottom"><i class="feather icon-feather-arrow-right-circle text-large text-fast-blue margin-10px-right" aria-hidden="true"></i><span class="text-extra-dark-gray alt-font">Our IT staff augmentation consulting team defines the number of resources you require</span></li>
+                    <li class="margin-15px-bottom"><i class="feather icon-feather-arrow-right-circle text-large text-fast-blue margin-10px-right" aria-hidden="true"></i><span class="text-extra-dark-gray alt-font">We provide you a list of candidates who match your skill requirementse</span></li>
+                    <li class="margin-15px-bottom"><i class="feather icon-feather-arrow-right-circle text-large text-fast-blue margin-10px-right" aria-hidden="true"></i><span class="text-extra-dark-gray alt-font">Our legal contract sheet defines project blueprint, timelines, tech information, details of collaboration</span></li>
+                    <li class="margin-15px-bottom"><i class="feather icon-feather-arrow-right-circle text-large text-fast-blue margin-10px-right" aria-hidden="true"></i><span class="text-extra-dark-gray alt-font">We sign a no-questions-asked NDA</span></li>
+                    <li class="margin-15px-bottom"><i class="feather icon-feather-arrow-right-circle text-large text-fast-blue margin-10px-right" aria-hidden="true"></i><span class="text-extra-dark-gray alt-font">Our legal contract sheet defines project blueprint, timelines, tech information, details of collaboration</span></li>
+                    <li class="margin-15px-bottom"><i class="feather icon-feather-arrow-right-circle text-large text-fast-blue margin-10px-right" aria-hidden="true"></i><span class="text-extra-dark-gray alt-font">A single POC is assigned for the collaboration</span></li></span></li>
+                    <li class="margin-15px-bottom"><i class="feather icon-feather-arrow-right-circle text-large text-fast-blue margin-10px-right" aria-hidden="true"></i><span class="text-extra-dark-gray alt-font">Get our offshore experts completely under your control</span></li>
+                </ul>
+                <a href="contact-us-modern.html" class="btn btn-medium btn-fast-blue btn-round-edge">Get Started Now</a>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- end section -->
+
+
+<!-- start section -->
+<section class="bg-light-blue section-padding-md service-box-row service-box-row-without-cursor section-paragraph ">
+    <div class="container">
+        <div class="row justify-content-md-between">
+            <div class="col-md-6">
+                <div class="section-title-and-desc side-sticky-section">
+                    <div class="section-title-block mb-0">
+                        <h2 class="section-title-text h1 mb-lg">Our Fintech Software Development Services</h2>
+                        <p>We offer various Fintech software development services to empower your finance enterprise with advanced and innovative solutions. Our Fintech software development company holds strong expertise in both finance and technology industries, delivering exceptional Fintech solutions.</p>
+                    </div>
+                    <div class="resp-btn overflow-hidden">
+                        <a href="#technical-stack" class="btn btn-outline-primary text-uppercase ls-xs mt-lg">Our tech stack</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="scrollable-container">
+                    <div class="row m-0 gy-4 resp-btn-outer">
+                        <div class="service-box bg-graylight m-0 card">
+                            <h3 class="h5 font-bold mb-sm">Fintech software consulting</h3>
+                            <p>Our Fintech software consultation services can assist you with strategic guidance to leverage the potential of innovative technologies for your financial ventures. From market analysis to technology development, our fintech experts can help you devise effective strategies to enhance business performance, optimize processes, and drive sustainable growth.</p>
+                        </div>
+                        <div class="service-box bg-graylight card">
+                            <h3 class="h5 font-bold mb-sm">Fintech software development</h3>
+                            <p>Accelerate digital innovation in your business with our bespoke Fintech software development. Our team of highly skilled and experienced IT professionals can craft tailored Fintech solutions, catering to your unique business requirements and customer expectations. Be it an interactive online trading platform or a user-friendly, feature-rich banking application, we can offer you high-performing and efficient solutions powered by emerging technologies.</p>
+                        </div>
+                        <div class="service-box bg-graylight card">
+                            <h3 class="h5 font-bold mb-sm">Migrate/Modernize legacy finance software</h3>
+                            <p>Take a step towards transforming your legacy systems to modern finance software solutions. We can ensure a seamless transition as our Fintech developers specialize in migrating and modernizing outdated finance software, maximizing efficiency by implementing the latest technologies for feature additions and upgrades.</p>
+                        </div>
+                        <div class="service-box bg-graylight card">
+                            <h3 class="h5 font-bold mb-sm">Custom fintech application</h3>
+                            <p>At Mitroz Technologie's, we offer specialized custom Fintech software development services that precisely align with your unique business needs. One size doesn’t fit all in finance. That’s why our Fintech software company provides scalable, flexible, easy-to-use, and cost-efficient Fintech solutions that empower your finance institutions to stay ahead of the curve.</p>
+                        </div>
+                        <div class="service-box bg-graylight card">
+                            <h3 class="h5 font-bold mb-sm">Fintech software integration</h3>
+                            <p>We can help you empower your Fintech ecosystem with seamless integrations, allowing the software to communicate smoothly with other helpful APIs and tools. Our expert professionals can help with Fintech software integration, facilitating flawless data flow and enhancing the overall efficiency of your business operations.</p>
+                        </div>
+                        <div class="service-box bg-graylight card">
+                            <h3 class="h5 font-bold mb-sm">Fintech software security and compliance</h3>
+                            <p>Our team of experts specializes in utilizing various cybersecurity tools and techniques to fortify your software infrastructure with robust security measures and ensure compliance with industry standards. Partnering with our custom Fintech software development firm, you can rest assured that your sensitive financial data and information remain protected.</p>
+                        </div>
+                        <div class="service-box bg-graylight card">
+                            <h3 class="h5 font-bold mb-sm">AI-enabled fintech solutions</h3>
+                            <p>Embrace the future with our highly efficient AI-enabled Fintech solutions. Let our professional developers build advanced and intelligent financial management solutions by unveiling the true potential of Artificial Intelligence, leading to enhanced data-driven decision-making, user engagement, fraud detection, risk assessment, and much more.</p>
+                        </div>
+                        <div class="service-box bg-graylight card">
+                            <h3 class="h5 font-bold mb-sm">Intelligent CRM solutions</h3>
+                            <p>Elevate your customer relationship management with intelligent solutions by integrating cloud-based CRM solutions. We empower your finance business with helpful tools to determine customer behaviors, personalize interactions, and ultimately strengthen customer and client relationships. Integrate the power of intelligent CRM solutions into your finance applications and experience better user experience, microservices, and AI-based solutions.</p>
+                        </div>
+                        <div class="service-box bg-graylight card">
+                            <h3 class="h5 font-bold mb-sm">Robotic process automation</h3>
+                            <p>Our team can develop high-end robotic process automation solutions based on your unique business needs. We can build powerful and efficient RPA bots to streamline your mundane processes, enhance employee productivity, reduce errors, and free up your IT professionals to focus on other higher-value activities.</p>
+                        </div>
+                        <div class="service-box bg-graylight card">
+                            <h3 class="h5 font-bold mb-sm">IoT development</h3>
+                            <p>We can expand the innovation and efficiency of your Fintech solutions with our compelling IoT development services. Integrating IoT (Internet of Things) solutions into your financial business enables you to collect real-time data and valuable insights into customer behavior, preferences, and usage patterns, improving decision-making and offering technology-driven personalized services to clients.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <!-- end section -->
+
+ <!-- start section -->
+ <section class="bg-light-gray ">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 text-center margin-7-rem-bottom">
+                
+                <h5 class="alt-font text-extra-dark-gray font-weight-600 mb-0">Why Choose MindInventory for Web Development Services?</h5>
+                <span class="d-block alt-font margin-5px-bottom">We have a proven track record in web app development. However, for more information, here are the reasons that make us your ideal partner for web development solutions:</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <div class="panel-group accordion-event accordion-style-03" id="accordion1" data-active-icon="fa-angle-down" data-inactive-icon="fa-angle-right">
+                    <!-- start accordion item -->
+                    <div class="panel bg-white box-shadow-small border-radius-5px">
+                        <div class="panel-heading active-accordion">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseOne" aria-expanded="false">
+                                <div class="panel-title">
+                                    <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500">
+                                        Transparency</span>
+                                    <i class="indicator fas fa-angle-down text-neon-blue icon-extra-small"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse show" data-parent="#accordion1">
+                            <div class="panel-body">We maintain complete transparency by consistently sharing all updates and incorporating your feedback to improve the project. Every line of code and creative element is owned entirely by our customers.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion item -->
+                    <!-- start accordion item -->
+                    <div class="panel bg-white box-shadow-small border-radius-5px">
+                        <div class="panel-heading">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseTwo" aria-expanded="false">
+                                <div class="panel-title">
+                                    <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500">
+                                        Deliver Exactly What You Need</span>
+                                    <i class="indicator fas fa-angle-right text-neon-blue icon-extra-small"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="collapseTwo" class="panel-collapse collapse show" data-parent="#accordion1">
+                            <div class="panel-body">Our digital solutions are crafted to deliver precisely what you need. Be it custom solutions or strategic optimization, we prioritize your objectives and ensure that the solution aligns seamlessly with your digital goals.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion item -->
+                    <!-- start accordion item -->
+                    <div class="panel bg-white box-shadow-small border-radius-5px">
+                        <div class="panel-heading">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion1" href="#collapseThree" aria-expanded="false">
+                                <div class="panel-title">
+                                    <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500">Uplifted User Experience</span>
+                                    <i class="indicator fas fa-angle-right text-neon-blue icon-extra-small"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="collapseThree" class="panel-collapse collapse show" data-parent="#accordion1">
+                            <div class="panel-body">Our process includes requirement analysis, planning, design and prototyping, MVP development, iterative development, rigorous testing, deployment, and ongoing maintenance and support.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion item -->
+                    <!-- start accordion item -->
+                    
+                    <!-- end accordion item -->
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="panel-group accordion-event accordion-style-03" id="accordion2" data-active-icon="fa-angle-down" data-inactive-icon="fa-angle-right">
+                    <!-- start accordion item -->
+                    <div class="panel bg-white box-shadow-small border-radius-5px">
+                        <div class="panel-heading">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseFour" aria-expanded="false">
+                                <div class="panel-title">
+                                    <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500">On-Time Delivery</span>
+                                    <i class="indicator fas fa-angle-right text-neon-blue icon-extra-small"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="collapseFour" class="panel-collapse collapse show" data-parent="#accordion2">
+                            <div class="panel-body">
+                                Following agile best practices and project planning with intelligent productivity tools, we smartly manage the project pace and deliver the solution within the agreed timeline while ensuring its top-notch quality.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion item -->
+                    <!-- start accordion item -->
+                    <div class="panel bg-white box-shadow-small border-radius-5px">
+                        <div class="panel-heading">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseSix" aria-expanded="false">
+                                <div class="panel-title">
+                                    <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500">Direct Contact With Your Team</span>
+                                    <i class="indicator fas fa-angle-right text-neon-blue icon-extra-small"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="collapseSix" class="panel-collapse collapse show" data-parent="#accordion2">
+                            <div class="panel-body">The dedicated talents/team you hire for your project from our team, work as your remote extended team. Hence, you'll have direct contact with them during the agreed working hours for effective collaboration.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion item -->
+                    <!-- start accordion item -->
+                    <div class="panel bg-white box-shadow-small border-radius-5px">
+                        <div class="panel-heading">
+                            <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseSeven" aria-expanded="false">
+                                <div class="panel-title">
+                                    <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500">
+                                        Flexible Engagement Models</span>
+                                    <i class="indicator fas fa-angle-right text-neon-blue icon-extra-small"></i>
+                                </div>
+                            </a>
+                        </div>
+                        <div id="collapseSeven" class="panel-collapse collapse show" data-parent="#accordion2">
+                            <div class="panel-body">Instead of working on unwanted rigid and strict parameters, we offer our clients the flexibility to choose engagement models and switch in between based on their changing needs to ensure long-term, reliable association.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end accordion item -->
+                    <!-- start accordion item -->
+                    
+                    <!-- end accordion item -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end section -->
+   
 
     <section>
         <div class="container-fluid">
@@ -1332,23 +1935,7 @@
 
     <!-- start section -->
     
-    <!-- <section class="bg-white wow animate__fadeIn" style="padding: 50px 0 0 0;">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 col-xl-8 col-sm-8 text-center">
-
-                    <h5 class="alt-font text-extra-dark-gray font-weight-500 d-inline-block">Technology <span
-                            class="text-neon-blue"> Stack</span></h5>
-                    <span class="alt-font text-extra-medium d-block text-dark-gray font-weight-400">
-                        The software architecture technology stack encompasses a range of tools and frameworks,
-                        facilitating the design, development, and deployment of robust and scalable systems. From
-                        programming languages to cloud services, it ensures efficient and reliable software solutions
-                        tailored to meet diverse architectural needs.</span>
-                </div>
-            </div>
-        </div>
-    </section> -->
-    <!-- end section -->
+    
 
     <!-- <section class="bg-white wow animate__fadeIn" style="padding: 50px 0 0 0;">
     <div class=" ">
@@ -1566,7 +2153,7 @@
                 <div class="col-12 col-xl-12 col-lg-12 wow animate__fadeIn text-center card-padding">
                     <div class="margin-25px-bottom text-white opacity-6 alt-font">Are you looking for a Software
                         devolopment Company</div>
-                    <h2 class="alt-font text-white font-weight-500 margin-40px-bottom head-padding">Let's work together<br> to build
+                    <h3 class="alt-font text-white font-weight-500 margin-40px-bottom head-padding">Let's work together<br> to build
                         something great</h3>
                     <a href="Contact.html"
                         class="btn btn-large btn-white border-radius-50px text-extra-dark-gray">Let's Collaborate<span
@@ -1578,101 +2165,13 @@
     <!-- end section -->
 
     <!-- start section -->
-    <section class="fix-background padding-100px-tb md-padding-75px-tb sm-padding-50px-tb"
-        style="background-image:url('images/home-corporate-img-05.jpg');">
-        <div class="opacity-full-dark bg-dark-slate-blue"></div>
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-12 col-xl-12 col-md-12 col-sm-12 text-center text-md-left sm-margin-30px-bottom">
-                    <h4 class="alt-font font-weight-600 text-white mb-0" style="    text-align: center;
-                padding-bottom: 100px;">Lets hear from you</h4>
-                </div>
+    >
+   
+   
+    
 
-            </div>
-        </div>
-    </section>
-    <!-- end section -->
-  
-
-    <!-- start section -->
-    <section class="bg-light-gray overflow-visible">
-        <div class="container">
-            <div class="row justify-content-center xs-no-margin-lr">
-                <div class="col-12 col-xl-12 col-lg-11 bg-white box-shadow-extra-large border-radius-6px overflow-hidden overlap-section-three-fourth wow animate__fadeInUp"
-                    data-wow-delay="0.3s">
-                    <div class="row">
-                        <div class="col-12 col-md-6 padding-3-rem-all md-padding-4-rem-all xs-padding-3-half-rem-all">
-                            <h5
-                                class="alt-font font-weight-700 text-slate-blue text-uppercase letter-spacing-minus-1px w-95">
-                                Get your project moving!</h5>
-                            <p class="w-90 lg-w-100">Our personal trainers are on hand to assist you with your training
-                                and inductions.</p>
-                            <form id="myForm" action="https://bywordhr.com/email-templates/contact-form.php" method="post"
-                                class="margin-15px-top d-inline-block w-100">
-                                <input
-                                    class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                    type="text"id="Name" name="Name" placeholder="Your name" />
-                                <input
-                                    class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                    type="text" id="Phone" name="Phone" placeholder="Your Contact Number" />
-                                <input
-                                    class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                    type="email" id="Email" name="Email" placeholder="Your email address" />
-                                <input type="hidden" name="redirect" value="">
-
-                                <textarea class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"     name="Message"  id="Message" placeholder="Start typing..." rows="5" cols="50"></textarea>
-                                <input type="hidden" name="redirect" value="">
-
-                                <button class="btn btn-large btn-neon-orange btn-round-edge w-100 mb-0 submit"
-                                    type="submit" name="submit-btn">Inquire Now
-                                </button>
-                                <center><span id="magalert" style="display:none;"><i class="bi bi-check-circle" style="color: green;"></i>&nbsp;<span style="color:green;">Your request have been sent. Thank You ...</span></span> </center>
-                                <div class="form-results border-radius-4px d-none"></div>
-                            </form>
-                        </div>
-                        <div class="col-12 col-md-6 padding-50px-all" style="background: #f1f1f1;">
-
-                            <h5
-                                class="alt-font cd-headline font-weight-600 text-extra-dark-gray letter-spacing-minus-1px line-height-40px margin-40px-bottom cd-headline sm-w-75 sm-line-height-30px xs-w-80 xs-margin-20px-bottom">
-                                <span class="">You are at <span class="text-neon-blue">Right</span> place</span>
-
-                            </h5>
-                            <p class="w-90 md-w-100 margin-30px-bottom">Our company stands as the ideal partner for
-                                software architecture due to our adeptness in crafting scalable, robust, and efficient
-                                systems tailored to your unique needs. With a focus on innovation, collaboration, and
-                                client satisfaction, we ensure that your software architecture exceeds expectations and
-                                drives your business forward.</p>
-                            <ul
-                                class="w-90 list-style-01 font-weight-500 text-extra-dark-gray lg-w-100 sm-w-85 xs-w-100">
-                                <li><i class="fas fa-check text-extra-medium-gray"></i>Expertise in Varied Technologies
-                                    <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
-                                </li>
-                                <li><i class="fas fa-check text-extra-medium-gray"></i>Proven Track Record
-                                    <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
-                                </li>
-                                <li><i class="fas fa-check text-extra-medium-gray"></i>Client-Centric Approach
-                                    <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
-                                </li>
-                                <li><i class="fas fa-check text-extra-medium-gray"></i>Continuous Innovation
-                                    <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
-                                </li>
-                                <li><i class="fas fa-check text-extra-medium-gray"></i>Wide tech expertise
-                                    <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
-                                </li>
-                                <li><i class="fas fa-check text-extra-medium-gray"></i>Radical Efficiency
-                                    <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
-                                </li>
-                            </ul>
-
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!-- end section -->
+    
+   
     <!-- start footer -->
     <footer class="footer-dark ">
         <div class="footer-top padding-five-tb lg-padding-eight-tb md-padding-50px-tb">
