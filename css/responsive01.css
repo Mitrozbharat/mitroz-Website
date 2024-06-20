@@ -294,12 +294,8 @@
     font-size: 24px;
  
   }
-  .btnsize{
-    width: 30%;
-    font-size:  ;
-    margin-top: -5px;
-
-  }
+  
+ 
   .dotnet-img {
     width: 86%;
     margin-top: 35%;
@@ -517,7 +513,7 @@
 /* Styles for screens from 1200px to 1399px */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   /* Styles for screens in this range */
-
+  
   .nav-item menu{
    width: 90%;
   }
