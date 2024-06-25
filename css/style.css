@@ -569,7 +569,7 @@ a.text-salmon-rose-hover:hover {
 .btn-link.text-tussock,
 .text-tussock,
 a.text-tussock-hover:hover {
-    color: #bf8c4c
+    color: #0039e3
 }
 .btn-link.text-greenish-slate,
 .text-greenish-slate,
@@ -2011,7 +2011,7 @@ blockquote footer {
     position: absolute;
     height: 100%;
     width: 100%;
-    opacity: .9;
+    opacity: 0.8;
     top: 0;
     left: 0
 }
