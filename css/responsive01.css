@@ -19,7 +19,11 @@
     margin-left: auto;
     margin-right: auto;
   }
- 
+  .logoblue {
+    width: 100%;
+    margin-bottom: 10px;
+    padding-left: 20%;
+}
     
   .circle {
     /* position: absolute;
@@ -98,7 +102,7 @@
   background-color: #f4f3f2;
   }
   .contact-margin{
-    margin-left: 18%;
+    margin-left: 2%;
   }
 
   .btn-cuncultation{
