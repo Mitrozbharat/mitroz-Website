@@ -30394,3 +30394,17 @@
         box-sizing: border-box;
     }
 }
+
+@media (min-width: 750px) and (max-width: 1380px){
+    .xl-w-80 {
+        width: 106% !important
+    }
+
+    .tab-style-07 .nav-tabs > li.nav-item > a.nav-link {
+        color: #232323;
+        border-bottom: 3px solid transparent;
+        padding: 30px 10px 25px 26px;
+    }
+}
+
+
