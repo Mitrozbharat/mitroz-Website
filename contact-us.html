@@ -300,7 +300,7 @@
                 </ul>
                
             </div>
-            <div class="col-12 col-lg-6 col-md-8">
+            <!-- <div class="col-12 col-lg-6 col-md-8">
                 <h4 class="alt-font text-black font-weight-600">Let's get in touch with us</h4>
                 <form id="myForm" action="https://bywordhr.com/email-templates/contact-form.php" method="post" class="alt-font text-extra-dark-gray">
                     <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required" type="text" id="Name" Name="name" placeholder="Your name" />
@@ -311,6 +311,22 @@
                     <input type="hidden" name="redirect" value="">
                     <center><span id="magalert" style="display:none;"><i class="bi bi-check-circle" style="color: green;"></i>&nbsp;<span style="color:green;">Your request have been sent. Thank You ...</span></span> </center>
                     <button class="btn btn-medium btn-fancy btn-transparent-fast-blue mb-0 submit" type="submit">send message</button>
+                    <div class="form-results d-none"></div>
+                    
+                </form>
+            </div> -->
+
+            <div class="col-12 col-lg-6 col-md-8">
+                <h4 class="alt-font text-black font-weight-600">Let's get in touch with us</h4>
+                <form class="alt-font text-extra-dark-gray">
+                    <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required" type="text" id="Name" Name="Name" placeholder="Your name" />
+                    <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px required" type="email" id="Email" name="Email" placeholder="Your email address" />
+                    <input class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-25px-bottom border-radius-0px" type="tel" id="Phone" name="Phone" placeholder="Mobile no" />
+                    <textarea class="input-border-bottom border-color-extra-dark-gray bg-transparent placeholder-dark large-input px-0 margin-35px-bottom border-radius-0px" id="Message" name="Message" rows="5" placeholder="How can we help you?"></textarea>
+                    <div class="g-recaptcha margin-35px-bottom" data-sitekey="6LdFf9kZAAAAAFEQ49P0-U3fLPXe-IpwH6Hk8_IW"></div>
+                    <input type="hidden" name="redirect" value="">
+                    <center><span id="magalert" style="display:none;"><i class="bi bi-check-circle" style="color: green;"></i>&nbsp;<span style="color:green;">Your request have been sent. Thank You ...</span></span> </center>
+                    <button class="btn btn-medium btn-fancy btn-transparent-fast-blue mb-0 submit" type="button" onclick="handleFormSubmit();">send message</button>
                     <div class="form-results d-none"></div>
                     
                 </form>
@@ -577,6 +593,7 @@
         <script type="text/javascript" src="js/jquery.min.js"></script>
         <script type="text/javascript" src="js/theme-vendors.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/formHandler.js"></script>
 
         <script>
         

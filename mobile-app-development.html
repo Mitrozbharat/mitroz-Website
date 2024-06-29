@@ -1656,22 +1656,26 @@
                                 Get your project moving!</h5>
                             <p class="w-90 lg-w-100">Our personal trainers are on hand to assist you with your training
                                 and inductions.</p>
-                            <form action="https://bywordhr.com/email-templates/contact-form.php" method="post"
-                                class="margin-15px-top d-inline-block w-100">
+                            <form class="margin-15px-top d-inline-block w-100">
                                 <input
                                     class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                    type="text" name="name" placeholder="Your name" />
+                                    type="text" id="Name" name="Name" placeholder="Your name" />
                                 <input
                                     class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                    type="text" name="contact" placeholder="Your Contact Number" />
+                                    type="text" id="Phone" name="Phone" placeholder="Your Contact Number" />
                                 <input
                                     class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                    type="email" name="email" placeholder="Your email address" />
+                                    type="email" id="Email" name="Email" placeholder="Your email address" />
                                 <input type="hidden" name="redirect" value="">
-                                <textarea class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"     name="message" placeholder="Start typing..." rows="5" cols="50"></textarea>
+                                <textarea class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"     
+                                
+                                name="message" placeholder="Start typing..." rows="5" cols="50"></textarea>
                                 <input type="hidden" name="redirect" value="">
                                 <button class="btn btn-large btn-neon-orange btn-round-edge w-100 mb-0 submit"
-                                    type="submit">Inquire Now</button>
+                                    type="button" onclick="handleFormSubmit();">Inquire Now</button>
+                                    <center><span id="magalert" style="display:none;"><i class="bi bi-check-circle"
+                                    style="color: green;"></i>&nbsp;<span style="color:green;">Your request have
+                                    been sent. Thank You ...</span></span> </center>
                                 <div class="form-results border-radius-4px d-none"></div>
                             </form>
                         </div>
@@ -1856,6 +1860,7 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/theme-vendors.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/formHandler.js"></script>
 
     <!-- Owl Carousel JS -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
