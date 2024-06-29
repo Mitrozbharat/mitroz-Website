@@ -2011,7 +2011,7 @@ blockquote footer {
     position: absolute;
     height: 100%;
     width: 100%;
-    opacity: 0.8;
+    opacity: 0.9;
     top: 0;
     left: 0
 }
@@ -15524,7 +15524,7 @@ a img.aligncenter {
 }
 .pie-chart-style-02 .percent {
     position: absolute;
-    top: 50%;
+    top: 60%; 
     left: 47%;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
