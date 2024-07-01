@@ -30,7 +30,7 @@ a:hover {
     text-decoration: none;
     outline: 0;
     outline-offset: 0;
-    color: #0038e3
+    color: #4285F4
 }
 a,
 a:active,
@@ -399,7 +399,7 @@ a.text-fast-blue-hover:hover {
 .btn-link.text-neon-blue,
 .text-neon-blue,
 a.text-neon-blue-hover:hover {
-    color: #3452ff
+    color: #4285F4
 }
 .btn-link.text-light-pink,
 .text-light-pink,
@@ -1208,10 +1208,10 @@ a.text-gradient-fuego-turquoise-hover:hover {
     background-color: #98272a
 }
 .bg-fast-blue {
-    background-color: #0038e3 
+    background-color: #4285F4
 }
 .bg-neon-blue {
-    background-color: #3452ff
+    background-color: #4285F4
 }
 .bg-transparent {
     background-color: transparent
@@ -1457,7 +1457,7 @@ a.text-gradient-fuego-turquoise-hover:hover {
     background-image: linear-gradient(to right top, #36c1e1, #28ccc0, #74cf8e, #bac962, #feb95b)
 }
 .bg-gradient-fast-blue-purple {
-    background: linear-gradient(to right top, #0039e3, #4132e0, #5e28dd, #741bd9, #8600d4);
+    background-color: #4285F4 ;
 }
 .bg-gradient-fast-blue {
     background: linear-gradient(to right top, #3d93f7, #3561c7, #2a1fcd, #082da5, #012a8a);
@@ -2757,7 +2757,7 @@ input.btn:focus {
 .btn.btn-fast-blue:focus,
 .btn.btn-fast-blue:hover {
     background: 0 0;
-    color: #0038e3
+    color: #4285F4
 }
 .btn.btn-green {
     /*background: #CE9605;*/
@@ -2840,14 +2840,14 @@ input.btn:focus {
     color: #374162
 }
 .btn.btn-neon-orange {
-    background: #0064ffe6;
+    background:#4285F4;
     border-color: #709bf8;
     color: #fff;
 }
 .btn.btn-neon-orange:focus,
 .btn.btn-neon-orange:hover {
     background: 0 0;
-    color: #0064ffe6
+    color:#4285F4
 }
 .btn.btn-salmon-rose {
     background: #ea9d8d;
@@ -2946,13 +2946,13 @@ input.btn:focus {
 }
 .btn.btn-transparent-fast-blue {
     background: 0 0;
-    border-color: #0038e3;
-    color: #0038e3
+    border-color: #4285F4;
+    color: #4285F4
 }
 .btn.btn-transparent-fast-blue:focus,
 .btn.btn-transparent-fast-blue:hover {
-    background: #0038e3;
-    border-color: #0038e3;
+    background: #4285F4;
+    border-color: #4285F4;
     color: #fff
 }
 .btn.btn-transparent-green {
@@ -3248,7 +3248,7 @@ input.btn:focus {
     border-color: #ff85a6!important
 }
 .border-color-fast-blue {
-    border-color: #0038e3!important
+    border-color: #4285F4!important
 }
 .border-color-light-peach {
     border-color: #ffd7c4!important
@@ -7793,7 +7793,7 @@ a.likes-count:hover {
     display: inline-block
 }
 .social-icon-style-01 a:hover {
-    color: #0038e3
+    color: #4285F4
 }
 .social-icon-style-02 ul li a {
     text-align: center;
@@ -8420,7 +8420,7 @@ a.likes-count:hover {
 .social-icon-style-06 a:hover {
     color: #fff;
     border-radius: 100%;
-    background-color: #0038e3
+    background-color: #4285F4
 }
 .social-icon-style-07 {
     position: relative
@@ -13305,9 +13305,9 @@ header .header-cart-icon .cart-count {
     vertical-align: middle
 }
 .blog-tag:hover {
-    border-color: #0038e3!important;
+    border-color: #4285F4!important;
     color: #fff;
-    background-color: #0038e3
+    background-color: #4285F4
 }
 .blog-tag:last-child {
     margin-right: 0
@@ -13506,8 +13506,8 @@ a img.aligncenter {
     background-color: #fff
 }
 .blog-comment li .btn-reply:hover {
-    border-color: #0038e3;
-    background: #0038e3;
+    border-color: #4285F4;
+    background: #4285F4;
     color: #fff
 }
 .blog-comment li ul.child-comment {
@@ -15686,7 +15686,7 @@ a img.aligncenter {
     line-height: 16px
 }
 .list-style-07 li a:hover {
-    color: #0038e3
+    color: #4285F4
 }
 .list-style-07.filter-category li,
 .list-style-07.filter-size li {
@@ -16488,7 +16488,7 @@ aside .instafeed-grid.gutter-double-extra-large {
 .tab-style-02 .nav-tabs > li.nav-item > a.nav-link:focus,
 .tab-style-02 .nav-tabs > li.nav-item > a.nav-link:hover {
     border-bottom: none;
-    color: #0038e3;
+    color: #4285F4;
     background: 0 0
 }
 .tab-style-02 .nav-tabs.nav-tabs-light > li.nav-item > a.nav-link.active,
@@ -18304,7 +18304,7 @@ footer .instafeed-grid.gutter-double-extra-large {
     opacity: 1
 }
 .web-agency .process-step-style-02 .process-step-item:hover .process-step-icon {
-    color: #0038e3
+    color: #4285F4
 }
 .footer-restaurant.footer-light a:hover {
     color: #ca943d
@@ -19665,3 +19665,6 @@ footer ul li.twt{
 .text-sky{
     color: #4285f4;
   }
+  .newbarclass{
+    width: 153% !important;
+}
