@@ -22,17 +22,190 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive01.css">
     <link rel="stylesheet" type="text/css" href="css/mycss.css" />
-    <!-- revolution slider -->
-    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
-    <link rel="stylesheet" type="text/css" href="css/bs1.css">
-    <link rel="stylesheet" type="text/css" href="css/bs1.css">
-    <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
-    <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
    
     <script src="../code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
     <script src="../www.google.com/recaptcha/api12dc.js?render=6LfOFrgcAAAAAP30iWJ_5Bosw-gjqvOhl1tmQd6N"></script>
     <style>
+
+
+        .scrollable-container {
+            max-height: 600px;
+            /* Adjust as necessary */
+            overflow-y: auto;
+            padding-right: 15px;
+            /* To prevent scrollbar overlap */
+        }
+
+        .service-box {
+            padding: 15px;
+            background-color: #f8f9fa;
+            /* Light gray background */
+            border-radius: 4px;
+        }
+
+        .scrollable-container {
+            max-height: 600px;
+            /* Adjust as necessary */
+            overflow-y: auto;
+            padding-right: 15px;
+            /* To prevent scrollbar overlap */
+            scrollbar-width: none;
+            /* For Firefox */
+            -ms-overflow-style: none;
+            /* For Internet Explorer and Edge */
+        }
+
+        .scrollable-container::-webkit-scrollbar {
+            display: none;
+            /* For Chrome, Safari, and Opera */
+        }
+
+        .service-box {
+            padding: 20px;
+            background-color: #f8f9fa;
+            /* Light gray background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+            transition: transform 0.2s ease-in-out;
+        }
+
+
+        .margin-4-half-rem-bottom {
+            margin-bottom: 1.5rem;
+        }
+
+        .top-60px {
+            top: 120px;
+        }
+
+        @media (min-width: 1200px) {
+            .offset-xl-1 {
+                margin-left: 0.333333% !important;
+            }
+        }
+
+        .slider-navigation-style-03.swiper-button-next {
+            right: inherit;
+            left: 56% !important;
+            margin-top: 0%;
+        }
+
+        .slider-navigation-style-03.swiper-button-prev {
+            left: 46% !important;
+            margin-top: 0%;
+        }
+
+        .process-step-style-01 .process-step-icon {
+            width: 100px !important;
+            height: 1000px !important;
+
+        }
+
+        .process-step-style-01 .process-step-icon i {
+            vertical-align: middle;
+        }
+
+
+
+        .faq_gap {
+            padding: 50px 0;
+        }
+
+        .faq_gap .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .heading2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .faq_grid_panel {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .faq_col {
+            flex-basis: calc(50% - 15px);
+            margin-bottom: 30px;
+            box-sizing: border-box;
+        }
+
+        .app-faq-wrap-list {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+            height: 180px;
+            /* Fixed height for all cards */
+            overflow: hidden;
+            /* Hide overflow content */
+        }
+
+        .app-faq-wrap-list:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .head {
+            position: relative;
+        }
+
+        .arrow-link {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+
+        .arrow-link svg {
+            width: 15px;
+            height: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-content-wrap {
+            display: none;
+            overflow-y: auto;
+            /* Enable vertical scrolling for longer content */
+            max-height: 140px;
+            /* Maximum height for content */
+        }
+
+        .faq-content-wrap.open {
+            display: block;
+        }
+
+        /* h3 {
+            font-size: 1.4rem !important;
+            line-height: 2.9rem !important;
+        } */
+
+        h2 {
+            font-size: 52px !important;
+            color: black !important;
+            font-weight: 600 !important;
+        }
+
+        .faq-card {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px;
+            text-align: center;
+            /* Center-align text content */
+        }
+    
+
         a, a:active, a:focus {
            color: black;
         }
@@ -306,10 +479,20 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-xl-7 col-lg-8 col-md-10 text-center overlap-gap-section">
+                    <h3 class="alt-font text-white font-weight-600  wow animate__fadeIn">Mitroz Software Development Company</h3>
+                </div>
+                <div class="col-12 col-xl-7 col-lg-8 col-md-10 text-center overlap-gap-section">
+                    <h6 class="alt-font text-white font-weight-600  wow animate__fadeIn" style="margin-bottom: -60px;">- Supercharge
+                        your business with our end-to-end technology services and solutions.</h6>
+                </div>
+                
+            </div>
+            <!-- <div class="row justify-content-center">
+                <div class="col-12 col-xl-7 col-lg-8 col-md-10 text-center overlap-gap-section">
                     <h4 class="alt-font text-white font-weight-600  wow animate__fadeIn">Supercharge
                         your business with our end-to-end technology services and solutions.</h4>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- end section -->
@@ -707,7 +890,7 @@
     </section>
     <!-- end client section -->
     <!-- start testomonianl section -->
-    <section class="wow animate__fadeIn">
+    <section class="wow animate__fadeIn bg-light-blue">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 align-items-center justify-content-center">
                 <!-- start counter item -->
@@ -772,7 +955,8 @@
                     <div class="row align-items-center">
                         <div class="col-12 col-md-6 text-right md-margin-30px-bottom">
                             <img src="images/home/Startup.png" alt="" />
-                            <div class="bg-gradient-tussock-greenish-slate text-white text-left alt-font text-extra-large w-300px padding-3-rem-tb padding-3-half-rem-lr position-absolute left-0px top-60px md-w-250px md-padding-2-rem-all">
+                            
+                            <div class="bg-neon-blue text-white text-left alt-font text-extra-large w-300px padding-3-rem-tb padding-3-half-rem-lr position-absolute left-0px top-60px md-w-250px md-padding-2-rem-all">
                                 Empowering startups with innovative software solutions for rapid growth.
                             </div>
                         </div>
@@ -814,7 +998,7 @@
                     <div class="row align-items-center">
                         <div class="col-12 col-md-6 text-right md-margin-30px-bottom">
                             <img src="images/home/Enterprices.png" alt="" />
-                            <div class="bg-gradient-tussock-greenish-slate text-white text-left alt-font text-extra-large w-300px padding-3-rem-tb padding-3-half-rem-lr position-absolute left-0px top-60px md-w-250px md-padding-2-rem-all">
+                            <div class="bg-neon-blue text-white text-left alt-font text-extra-large w-300px padding-3-rem-tb padding-3-half-rem-lr position-absolute left-0px top-60px md-w-250px md-padding-2-rem-all">
                                 How can we elevate your enterprise to new heights?
                             </div>
                         </div>
@@ -858,7 +1042,7 @@
                     <div class="row align-items-center">
                         <div class="col-12 col-md-6 text-right md-margin-30px-bottom">
                             <img src="images/home/SME.png" alt="" />
-                            <div class="bg-gradient-tussock-greenish-slate text-white text-left alt-font text-extra-large w-300px padding-3-rem-tb padding-3-half-rem-lr position-absolute left-0px top-60px md-w-250px md-padding-2-rem-all">
+                            <div class="bg-neon-blue text-white text-left alt-font text-extra-large w-300px padding-3-rem-tb padding-3-half-rem-lr position-absolute left-0px top-60px md-w-250px md-padding-2-rem-all">
                                 Transforming your SME with innovative software solutions for enhanced growth.
                             </div>
                         </div>
@@ -907,24 +1091,262 @@
         </div>
         </div>
     </section>
-    <!-- end section -->
-    <section class="cover-background wow animate__fadeIn justify-content-center  bg-img-padding"
-    style="background: url('images/new/who-we-are-image-5.jpg');">
-    <div class="container">
+     <!-- start section -->
+ <!-- start section -->
+ <section>
+    <div class="container-fluid">
+        <div class="row justify-content-center wow animate__fadeIn">
+            <div class="col-12 col-xl-6 col-lg-7 col-sm-8 text-center margin-5-rem-bottom md-margin-5-rem-bottom">
+
+                <h5 class="alt-font text-extra-dark-gray font-weight-600 letter-spacing-minus-1px"> Industries We
+                    Serve</h5>
+                <p style="margin-bottom: -25px;">Our expertise covers multiple sectors, delivering comprehensive
+                    support and innovative solutions to meet your industry's needs.</p>
+            </div>
+        </div>
         <div class="row">
-            <div class="col-12 col-xl-12 col-lg-12 wow animate__fadeIn text-center card-padding">
-               
-                <div class=" d-flex justify-content-center head-padding">
-                    <h2 class="alt-font text-white font-weight-500  margin-40px-bottom">Let's work together <br>to
-                        build
-                        something great</h3>
+            <div class="col-12 px-lg-0 wow animate__fadeIn" data-wow-delay="0.2s">
+                <div class="swiper-container portfolio-classic position-relative"
+                    data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "autoplay": { "delay": 3000, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 4 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 } }, "effect": "slide" }'>
+                    <div class="swiper-wrapper">
+
+                        <!-- start slide item -->
+
+                        <!-- end slide item -->
+                        <!-- start slide item -->
+                        <div class="swiper-slide overflow-hidden">
+                            <div class="col interactive-banners-style-09 lg-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeInUp"
+                                data-wow-delay="0.2s">
+                                <figure class="m-0">
+                                    <img src="images/Ind_serve/Education.jpg" alt="" />
+                                    <div class="opacity-full bg-dark-slate-blue"></div>
+                                    <figcaption>
+                                        <div
+                                            class="interactive-banners-content align-items-start padding-2-rem-all last-paragraph-no-margin">
+                                            <h6
+                                                class="alt-font font-weight-500 text-white w-55 position-relative z-index-1 xl-w-80 lg-w-40 md-w-50 xs-w-60">
+                                                Education</h6>
+                                            <span
+                                                class="interactive-banners-hover-icon w-40px h-40px line-height-44px text-center d-inline-block bg-white rounded-circle"><i
+                                                    class="feather icon-feather-arrow-right text-extra-dark-gray icon-extra-small"></i></span>
+                                        </div>
+                                        <div
+                                            class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
+                                            <div class="padding-4-rem-all last-paragraph-no-margin">
+                                                <p class="interactive-banners-action-content w-85 md-w-95">
+                                                    Empowering learners, educators, and institutions with innovative
+                                                    solutions for a brighter future.</p>
+                                                <a href="Education.html"
+                                                    class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">learn
+                                                    more<i
+                                                        class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- end slide item -->
+                        <!-- start slide item -->
+                        <div class="swiper-slide overflow-hidden">
+                            <div class="col interactive-banners-style-09 lg-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeInUp"
+                                data-wow-delay="0.2s">
+                                <figure class="m-0">
+                                    <img src="images/Ind_serve/fintech.svg" alt="" />
+                                    <div class="opacity-full bg-dark-slate-blue"></div>
+                                    <figcaption>
+                                        <div
+                                            class="interactive-banners-content align-items-start padding-2-rem-all last-paragraph-no-margin">
+                                            <h6
+                                                class="alt-font font-weight-500 text-white w-55 position-relative z-index-1 xl-w-80 lg-w-40 md-w-50 xs-w-60">
+                                                Fintech</h6>
+                                            <span
+                                                class="interactive-banners-hover-icon w-40px h-40px line-height-44px text-center d-inline-block bg-white rounded-circle"><i
+                                                    class="feather icon-feather-arrow-right text-extra-dark-gray icon-extra-small"></i></span>
+                                        </div>
+                                        <div
+                                            class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
+                                            <div class="padding-4-rem-all last-paragraph-no-margin">
+                                                <p class="interactive-banners-action-content w-85 md-w-95">
+                                                    Empowering financial services with cutting-edge technology
+                                                    solutions.</p>
+                                                <a href="FinTech.html"
+                                                    class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">learn
+                                                    more<i
+                                                        class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- end slide item -->
+                        <!-- start slide item -->
+                        <div class="swiper-slide overflow-hidden">
+                            <div class="col interactive-banners-style-09 lg-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeInUp"
+                                data-wow-delay="0.2s">
+                                <figure class="m-0">
+                                    <img src="images/Ind_serve/Reatil.jpg" alt="" />
+                                    <div class="opacity-full bg-dark-slate-blue"></div>
+                                    <figcaption>
+                                        <div
+                                            class="interactive-banners-content align-items-start padding-2-rem-all last-paragraph-no-margin">
+                                            <h6
+                                                class="alt-font font-weight-500 text-white w-55 position-relative z-index-1 xl-w-80 lg-w-40 md-w-50 xs-w-60">
+                                                Retail &<br>eCommerce</h6>
+                                            <span
+                                                class="interactive-banners-hover-icon w-40px h-40px line-height-44px text-center d-inline-block bg-white rounded-circle"><i
+                                                    class="feather icon-feather-arrow-right text-extra-dark-gray icon-extra-small"></i></span>
+                                        </div>
+                                        <div
+                                            class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
+                                            <div class="padding-4-rem-all last-paragraph-no-margin">
+                                                <p class="interactive-banners-action-content w-85 md-w-95">Boosting
+                                                    retail with e-commerce, inventory management, and customer
+                                                    engagement solutions."</p>
+                                                <a href="industries-retail-eCommerce.html"
+                                                    class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">learn
+                                                    more<i
+                                                        class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- end slide item -->
+                        <!-- start slide item -->
+                        <div class="swiper-slide overflow-hidden">
+                            <div class="col interactive-banners-style-09 lg-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeInUp"
+                                data-wow-delay="0.2s">
+                                <figure class="m-0">
+                                    <img src="images/Ind_serve/Healthcare.jpg" alt="" />
+                                    <div class="opacity-full bg-dark-slate-blue"></div>
+                                    <figcaption>
+                                        <div
+                                            class="interactive-banners-content align-items-start padding-2-rem-all last-paragraph-no-margin">
+                                            <h6
+                                                class="alt-font font-weight-500 text-white w-55 position-relative z-index-1 xl-w-80 lg-w-40 md-w-50 xs-w-60">
+                                                Healthcare</h6>
+                                            <span
+                                                class="interactive-banners-hover-icon w-40px h-40px line-height-44px text-center d-inline-block bg-white rounded-circle"><i
+                                                    class="feather icon-feather-arrow-right text-extra-dark-gray icon-extra-small"></i></span>
+                                        </div>
+                                        <div
+                                            class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
+                                            <div class="padding-4-rem-all last-paragraph-no-margin">
+                                                <p class="interactive-banners-action-content w-85 md-w-95">
+                                                    Innovating patient care, efficiency, and outcomes through
+                                                    transformative technology solutions.</p>
+                                                <a href="Healthcare.html"
+                                                    class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">learn
+                                                    more<i
+                                                        class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- end slide item -->
+                        <!-- start slide item -->
+                        <div class="swiper-slide overflow-hidden">
+                            <div class="col interactive-banners-style-09 lg-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeInUp"
+                                data-wow-delay="0.2s">
+                                <figure class="m-0">
+                                    <img src="images/Ind_serve/Automotive.jpg" alt="" />
+                                    <div class="opacity-full bg-dark-slate-blue"></div>
+                                    <figcaption>
+                                        <div
+                                            class="interactive-banners-content align-items-start padding-2-rem-all last-paragraph-no-margin">
+                                            <h6
+                                                class="alt-font font-weight-500 text-white w-55 position-relative z-index-1 xl-w-80 lg-w-40 md-w-50 xs-w-60">
+                                                Automotive & Transport</h6>
+                                            <span
+                                                class="interactive-banners-hover-icon w-40px h-40px line-height-44px text-center d-inline-block bg-white rounded-circle"><i
+                                                    class="feather icon-feather-arrow-right text-extra-dark-gray icon-extra-small"></i></span>
+                                        </div>
+                                        <div
+                                            class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
+                                            <div class="padding-4-rem-all last-paragraph-no-margin">
+                                                <p class="interactive-banners-action-content w-85 md-w-95">
+                                                    Innovative software revolutionizes automotive and transport:
+                                                    vehicle performance, fleet, service."</p>
+                                                <a href="industries-automotive-transport.html"
+                                                    class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">learn
+                                                    more<i
+                                                        class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-slide overflow-hidden">
+                            <div class="col interactive-banners-style-09 lg-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeInUp"
+                                data-wow-delay="0.2s">
+                                <figure class="m-0">
+                                    <img src="images/Ind_serve/Reatil.jpg" alt="" />
+                                    <div class="opacity-full bg-dark-slate-blue"></div>
+                                    <figcaption>
+                                        <div
+                                            class="interactive-banners-content align-items-start padding-2-rem-all last-paragraph-no-margin">
+                                            <h6
+                                                class="alt-font font-weight-500 text-white w-60 position-relative z-index-1 xl-w-90 lg-w-40 md-w-50 xs-w-60">
+                                                Manufacturing</h6>
+                                            <span
+                                                class="interactive-banners-hover-icon w-40px h-40px line-height-44px text-center d-inline-block bg-white rounded-circle"><i
+                                                    class="feather icon-feather-arrow-right text-extra-dark-gray icon-extra-small"></i></span>
+                                        </div>
+                                        <div
+                                            class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
+                                            <div class="padding-4-rem-all last-paragraph-no-margin">
+                                                <p class="interactive-banners-action-content w-85 md-w-95">
+                                                    Cutting-edge solutions transform manufacturing: data analytics,
+                                                    risk assessment, customer experience.</p>
+                                                <a href="industries-manufacturing.html"
+                                                    class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">learn
+                                                    more<i
+                                                        class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- end slide item -->
+                    </div>
+                    <!-- start slider navigation -->
+                    <!--<div class="swiper-button-next-nav swiper-button-next rounded-circle slider-navigation-style-01 light"><i class="feather icon-feather-arrow-right"></i></div>
+                    <div class="swiper-button-previous-nav swiper-button-prev rounded-circle slider-navigation-style-01 light"><i class="feather icon-feather-arrow-left"></i></div>-->
+                    <!-- end slider navigation -->
                 </div>
-                <a href="contact-us.html" class="btn btn-large btn-white border-radius-50px text-extra-dark-gray">Let's
-                    Collaborate<span class="bg-transparent-black"></span></a>
             </div>
         </div>
     </div>
 </section>
+<!-- end section -->
+
+     <section class="cover-background wow animate__fadeIn justify-content-center  bg-img-padding"
+     style="background: url('images/new/who-we-are-image-5.jpg');">
+
+     <div class="container">
+         <div class="row">
+             <div class="col-12 col-xl-12 col-lg-12 wow animate__fadeIn text-center card-padding">
+                 <div class="margin-25px-bottom text-white opacity-6 alt-font">Are you looking for software
+                     devolopment Company</div>
+                 <div class=" d-flex justify-content-center head-padding">
+                     <h2 class="alt-font text-white font-weight-500  margin-40px-bottom">Let's work together <br>to
+                         build
+                         something great</h3>
+                 </div>
+                 <a href="contact-us.html" class="btn btn-large btn-white border-radius-50px text-extra-dark-gray">Let's
+                     Collaborate<span class="bg-transparent-black"></span></a>
+             </div>
+         </div>
+     </div>
+ </section>
+
 
 <!-- end section -->
 
