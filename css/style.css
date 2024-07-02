@@ -19668,3 +19668,8 @@ footer ul li.twt{
   .newbarclass{
     width: 153% !important;
 }
+
+.favicon{
+    width:32px;
+    height: 32px;
+}
