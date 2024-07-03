@@ -5,16 +5,18 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Mitroz | Mobile app & web Development Company</title>
-    <meta name="description" content="Elevate your business with comprehensive, cutting-edge technology services and solutions.">
-    <meta name="keywords" content="Custom Software Development, Web Development Mobile App Development, UI/UX Development, Testing and QA, Hire a Team">
+    <meta name="description"
+        content="Elevate your business with comprehensive, cutting-edge technology services and solutions.">
+    <meta name="keywords"
+        content="Custom Software Development, Web Development Mobile App Development, UI/UX Development, Testing and QA, Hire a Team">
     <meta name="robots" content="index,follow">
     <meta name="author" content="Mitroz technology">
     <meta name="copyright" content="Mitroz technology" />
     <meta name="distribution" content="Global" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- favicon icon -->
-     <link rel="shortcut icon" href="images/home/Mitroz-favicon.png">
-   
+    <link rel="shortcut icon" href="images/home/Mitroz-favicon.png">
+
     <!-- style sheets and font icons  -->
     <link rel="stylesheet" type="text/css" href="css/font-icons.min.css">
     <link rel="stylesheet" type="text/css" href="css/theme-vendors.min.css">
@@ -22,23 +24,199 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive01.css">
     <link rel="stylesheet" type="text/css" href="css/mycss.css" />
-    <!-- revolution slider -->
-    <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
-    <link rel="stylesheet" type="text/css" href="css/bs1.css">
-    <link rel="stylesheet" type="text/css" href="css/bs1.css">
-    <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
-    <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
    
     <script src="../code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
         crossorigin="anonymous"></script>
     <script src="../www.google.com/recaptcha/api12dc.js?render=6LfOFrgcAAAAAP30iWJ_5Bosw-gjqvOhl1tmQd6N"></script>
     <style>
+
+
+        .scrollable-container {
+            max-height: 600px;
+            /* Adjust as necessary */
+            overflow-y: auto;
+            padding-right: 15px;
+            /* To prevent scrollbar overlap */
+        }
+
+        .service-box {
+            padding: 15px;
+            background-color: #f8f9fa;
+            /* Light gray background */
+            border-radius: 4px;
+        }
+
+        .scrollable-container {
+            max-height: 600px;
+            /* Adjust as necessary */
+            overflow-y: auto;
+            padding-right: 15px;
+            /* To prevent scrollbar overlap */
+            scrollbar-width: none;
+            /* For Firefox */
+            -ms-overflow-style: none;
+            /* For Internet Explorer and Edge */
+        }
+
+        .scrollable-container::-webkit-scrollbar {
+            display: none;
+            /* For Chrome, Safari and Opera */
+        }
+
+        .service-box {
+            padding: 20px;
+            background-color: #f8f9fa;
+            /* Light gray background */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+            transition: transform 0.2s ease-in-out;
+        }
+
+
+        .margin-4-half-rem-bottom {
+            margin-bottom: 1.5rem;
+        }
+
+        .top-60px {
+            top: 120px;
+        }
+
+        @media (min-width: 1200px) {
+            .offset-xl-1 {
+                margin-left: 0.333333% !important;
+            }
+        }
+
+        .slider-navigation-style-03.swiper-button-next {
+            right: inherit;
+            left: 56% !important;
+            margin-top: 0%;
+        }
+
+        .slider-navigation-style-03.swiper-button-prev {
+            left: 46% !important;
+            margin-top: 0%;
+        }
+
+        .process-step-style-01 .process-step-icon {
+            width: 100px !important;
+            height: 1000px !important;
+
+        }
+
+        .process-step-style-01 .process-step-icon i {
+            vertical-align: middle;
+        }
+
+
+
+        .faq_gap {
+            padding: 50px 0;
+        }
+
+        .faq_gap .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .heading2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .faq_grid_panel {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .faq_col {
+            flex-basis: calc(50% - 15px);
+            margin-bottom: 30px;
+            box-sizing: border-box;
+        }
+
+        .app-faq-wrap-list {
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-sizing: border-box;
+            height: 180px;
+            /* Fixed height for all cards */
+            overflow: hidden;
+            /* Hide overflow content */
+        }
+
+        .app-faq-wrap-list:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .head {
+            position: relative;
+        }
+
+        .arrow-link {
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+        }
+
+        .arrow-link svg {
+            width: 15px;
+            height: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .faq-content-wrap {
+            display: none;
+            overflow-y: auto;
+            /* Enable vertical scrolling for longer content */
+            max-height: 140px;
+            /* Maximum height for content */
+        }
+
+        .faq-content-wrap.open {
+            display: block;
+        }
+
+        /* h3 {
+            font-size: 1.4rem !important;
+            line-height: 2.9rem !important;
+        } */
+
+        h2 {
+            font-size: 52px !important;
+            color: black !important;
+            font-weight: 600 !important;
+        }
+
+        .faq-card {
+            width: 100%;
+            max-width: 400px;
+            margin: 10px;
+            text-align: center;
+            /* Center-align text content */
+        }
+    
+
         a, a:active, a:focus {
            color: black;
         }
+
         body {
             color: black;
-        }.accordion-style-01 .panel .panel-body {
+        }
+
+        .accordion-style-01 .panel .panel-body {
             padding: 0px 15px 25px 7px;
         }
 
@@ -61,7 +239,7 @@
         .SectionOne {
             padding: 70px 0;
             overflow: hidden;
-            background: #3d58f3;
+            background: #4285F4;
         }
 
         .sizeoftext {
@@ -73,248 +251,274 @@
 
 <body data-mobile-nav-style="classic">
 
-        <!-- start header -->
-        <header>
-            <!-- start navigation -->
-            <nav
-                class="navbar navbar-expand-lg navbar-dark bg-transparent header-light fixed-top navbar-boxed header-reverse-scroll">
-                <div class="container-fluid nav-header-container">
-                    <div class="col-auto col-sm-6 col-lg-2 mr-auto pl-lg-0">
-                        <a class="navbar-brand" href="index.html">
-                            <img src="images/new/logoblue.png" class="default-logo" alt="">
-                            <img src="images/new/logoblue.png" class="alt-logo" alt="">
-                            <img src="images/new/logoblue.png" class="mobile-logo" alt="">
-                        </a>
-                    </div>
-                    <div class="col-auto col-lg-9 menu-order px-lg-0">
-                        <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
-                            data-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                            <span class="navbar-toggler-line"></span>
-                        </button>
-                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                            <ul class="navbar-nav alt-font">
-                                <li class="nav-item menu"><a href="our-work.html" class="nav-link">Our Work</a></li>
-                                <li class="nav-item dropdown megamenu">
-                                     <a href="Service.html" class="nav-link">Services</a>
-                                    <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown"
-                                        aria-hidden="true"></i>
-                                    <div class="menu-back-div dropdown-menu megamenu-content" role="menu">
-                                        <div class="d-lg-flex justify-content-center">
-                                            <ul class="d-lg-inline-block" style="padding-right: 0;  ">
-                                                <h6 style="font-size: 20px;
+    <!-- start header -->
+    <header>
+        <!-- start navigation -->
+        <nav
+            class="navbar navbar-expand-lg navbar-dark bg-transparent header-light fixed-top navbar-boxed header-reverse-scroll">
+            <div class="container-fluid nav-header-container">
+                <div class="col-auto col-sm-6 col-lg-2 mr-auto pl-lg-0">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/new/logoblue.png" class="default-logo" alt="">
+                        <img src="images/new/logoblue.png" class="alt-logo" alt="">
+                        <img src="images/new/logoblue.png" class="mobile-logo" alt="">
+                    </a>
+                </div>
+                <div class="col-auto col-lg-9 menu-order px-lg-0">
+                    <button class="navbar-toggler float-right" type="button" data-toggle="collapse"
+                        data-target="#navbarNav" aria-controls="navbarNav" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                        <span class="navbar-toggler-line"></span>
+                    </button>
+                    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav alt-font">
+                            <li class="nav-item menu"><a href="our-work.html" class="nav-link">Our Work</a></li>
+                            <li class="nav-item dropdown megamenu">
+                                <a href="Service.html" class="nav-link">Services</a>
+                                <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown"
+                                    aria-hidden="true"></i>
+                                <div class="menu-back-div dropdown-menu megamenu-content" role="menu">
+                                    <div class="d-lg-flex justify-content-center">
+                                        <ul class="d-lg-inline-block" style="padding-right: 0;  ">
+                                            <h6 style="font-size: 20px;
                                                    line-height: 1.5;
                                                    font-weight: 600;
                                                    width: 90%;"> Access the product development know-how you need </h6>
-                                                <a href="Service.html">All services <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </ul>
-                                            <ul class="d-lg-inline-block">
-                                                <li class="dropdown-header"><a href="custom-software-development.html"
-                                                    class="megamenu-heading">Custom Software 
+                                            <a href="Service.html">All services <i class="fa fa-angle-right"></i></a>
+                                        </ul>
+                                        <ul class="d-lg-inline-block">
+                                            <li class="dropdown-header"><a href="custom-software-development.html"
+                                                    class="megamenu-heading">Custom Software
                                                     Development</a></li>
-                                              <p class="megamenu-subtext">Reach the software flexibility needed to scale
+                                            <p class="megamenu-subtext">Reach the software flexibility needed to scale
                                                 by optimizing your architecture.</p>
-                                                
-                                                <li class="dropdown-header"><a href="ui-ux-development-company.html"
-                                                    class="megamenu-heading">UI/UX 
+
+                                            <li class="dropdown-header"><a href="ui-ux-development-company.html"
+                                                    class="megamenu-heading">UI/UX
                                                     Development</a></li>
-                                                   <p class="megamenu-subtext">Empower your product's success with our seasoned
-                                                   designers.</p>
-    
-                                                   
-                                            </ul>
-                                            <ul class="d-lg-inline-block">
-                                                <li class="dropdown-header"><a href="web-app-development.html"
+                                            <p class="megamenu-subtext">Empower your product's success with our seasoned
+                                                designers.</p>
+
+
+                                        </ul>
+                                        <ul class="d-lg-inline-block">
+                                            <li class="dropdown-header"><a href="web-app-development.html"
                                                     class="megamenu-heading">Web App
                                                     development</a></li>
-                                               <p class="megamenu-subtext">Build or scale a competitive product ready for
+                                            <p class="megamenu-subtext">Build or scale a competitive product ready for
                                                 future growth.</p>
-    
-                                                <li class="dropdown-header"><a href="testing-and-QA.html"
-                                                    class="megamenu-heading">Testing and 
+
+                                            <li class="dropdown-header"><a href="testing-and-QA.html"
+                                                    class="megamenu-heading">Testing and
                                                     QA</a></li>
-                                                <p class="megamenu-subtext">Secure the highest ratings for your product by
+                                            <p class="megamenu-subtext">Secure the highest ratings for your product by
                                                 running extensive QA tests.</p>
-                                            </ul>
-                                            <ul class="d-lg-inline-block">
-    
-                                                <li class="dropdown-header"><a href="mobile-app-development.html"
-                                                    class="megamenu-heading">Mobile  App 
+                                        </ul>
+                                        <ul class="d-lg-inline-block">
+
+                                            <li class="dropdown-header"><a href="mobile-app-development.html"
+                                                    class="megamenu-heading">Mobile App
                                                     Development</a></li>
-                                                    <p class="megamenu-subtext">Make your systems fast, efficient, and scalable
-                                                   to prepare for further product growth.</p>
-    
-                                                <li class="dropdown-header"><a href="hire-team.html"
-                                                        class="megamenu-heading">Hire a Team
-                                                        </a></li>
-                                                <p class="megamenu-subtext">Hire a team of certified engineers to kick-start your operations with top-tier technical expertise.</p>
-                                               
-                                                    
-                                            </ul>
-                                        </div>
+                                            <p class="megamenu-subtext">Make your systems fast, efficient and scalable
+                                                to prepare for further product growth.</p>
+
+                                            <li class="dropdown-header"><a href="hire-team.html"
+                                                    class="megamenu-heading">Hire a Team
+                                                </a></li>
+                                            <p class="megamenu-subtext">Hire a team of certified engineers to kick-start
+                                                your operations with top-tier technical expertise.</p>
+
+
+                                        </ul>
                                     </div>
-                                </li>
-                                <li class="nav-item dropdown megamenu">
-                                  <a href="#" class="nav-link">Technologies</a>
-                                    <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown"
-                                        aria-hidden="false"></i>
-                                    <div class="menu-back-div dropdown-menu megamenu-content" role="menu">
-                                        <div class="d-lg-flex justify-content-center">
-                                            <ul class="d-lg-inline-block" style="padding-right: 0px;">
-                                                <h6 style="font-size: 20px;
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown megamenu">
+                                <a href="#" class="nav-link">Technologies</a>
+                                <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown"
+                                    aria-hidden="false"></i>
+                                <div class="menu-back-div dropdown-menu megamenu-content newbarclass" role="menu">
+                                    <div class="d-lg-flex justify-content-center">
+                                        <ul class="d-lg-inline-block" style="padding-right: 0px;">
+                                            <h6 style="font-size: 20px;
                                                    line-height: 1.5;
                                                    font-weight: 600;
                                                    width: 80%;">Bet on technologies that will work even years from now
-                                                </h6>
-                                            </ul>
-                                            <ul class="d-lg-inline-block" style="padding-right: 80px;">
-                                                <li class="dropdown-header"><a href="#" class="megamenu-heading">Web
-                                                        Development</a></li>
-                                                <div class="row">
-                                                    <a href="hire-dotnet-developer.html" style="margin-left: 10%;">.Net</a>
-                                                    <a href="hire-node-js-developer.html" style="margin-left: 40%;">Node</a>
-                                                </div>
-                                                <div class="row">
-                                                    <a href="hire-react-js-developer.html" style="margin-left: 10%;">React</a>
-                                                    <a href="hire-python-developer.html" style="margin-left: 33%;">Python</a>
-                                                </div>
-                                                <div class="row">
-                                                    <a href="hire-php-developer.html" style="margin-left: 10%;">PHP</a>
-                                                    <a href="hire-angular-developer.html" style="margin-left: 40%;">Angular</a>
-                                                </div>
-                                                <div class="row">
-                                                    <a href="hire-java-developer.html" style="margin-left: 10%;">Java</a>
-                                                </div>
-                                            </ul>
-                                            <ul class="d-lg-inline-block" style="padding-right: 80px;">
-                                                <li class="dropdown-header"><a href="#" class="megamenu-heading">App
-                                                        Development</a></li>
-                                                <div class="row">
-                                                    <a href="hire-android-developer.html" style="margin-left: 10%;">Android</a>
-                                                    <a href="hire-ios-developer.html" style="margin-left: 40%;">IOS</a>
-                                                </div>
-                                                <div class="row">
-                                                    <a href="hire-react-native-developer.html" style="margin-left: 10%;">React</a>
-                                                    <a href="hire-flutter-developer.html" style="margin-left: 33%;">Flutter</a>
-                                                </div>
-                                            </ul>
-                                            <ul class="d-lg-inline-block" style="padding-right: 80px;">
-                                                <li class="dropdown-header"><a href="Cloud-Engineering-&-DevOps.html" class="megamenu-heading">Cloud
-                                                        Engineering & DevOps</a></li>
-                                                <div class="row">
-                                                    <a href="hire-azure-developer.html" style="margin-left: 10%;">Azure</a>
-                                                    <a href="AWS-Cloud-Engineering.html" style="margin-left: 40%;">AWs</a>
-                                                </div>
-                                                <div class="row">
-                                                    <a href="hire-docker-developer.html" style="margin-left: 10%;">Doker</a>
-                                                </div>
-                                                <li class="dropdown-header"><a href="hire-ui-ux-developer.html" class="megamenu-heading">UI / UX
-                                                        Development</a></li>
-                                                <div class="row">
-                                                    <a href="hire-ui-ux-developer.html" style="margin-left: 10%;">Figma</a>
-                                                     <!-- Adobe -->
-                                                </div>
-                                            </ul>
-                                        </div>
+                                            </h6>
+                                        </ul>
+                                        <ul class="d-lg-inline-block" style="padding-right: 80px;">
+                                            <li class="dropdown-header"><a href="#" class="megamenu-heading">Web
+                                                    Development</a></li>
+                                            <div class="row">
+                                                <a href="hire-dotnet-developer.html" style="margin-left: 10%;">.Net</a>
+                                                <a href="hire-node-js-developer.html" style="margin-left: 40%;">Node</a>
+                                            </div>
+                                            <div class="row">
+                                                <a href="hire-react-js-developer.html"
+                                                    style="margin-left: 10%;">React</a>
+                                                <a href="hire-python-developer.html"
+                                                    style="margin-left: 33%;">Python</a>
+                                            </div>
+                                            <div class="row">
+                                                <a href="hire-php-developer.html" style="margin-left: 10%;">PHP</a>
+                                                <a href="hire-angular-developer.html"
+                                                    style="margin-left: 40%;">Angular</a>
+                                            </div>
+                                            <div class="row">
+                                                <a href="hire-java-developer.html" style="margin-left: 10%;">Java</a>
+                                            </div>
+                                        </ul>
+                                        <ul class="d-lg-inline-block" style="padding-right: 80px;">
+                                            <li class="dropdown-header"><a href="#" class="megamenu-heading">App
+                                                    Development</a></li>
+                                            <div class="row">
+                                                <a href="hire-android-developer.html"
+                                                    style="margin-left: 10%;">Android</a>
+                                                <a href="hire-ios-developer.html" style="margin-left: 40%;">IOS</a>
+                                            </div>
+                                            <div class="row">
+                                                <a href="hire-react-native-developer.html"
+                                                    style="margin-left: 10%;">React</a>
+                                                <a href="hire-flutter-developer.html"
+                                                    style="margin-left: 33%;">Flutter</a>
+                                            </div>
+                                        </ul>
+                                        <ul class="d-lg-inline-block" style="padding-right: 80px;">
+                                            <li class="dropdown-header"><a href="Cloud-Engineering-&-DevOps.html"
+                                                    class="megamenu-heading">Cloud
+                                                    Engineering & DevOps</a></li>
+                                            <div class="row">
+                                                <a href="hire-azure-developer.html" style="margin-left: 10%;">Azure</a>
+                                                <a href="hire-aws-developer.html" style="margin-left: 40%;">AWs</a>
+                                            </div>
+                                            <div class="row">
+                                                <a href="hire-docker-developer.html" style="margin-left: 10%;">Doker</a>
+                                            </div>
+                                            <li class="dropdown-header"><a href="hire-ui-ux-developer.html"
+                                                    class="megamenu-heading">UI / UX
+                                                    Development</a></li>
+                                            <div class="row">
+                                                <a href="hire-ui-ux-developer.html" style="margin-left: 10%;">Figma</a>
+                                                <!-- Adobe -->
+                                            </div>
+                                        </ul>
                                     </div>
-                                </li>
-                                <li class="nav-item dropdown megamenu">
-                                     <a href="industries.html" class="nav-link">Industries</a>
-                                    <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown"
-                                        aria-hidden="false"></i>
-                                    <div class="menu-back-div dropdown-menu megamenu-content" style="margin-left: 4%;"
-                                        role="menu">
-                                        <div class="d-lg-flex justify-content-center">
-                                            <ul class="d-lg-inline-block" style="padding-right: 0;">
-                                                <h6 style="font-size: 20px;
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown megamenu">
+                                <a href="industries.html" class="nav-link">Industries</a>
+                                <i class="fa fa-angle-down dropdown-toggle" data-toggle="dropdown"
+                                    aria-hidden="false"></i>
+                                <div class="menu-back-div dropdown-menu megamenu-content" style="margin-left: 4%;"
+                                    role="menu">
+                                    <div class="d-lg-flex justify-content-center">
+                                        <ul class="d-lg-inline-block" style="padding-right: 0;">
+                                            <h6 style="font-size: 20px;
                                                    line-height: 1.5;
                                                    font-weight: 600;
-                                                   width: 90%;">Your new team’s cross-industry knowledge will level up your
-                                                    project </h6>
-                                                <a href="home-startup.html">All industries <i
-                                                        class="fa fa-angle-right"></i></a>
-                                            </ul>
-                                            <ul class="d-lg-inline-block">
-                                                <li class="dropdown-header"><a href="industries-fintech.html" class="megamenu-heading">Fintech</a>
-                                                </li>
-                                                <p class="megamenu-subtext">Empowering financial services with cutting-edge
-                                                    technology solutions.</p>
-                                                <li class="dropdown-header"><a href="industries-education.html"
-                                                        class="megamenu-heading">Education</a></li>
-                                                <p class="megamenu-subtext">Empowering learners, educators, and institutions
-                                                    with innovative solutions for a brighter future.</p>
-                                            </ul>
-                                            <ul class="d-lg-inline-block">
-                                                 <li class="dropdown-header"><a href="industries-information-technology.html" class="megamenu-heading">Information
-                                                        Technology</a></li>   
-                                                <p class="megamenu-subtext">Custom solutions and integrations for products
-                                                    in need of innovation.</p>
-                                                <li class="dropdown-header"><a href="industries-healthcare.html"
-                                                        class="megamenu-heading">Healthcare</a></li>
-                                                <p class="megamenu-subtext">Innovating patient care, efficiency, and
-                                                    outcomes through transformative technology solutions.</p>
-                                            </ul>
-                                            <ul class="d-lg-inline-block">
-                                                <li class="dropdown-header"><a href="industries-events.html" class="megamenu-heading">Events </a>
-                                                </li>
-                                                <p class="megamenu-subtext">Data-driven event management <br>software boosts
-                                                    sales, and user engagement.</p>
-                                                <li class="dropdown-header"><a href="industries-retail-eCommerce.html" class="megamenu-heading">Retail & eCommerce</a></li>
-                                                <p class="megamenu-subtext">Transforming the retail landscape with innovative 
-                                                    e-commerce solutions to drive sales, enhance customer 
-                                                    experiences, and streamline operations.</p>
-                                            </ul>
-    
-                                            <ul class="d-lg-inline-block">
-                                                <li class="dropdown-header"><a href="industries-automotive-transport.html" class="megamenu-heading">Automotive & Transport</a>
-                                                </li>
-                                                <p class="megamenu-subtext">Revolutionizing the automotive and transport sectors 
-                                                    with cutting-edge technology, improving 
-                                                    efficiency, safety.</p>
-    
-                                                <li class="dropdown-header"><a href="industries-manufacturing.html" class="megamenu-heading">Manufacturing</a></li>
-                                                <p class="megamenu-subtext">Enhancing manufacturing processes through advanced technology solutions 
-                                                    that boost productivity, ensure quality, 
-                                                    and promote sustainable practices.</p>
-                                            </ul>
-                                        </div>
+                                                   width: 90%;">Your new team’s cross-industry knowledge will level up
+                                                your
+                                                project </h6>
+                                            <a href="home-startup.html">All industries <i
+                                                    class="fa fa-angle-right"></i></a>
+                                        </ul>
+                                        <ul class="d-lg-inline-block">
+                                            <li class="dropdown-header"><a href="industries-fintech.html"
+                                                    class="megamenu-heading">Fintech</a>
+                                            </li>
+                                            <p class="megamenu-subtext">Empowering financial services with cutting-edge
+                                                technology solutions.</p>
+                                            <li class="dropdown-header"><a href="industries-education.html"
+                                                    class="megamenu-heading">Education</a></li>
+                                            <p class="megamenu-subtext">Empowering learners, educators and institutions
+                                                with innovative solutions for a brighter future.</p>
+                                        </ul>
+                                        <ul class="d-lg-inline-block">
+                                            <li class="dropdown-header"><a href="industries-information-technology.html"
+                                                    class="megamenu-heading">Information
+                                                    Technology</a></li>
+                                            <p class="megamenu-subtext">Custom solutions and integrations for products
+                                                in need of innovation.</p>
+                                            <li class="dropdown-header"><a href="industries-healthcare.html"
+                                                    class="megamenu-heading">Healthcare</a></li>
+                                            <p class="megamenu-subtext">Innovating patient care, efficiency and
+                                                outcomes through transformative technology solutions.</p>
+                                        </ul>
+                                        <ul class="d-lg-inline-block">
+                                            <li class="dropdown-header"><a href="industries-events.html"
+                                                    class="megamenu-heading">Events </a>
+                                            </li>
+                                            <p class="megamenu-subtext">Data-driven event management <br>software boosts
+                                                sales and user engagement.</p>
+                                            <li class="dropdown-header"><a href="industries-retail-eCommerce.html"
+                                                    class="megamenu-heading">Retail & eCommerce</a></li>
+                                            <p class="megamenu-subtext">Transforming the retail landscape with
+                                                innovative
+                                                e-commerce solutions to drive sales, enhance customer
+                                                experiences and streamline operations.</p>
+                                        </ul>
+
+                                        <ul class="d-lg-inline-block">
+                                            <li class="dropdown-header"><a href="industries-automotive-transport.html"
+                                                    class="megamenu-heading">Automotive & Transport</a>
+                                            </li>
+                                            <p class="megamenu-subtext">Revolutionizing the automotive and transport
+                                                sectors
+                                                with cutting-edge technology, improving
+                                                efficiency, safety.</p>
+
+                                            <li class="dropdown-header"><a href="industries-manufacturing.html"
+                                                    class="megamenu-heading">Manufacturing</a></li>
+                                            <p class="megamenu-subtext">Enhancing manufacturing processes through
+                                                advanced technology solutions
+                                                that boost productivity, ensure quality,
+                                                and promote sustainable practices.</p>
+                                        </ul>
                                     </div>
-                                </li>
-                                <li class="nav-item menu"><a href="company.html" class="nav-link">Company</a></li>
-                                <li class="nav-item menu"><a href="career.html" class="nav-link">Career</a></li>
-                                <li class="nav-item menu">
-                                    <a href="contact-us.html"
-                                        class="btn btn-extra-large btn-transparent-fast-blue btn-rounded d-table d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr"
-                                        style="padding: 5px 20px;
+                                </div>
+                            </li>
+                            <li class="nav-item menu"><a href="company.html" class="nav-link">Company</a></li>
+                            <li class="nav-item menu"><a href="career.html" class="nav-link">Career</a></li>
+                            <li class="nav-item menu">
+                                <a href="contact-us.html"
+                                    class="btn btn-extra-large btn-transparent-fast-blue btn-rounded d-table d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr"
+                                    style="padding: 5px 20px;
                                     margin: 22px 10px;">Contact Us</a>
-                                </li>
-                            </ul>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </nav>
-           
-        </header>
-        <!-- end header -->
-   
+            </div>
+        </nav>
+
+    </header>
+    <!-- end header -->
+
     <!-- start section -->
     <section class="big-section cover-background" style="background-image:url('images/home-business-parallax-bg.jpg');">
         <div class=" opacity-full-dark bg-fast-blue"></div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 col-xl-7 col-lg-8 col-md-10 text-center overlap-gap-section">
+                    <h3 class="alt-font text-white font-weight-600  wow animate__fadeIn">Mitroz Software Development Company</h3>
+                </div>
+                <div class="col-12 col-xl-7 col-lg-8 col-md-10 text-center overlap-gap-section">
+                    <h6 class="alt-font text-white font-weight-600  wow animate__fadeIn" style="margin-bottom: -60px;">- Supercharge
+                        your business with our end-to-end technology services and solutions.</h6>
+                </div>
+                
+            </div>
+            <!-- <div class="row justify-content-center">
+                <div class="col-12 col-xl-7 col-lg-8 col-md-10 text-center overlap-gap-section">
                     <h4 class="alt-font text-white font-weight-600  wow animate__fadeIn">Supercharge
                         your business with our end-to-end technology services and solutions.</h4>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
     <!-- end section -->
-
-
     <!-- start services section -->
     <section class=" wow animate__fadeIn bg-light-gray">
         <div class="container">
@@ -323,23 +527,16 @@
                     <h5 class="alt-font text-extra-dark-gray font-weight-500 margin-2-rem-bottom sm-w-100">Our Mitroz
                         <span class="text-neon-blue">Software Development Services</span>
                     </h5>
-                    <span class="text-extra-medium margin-15px-bottom alt-font d-block w-100">Mitroz Software
-                        Development Company is the trusted technology partner of businesses worldwide, enabling them to
-                        leverage IT as a strategic asset. Empowered by technology expertise, immaculate execution
-                        capabilities, and an unwavering focus on customer needs, we have nurtured success in multiple
-                        technologies and verticals.
-
+                    <span class="text-extra-medium margin-15px-bottom alt-font d-block w-100">
+                        Mitroz Software Development Company is a trusted technology partner for businesses worldwide,
+                        enabling them to use IT as a strategy. Our vast technical expertise, immaculate capacity and
+                        unwavering focus on customer needs have led to success across multiple industries and verticals.
 
                     </span>
                 </div>
             </div>
 
             <div class="row row-cols-1 row-cols-lg-3 row-cols-md-2 justify-content-center">
-
-
-
-
-
 
                 <!-- start fancy text box item -->
                 <div class="col col-md-9 md-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeInUp">
@@ -354,8 +551,9 @@
                             <!-- <span class="text-small alt-font">Easy installation theme</span> -->
                         </div>
                         <div class="bg-medium-light-gray margin-25px-top w-100 h-1px"></div>
-                        <p class="margin-25px-top">custom-software-development.html designed to meet your specific business
-                            needs, ensuring efficiency, scalability, and high performance.</p><br><br>
+                        <p class="margin-25px-top">
+                            We have solutions designed for your business to be efficient, scalable and efficient.
+                        </p><br><br>
                         <!-- <a href="Software-Architecture.html" class="btn btn-very-small btn btn-fancy btn-transparent-fast-blue d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr mx-auto">Learn More</a> -->
                         <a href="custom-software-development.html"
                             class="btn btn-link btn-large text-neon-blue top-minus-5px font-weight-400">Learn More</a>
@@ -377,8 +575,9 @@
                             <!-- <span class="text-small alt-font">Unlimited theme guide</span> -->
                         </div>
                         <div class="bg-medium-light-gray margin-25px-top w-100 h-1px"></div>
-                        <p class="margin-25px-top">Creating dynamic and responsive websites that enhance your digital
-                            presence, providing an engaging user experience across all devices.</p><br><br>
+                        <p class="margin-25px-top">
+                            Create dynamic, responsive websites that give your digital presence a long-awaited boost with an engaging user experience across all devices.
+                        </p><br><br>
                         <!-- <a href="web-app-development.html" class="btn btn-very-small btn btn-fancy btn-transparent-fast-blue d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr mx-auto">Learn More</a> -->
                         <a href="web-app-development.html"
                             class="btn btn-link btn-large text-neon-blue top-minus-5px font-weight-400">Learn More</a>
@@ -400,9 +599,10 @@
                             <!-- <span class="text-small alt-font">Fully optimised code</span> -->
                         </div>
                         <div class="bg-medium-light-gray margin-25px-top w-100 h-1px"></div>
-                        <p class="margin-25px-top">Mobile app development involves creating software applications for
-                            mobile devices, enhancing user experience and functionality.</p><br><br>
-                       
+                        <p class="margin-25px-top">
+                            Mobile app development is the process of creating a software application designed for mobile devices, to enhance the user experience and usability.
+                        </p><br><br>
+
                         <a href="mobile-app-development.html"
                             class="btn btn-link btn-large text-neon-blue top-minus-5px font-weight-400">Learn More</a>
 
@@ -425,8 +625,9 @@
                             <!-- <span class="text-small alt-font">Fully optimised code</span> -->
                         </div>
                         <div class="bg-medium-light-gray margin-25px-top w-100 h-1px"></div>
-                        <p class="margin-25px-top">UI/UX development focuses on designing user-friendly interfaces and
-                            enhancing overall user experience in applications.</p><br><br><br>
+                        <p class="margin-25px-top">
+                            UI/UX improvements mean designing user-friendly interfaces and improving the overall user experience.
+                        </p><br><br><br>
                         <!-- <a href="Digital-Product-Design.html" class="btn btn-very-small btn btn-fancy btn-transparent-fast-blue d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr mx-auto">Learn More</a> -->
                         <a href="ui-ux-development-company.html"
                             class="btn btn-link btn-large text-neon-blue top-minus-5px font-weight-400">Learn More</a>
@@ -447,8 +648,10 @@
                             <!-- <span class="text-small alt-font">Fully optimised code</span> -->
                         </div>
                         <div class="bg-medium-light-gray margin-25px-top w-100 h-1px"></div>
-                        <p class="margin-25px-top">Ensuring your software is reliable, secure, and performs optimally
-                            through rigorous testing and quality assurance processes.</p><br><br><br>
+                        <p class="margin-25px-top">
+                            Ensuring your software is reliable and secure and fast by passing tests and quality assurance.
+
+                        </p><br><br><br>
                         <!-- <a href="Quality-Assurance.html" class="btn btn-very-small btn btn-fancy btn-transparent-fast-blue d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr mx-auto">Learn More</a> -->
                         <a href="testing-and-QA.html"
                             class="btn btn-link btn-large text-neon-blue top-minus-5px font-weight-400">Learn More</a>
@@ -469,8 +672,9 @@
                             <!-- <span class="text-small alt-font">Fully optimised code</span> -->
                         </div>
                         <div class="bg-medium-light-gray margin-25px-top w-100 h-1px"></div>
-                        <p class="margin-25px-top">We are offers expert staffing solutions, connecting businesses with
-                            top talent for optimal success.
+                        <p class="margin-25px-top">
+                            We provide expert staffing solutions, delivering projects that engage with top talent for optimal success.
+
                         </p>
                         <br><br><br>
                         <!-- <a href="Hire-Team.html" class="btn btn-very-small btn btn-fancy btn-transparent-fast-blue d-lg-inline-block lg-margin-15px-bottom md-margin-auto-lr mx-auto">Learn More</a> -->
@@ -500,11 +704,11 @@
                             <h5 class="alt-font text-extra-dark-gray font-weight-500 d-inline-block text-white">
                                 Why choose <span class="text-white">Mitroz for Software Development</span></h5>
                             <span
-                                class="alt-font text-extra-medium margin-20px-bottom d-block text-dark-gray font-weight-400 text-white">23
-                                years of serving Fortune 500 to startups has strengthened and optimised our core
-                                expertise across domains and in technology. The talent pool comprises of 650+ certified
-                                engineers to successfully drive your business goals. Hiring dedicated developers from
-                                Radixweb is your shortcut to success</span>
+                                class="alt-font text-extra-medium margin-20px-bottom d-block text-dark-gray font-weight-400 text-white">
+                                Different software types are developed by Mitroz, innovative and scalable solutions
+                                being delivered to the specified needs of the consumers. We have a team that ensures
+                                quality, timely delivery as well as lifelong support hence we are prone to be friends
+                                when aspiring for technology goals and increased business development.</span>
                         </div>
                     </div>
                 </div>
@@ -710,7 +914,7 @@
     </section>
     <!-- end client section -->
     <!-- start testomonianl section -->
-    <section class="wow animate__fadeIn">
+    <section class="wow animate__fadeIn bg-light-blue">
         <div class="container">
             <div class="row row-cols-1 row-cols-md-4 row-cols-sm-2 align-items-center justify-content-center">
                 <!-- start counter item -->
@@ -775,7 +979,8 @@
                     <div class="row align-items-center">
                         <div class="col-12 col-md-6 text-right md-margin-30px-bottom">
                             <img src="images/home/Startup.png" alt="" />
-                            <div class="bg-gradient-tussock-greenish-slate text-white text-left alt-font text-extra-large w-300px padding-3-rem-tb padding-3-half-rem-lr position-absolute left-0px top-60px md-w-250px md-padding-2-rem-all">
+                            
+                            <div class="bg-neon-blue text-white text-left alt-font text-extra-large w-300px padding-3-rem-tb padding-3-half-rem-lr position-absolute left-0px top-60px md-w-250px md-padding-2-rem-all">
                                 Empowering startups with innovative software solutions for rapid growth.
                             </div>
                         </div>
@@ -817,7 +1022,7 @@
                     <div class="row align-items-center">
                         <div class="col-12 col-md-6 text-right md-margin-30px-bottom">
                             <img src="images/home/Enterprices.png" alt="" />
-                            <div class="bg-gradient-tussock-greenish-slate text-white text-left alt-font text-extra-large w-300px padding-3-rem-tb padding-3-half-rem-lr position-absolute left-0px top-60px md-w-250px md-padding-2-rem-all">
+                            <div class="bg-neon-blue text-white text-left alt-font text-extra-large w-300px padding-3-rem-tb padding-3-half-rem-lr position-absolute left-0px top-60px md-w-250px md-padding-2-rem-all">
                                 How can we elevate your enterprise to new heights?
                             </div>
                         </div>
@@ -861,7 +1066,7 @@
                     <div class="row align-items-center">
                         <div class="col-12 col-md-6 text-right md-margin-30px-bottom">
                             <img src="images/home/SME.png" alt="" />
-                            <div class="bg-gradient-tussock-greenish-slate text-white text-left alt-font text-extra-large w-300px padding-3-rem-tb padding-3-half-rem-lr position-absolute left-0px top-60px md-w-250px md-padding-2-rem-all">
+                            <div class="bg-neon-blue text-white text-left alt-font text-extra-large w-300px padding-3-rem-tb padding-3-half-rem-lr position-absolute left-0px top-60px md-w-250px md-padding-2-rem-all">
                                 Transforming your SME with innovative software solutions for enhanced growth.
                             </div>
                         </div>
@@ -910,119 +1115,360 @@
         </div>
         </div>
     </section>
-    <!-- end section -->
-    <section class="cover-background wow animate__fadeIn justify-content-center  bg-img-padding"
-    style="background: url('images/new/who-we-are-image-5.jpg');">
-    <div class="container">
+     <!-- start section -->
+ <!-- start section -->
+ <section>
+    <div class="container-fluid">
+        <div class="row justify-content-center wow animate__fadeIn">
+            <div class="col-12 col-xl-6 col-lg-7 col-sm-8 text-center margin-5-rem-bottom md-margin-5-rem-bottom">
+
+                <h5 class="alt-font text-extra-dark-gray font-weight-600 letter-spacing-minus-1px"> Industries We
+                    Serve</h5>
+                <p style="margin-bottom: -25px;">Our expertise covers multiple sectors, delivering comprehensive
+                    support and innovative solutions to meet your industry's needs.</p>
+            </div>
+        </div>
         <div class="row">
-            <div class="col-12 col-xl-12 col-lg-12 wow animate__fadeIn text-center card-padding">
-               
-                <div class=" d-flex justify-content-center head-padding">
-                    <h2 class="alt-font text-white font-weight-500  margin-40px-bottom">Let's work together <br>to
-                        build
-                        something great</h3>
+            <div class="col-12 px-lg-0 wow animate__fadeIn" data-wow-delay="0.2s">
+                <div class="swiper-container portfolio-classic position-relative"
+                    data-slider-options='{ "slidesPerView": 1, "spaceBetween": 30, "navigation": { "nextEl": ".swiper-button-next-nav", "prevEl": ".swiper-button-previous-nav" }, "autoplay": { "delay": 3000, "disableOnInteraction": false }, "keyboard": { "enabled": true, "onlyInViewport": true }, "breakpoints": { "1200": { "slidesPerView": 4 }, "992": { "slidesPerView": 3 }, "768": { "slidesPerView": 2 } }, "effect": "slide" }'>
+                    <div class="swiper-wrapper">
+
+                        <!-- start slide item -->
+
+                        <!-- end slide item -->
+                        <!-- start slide item -->
+                        <div class="swiper-slide overflow-hidden">
+                            <div class="col interactive-banners-style-09 lg-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeInUp"
+                                data-wow-delay="0.2s">
+                                <figure class="m-0">
+                                    <img src="images/Ind_serve/Education.jpg" alt="" />
+                                    <div class="opacity-full bg-dark-slate-blue"></div>
+                                    <figcaption>
+                                        <div
+                                            class="interactive-banners-content align-items-start padding-2-rem-all last-paragraph-no-margin">
+                                            <h6
+                                                class="alt-font font-weight-500 text-white w-55 position-relative z-index-1 xl-w-80 lg-w-40 md-w-50 xs-w-60">
+                                                Education</h6>
+                                            <span
+                                                class="interactive-banners-hover-icon w-40px h-40px line-height-44px text-center d-inline-block bg-white rounded-circle"><i
+                                                    class="feather icon-feather-arrow-right text-extra-dark-gray icon-extra-small"></i></span>
+                                        </div>
+                                        <div
+                                            class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
+                                            <div class="padding-4-rem-all last-paragraph-no-margin">
+                                                <p class="interactive-banners-action-content w-85 md-w-95">
+                                                    Empowering learners, educators and institutions with innovative
+                                                    solutions for a brighter future.</p>
+                                                <a href="Education.html"
+                                                    class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">learn
+                                                    more<i
+                                                        class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- end slide item -->
+                        <!-- start slide item -->
+                        <div class="swiper-slide overflow-hidden">
+                            <div class="col interactive-banners-style-09 lg-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeInUp"
+                                data-wow-delay="0.2s">
+                                <figure class="m-0">
+                                    <img src="images/Ind_serve/fintech.svg" alt="" />
+                                    <div class="opacity-full bg-dark-slate-blue"></div>
+                                    <figcaption>
+                                        <div
+                                            class="interactive-banners-content align-items-start padding-2-rem-all last-paragraph-no-margin">
+                                            <h6
+                                                class="alt-font font-weight-500 text-white w-55 position-relative z-index-1 xl-w-80 lg-w-40 md-w-50 xs-w-60">
+                                                Fintech</h6>
+                                            <span
+                                                class="interactive-banners-hover-icon w-40px h-40px line-height-44px text-center d-inline-block bg-white rounded-circle"><i
+                                                    class="feather icon-feather-arrow-right text-extra-dark-gray icon-extra-small"></i></span>
+                                        </div>
+                                        <div
+                                            class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
+                                            <div class="padding-4-rem-all last-paragraph-no-margin">
+                                                <p class="interactive-banners-action-content w-85 md-w-95">
+                                                    Empowering financial services with cutting-edge technology
+                                                    solutions.</p>
+                                                <a href="FinTech.html"
+                                                    class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">learn
+                                                    more<i
+                                                        class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- end slide item -->
+                        <!-- start slide item -->
+                        <div class="swiper-slide overflow-hidden">
+                            <div class="col interactive-banners-style-09 lg-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeInUp"
+                                data-wow-delay="0.2s">
+                                <figure class="m-0">
+                                    <img src="images/Ind_serve/Reatil.jpg" alt="" />
+                                    <div class="opacity-full bg-dark-slate-blue"></div>
+                                    <figcaption>
+                                        <div
+                                            class="interactive-banners-content align-items-start padding-2-rem-all last-paragraph-no-margin">
+                                            <h6
+                                                class="alt-font font-weight-500 text-white w-55 position-relative z-index-1 xl-w-80 lg-w-40 md-w-50 xs-w-60">
+                                                Retail &<br>eCommerce</h6>
+                                            <span
+                                                class="interactive-banners-hover-icon w-40px h-40px line-height-44px text-center d-inline-block bg-white rounded-circle"><i
+                                                    class="feather icon-feather-arrow-right text-extra-dark-gray icon-extra-small"></i></span>
+                                        </div>
+                                        <div
+                                            class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
+                                            <div class="padding-4-rem-all last-paragraph-no-margin">
+                                                <p class="interactive-banners-action-content w-85 md-w-95">Boosting
+                                                    retail with e-commerce, inventory management and customer
+                                                    engagement solutions."</p>
+                                                <a href="industries-retail-eCommerce.html"
+                                                    class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">learn
+                                                    more<i
+                                                        class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- end slide item -->
+                        <!-- start slide item -->
+                        <div class="swiper-slide overflow-hidden">
+                            <div class="col interactive-banners-style-09 lg-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeInUp"
+                                data-wow-delay="0.2s">
+                                <figure class="m-0">
+                                    <img src="images/Ind_serve/Healthcare.jpg" alt="" />
+                                    <div class="opacity-full bg-dark-slate-blue"></div>
+                                    <figcaption>
+                                        <div
+                                            class="interactive-banners-content align-items-start padding-2-rem-all last-paragraph-no-margin">
+                                            <h6
+                                                class="alt-font font-weight-500 text-white w-55 position-relative z-index-1 xl-w-80 lg-w-40 md-w-50 xs-w-60">
+                                                Healthcare</h6>
+                                            <span
+                                                class="interactive-banners-hover-icon w-40px h-40px line-height-44px text-center d-inline-block bg-white rounded-circle"><i
+                                                    class="feather icon-feather-arrow-right text-extra-dark-gray icon-extra-small"></i></span>
+                                        </div>
+                                        <div
+                                            class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
+                                            <div class="padding-4-rem-all last-paragraph-no-margin">
+                                                <p class="interactive-banners-action-content w-85 md-w-95">
+                                                    Innovating patient care, efficiency and outcomes through
+                                                    transformative technology solutions.</p>
+                                                <a href="Healthcare.html"
+                                                    class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">learn
+                                                    more<i
+                                                        class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- end slide item -->
+                        <!-- start slide item -->
+                        <div class="swiper-slide overflow-hidden">
+                            <div class="col interactive-banners-style-09 lg-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeInUp"
+                                data-wow-delay="0.2s">
+                                <figure class="m-0">
+                                    <img src="images/Ind_serve/Automotive.jpg" alt="" />
+                                    <div class="opacity-full bg-dark-slate-blue"></div>
+                                    <figcaption>
+                                        <div
+                                            class="interactive-banners-content align-items-start padding-2-rem-all last-paragraph-no-margin">
+                                            <h6
+                                                class="alt-font font-weight-500 text-white w-55 position-relative z-index-1 xl-w-80 lg-w-40 md-w-50 xs-w-60">
+                                                Automotive & Transport</h6>
+                                            <span
+                                                class="interactive-banners-hover-icon w-40px h-40px line-height-44px text-center d-inline-block bg-white rounded-circle"><i
+                                                    class="feather icon-feather-arrow-right text-extra-dark-gray icon-extra-small"></i></span>
+                                        </div>
+                                        <div
+                                            class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
+                                            <div class="padding-4-rem-all last-paragraph-no-margin">
+                                                <p class="interactive-banners-action-content w-85 md-w-95">
+                                                    Innovative software revolutionizes automotive and transport:
+                                                    vehicle performance, fleet, service."</p>
+                                                <a href="industries-automotive-transport.html"
+                                                    class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">learn
+                                                    more<i
+                                                        class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <div class="swiper-slide overflow-hidden">
+                            <div class="col interactive-banners-style-09 lg-margin-30px-bottom xs-margin-15px-bottom wow animate__fadeInUp"
+                                data-wow-delay="0.2s">
+                                <figure class="m-0">
+                                    <img src="images/Ind_serve/Reatil.jpg" alt="" />
+                                    <div class="opacity-full bg-dark-slate-blue"></div>
+                                    <figcaption>
+                                        <div
+                                            class="interactive-banners-content align-items-start padding-2-rem-all last-paragraph-no-margin">
+                                            <h6
+                                                class="alt-font font-weight-500 text-white w-60 position-relative z-index-1 xl-w-90 lg-w-40 md-w-50 xs-w-60">
+                                                Manufacturing</h6>
+                                            <span
+                                                class="interactive-banners-hover-icon w-40px h-40px line-height-44px text-center d-inline-block bg-white rounded-circle"><i
+                                                    class="feather icon-feather-arrow-right text-extra-dark-gray icon-extra-small"></i></span>
+                                        </div>
+                                        <div
+                                            class="interactive-banners-hover-action align-items-end d-flex bg-transparent-gradiant-white-black">
+                                            <div class="padding-4-rem-all last-paragraph-no-margin">
+                                                <p class="interactive-banners-action-content w-85 md-w-95">
+                                                    Cutting-edge solutions transform manufacturing: data analytics,
+                                                    risk assessment, customer experience.</p>
+                                                <a href="industries-manufacturing.html"
+                                                    class="alt-font text-parrot-green text-white-hover text-small text-uppercase d-inline-block font-weight-500">learn
+                                                    more<i
+                                                        class="feather icon-feather-arrow-right align-middle margin-5px-left"></i></a>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                        <!-- end slide item -->
+                    </div>
+                    <!-- start slider navigation -->
+                    <!--<div class="swiper-button-next-nav swiper-button-next rounded-circle slider-navigation-style-01 light"><i class="feather icon-feather-arrow-right"></i></div>
+                    <div class="swiper-button-previous-nav swiper-button-prev rounded-circle slider-navigation-style-01 light"><i class="feather icon-feather-arrow-left"></i></div>-->
+                    <!-- end slider navigation -->
                 </div>
-                <a href="contact-us.html" class="btn btn-large btn-white border-radius-50px text-extra-dark-gray">Let's
-                    Collaborate<span class="bg-transparent-black"></span></a>
             </div>
         </div>
     </div>
 </section>
+<!-- end section -->
+
+     <section class="cover-background wow animate__fadeIn justify-content-center  bg-img-padding"
+     style="background: url('images/new/who-we-are-image-5.jpg');">
+
+     <div class="container">
+         <div class="row">
+             <div class="col-12 col-xl-12 col-lg-12 wow animate__fadeIn text-center card-padding">
+                 <div class="margin-25px-bottom text-white opacity-6 alt-font">Are you looking for software
+                     devolopment Company</div>
+                 <div class=" d-flex justify-content-center head-padding">
+                     <h2 class="alt-font text-white font-weight-500  margin-40px-bottom">Let's work together <br>to
+                         build
+                         something great</h3>
+                 </div>
+                 <a href="contact-us.html" class="btn btn-large btn-white border-radius-50px text-extra-dark-gray">Let's
+                     Collaborate<span class="bg-transparent-black"></span></a>
+             </div>
+         </div>
+     </div>
+ </section>
+
 
 <!-- end section -->
 
 
 
-<!-- start section -->
-<section class="fix-background padding-100px-tb md-padding-75px-tb sm-padding-50px-tb"
-style="background-image:url('images/home-corporate-img-05.jpg');">
-<div class="opacity-full-dark bg-dark-slate-blue"></div>
-<div class="container">
-    <div class="row align-items-center justify-content-center">
-        <div class="col-12 col-xl-12 col-md-12 col-sm-12 text-center text-md-left sm-margin-30px-bottom">
-            <h4 class="alt-font font-weight-600 text-white mb-0" style="    text-align: center;
+    <!-- start section -->
+    <section class="fix-background padding-100px-tb md-padding-75px-tb sm-padding-50px-tb"
+        style="background-image:url('images/home-corporate-img-05.jpg');">
+        <div class="opacity-full-dark bg-dark-slate-blue"></div>
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="col-12 col-xl-12 col-md-12 col-sm-12 text-center text-md-left sm-margin-30px-bottom">
+                    <h4 class="alt-font font-weight-600 text-white mb-0" style="    text-align: center;
         padding-bottom: 110px;">Lets hear from you</h4>
-        </div>
-    </div>
-</div>
-</section>
-<!-- end section -->
-<!-- start section -->
-<section class="bg-light-gray overflow-visible">
-<div class="container">
-    <div class="row justify-content-center xs-no-margin-lr">
-        <div class="col-12 col-xl-12 col-lg-11 bg-white box-shadow-extra-large border-radius-6px overflow-hidden overlap-section-three-fourth wow animate__fadeInUp"
-            data-wow-delay="0.3s">
-            <div class="row">
-                <div class="col-12 col-md-6 padding-3-rem-all md-padding-4-rem-all xs-padding-3-half-rem-all">
-                    <h5
-                        class="alt-font font-weight-700 text-slate-blue text-uppercase letter-spacing-minus-1px w-95">
-                        Get your project moving!</h5>
-                    <p class="w-90 lg-w-100">Our personal trainers are on hand to assist you with your training
-                        and inductions.</p>
-                        <form class="margin-15px-top d-inline-block w-100">
-                            <input
-                                class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                type="text" id="Name" name="Name" placeholder="Your name" />
-                            <input
-                                class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                type="text" id="Phone" name="Phone" placeholder="Your Contact Number" />
-                            <input
-                                class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                type="email" id="Email" name="Email" placeholder="Your email address" />
-                            <input type="hidden" name="redirect" value="">
-                            <textarea
-                                class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                name="Message" id="Message" placeholder="Start typing..." rows="5"
-                                cols="50"></textarea>
-                            <input type="hidden" name="redirect" value="">
-
-                            <button class="btn btn-large btn-neon-orange btn-round-edge w-100 mb-0 submit"
-                                type="button" onclick="handleFormSubmit();">Inquire Now</button>
-
-                            <center><span id="magalert" style="display:none;"><i class="bi bi-check-circle"
-                                        style="color: green;"></i>&nbsp;<span style="color:green;">Your request have
-                                        been sent. Thank You ...</span></span> </center>
-                                        
-                            <div class="form-results border-radius-4px d-none"></div>
-                        </form>
-                </div>
-                <div class="col-12 col-md-6 padding-50px-all" style="background: #f1f1f1;">
-                    <h5
-                        class="alt-font cd-headline font-weight-600 text-extra-dark-gray letter-spacing-minus-1px line-height-40px margin-40px-bottom cd-headline sm-w-75 sm-line-height-30px xs-w-80 xs-margin-20px-bottom">
-                        <span class="">You are at <span class="text-neon-blue">Right</span> place</span>
-                    </h5>
-                    <p class="w-90 md-w-100 margin-30px-bottom">Let's discuss how we can support your business objectives. Fill out the form, and take the first step towards transformation.</p>
-                    <ul
-                        class="w-90 list-style-01 font-weight-500 text-extra-dark-gray lg-w-100 sm-w-85 xs-w-100">
-                        <li><i class="fas fa-check text-extra-medium-gray"></i> 100% certified talent
-                            <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
-                        </li>
-                        <li><i class="fas fa-check text-extra-medium-gray"></i>Team Scalability
-                            <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
-                        </li>
-                        <li><i class="fas fa-check text-extra-medium-gray"></i>Spend up to 30% less
-                            <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
-                        </li>
-                        <li><i class="fas fa-check text-extra-medium-gray"></i>Kick off in 5 days or less
-                            <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
-                        </li>
-                        <li><i class="fas fa-check text-extra-medium-gray"></i>Wide tech expertise
-                            <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
-                        </li>
-                        <li><i class="fas fa-check text-extra-medium-gray"></i>Radical Efficiency
-                            <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-</div>
-</section>
-<!-- end section -->
-   <!--  -->
-    
+    </section>
+    <!-- end section -->
+    <!-- start section -->
+    <section class="bg-light-gray overflow-visible">
+        <div class="container">
+            <div class="row justify-content-center xs-no-margin-lr">
+                <div class="col-12 col-xl-12 col-lg-11 bg-white box-shadow-extra-large border-radius-6px overflow-hidden overlap-section-three-fourth wow animate__fadeInUp"
+                    data-wow-delay="0.3s">
+                    <div class="row">
+                        <div class="col-12 col-md-6 padding-3-rem-all md-padding-4-rem-all xs-padding-3-half-rem-all">
+                            <h5
+                                class="alt-font font-weight-700 text-slate-blue text-uppercase letter-spacing-minus-1px w-95">
+                                Get your project moving!</h5>
+                            <p class="w-90 lg-w-100">Our personal trainers are on hand to assist you with your training
+                                and inductions.</p>
+                            <form class="margin-15px-top d-inline-block w-100">
+                                <input
+                                    class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
+                                    type="text" id="Name" name="Name" placeholder="Your name" />
+                                <input
+                                    class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
+                                    type="text" id="Phone" name="Phone" placeholder="Your Contact Number" />
+                                <input
+                                    class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
+                                    type="email" id="Email" name="Email" placeholder="Your email address" />
+                                <input type="hidden" name="redirect" value="">
+                                <textarea
+                                    class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
+                                    name="Message" id="Message" placeholder="Start typing..." rows="5"
+                                    cols="50"></textarea>
+                                <input type="hidden" name="redirect" value="">
+
+                                <button class="btn btn-large btn-neon-orange btn-round-edge w-100 mb-0 submit"
+                                    type="button" onclick="handleFormSubmit();">Inquire Now</button>
+
+                                <center><span id="magalert" style="display:none;"><i class="bi bi-check-circle"
+                                            style="color: green;"></i>&nbsp;<span style="color:green;">Your request have
+                                            been sent. Thank You ...</span></span> </center>
+
+                                <div class="form-results border-radius-4px d-none"></div>
+                            </form>
+                        </div>
+                        <div class="col-12 col-md-6 padding-50px-all" style="background: #f1f1f1;">
+                            <h5
+                                class="alt-font cd-headline font-weight-600 text-extra-dark-gray letter-spacing-minus-1px line-height-40px margin-40px-bottom cd-headline sm-w-75 sm-line-height-30px xs-w-80 xs-margin-20px-bottom">
+                                <span class="">You are at <span class="text-neon-blue">Right</span> place</span>
+                            </h5>
+                            <p class="w-90 md-w-100 margin-30px-bottom">
+                                Let's discuss how we can support your business
+                                objectives. Fill out the form and take the first step towards transformation.
+                            </p>
+                            <ul
+                                class="w-90 list-style-01 font-weight-500 text-extra-dark-gray lg-w-100 sm-w-85 xs-w-100">
+                                <li><i class="fas fa-check text-extra-medium-gray"></i> 100% certified talent
+                                    <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
+                                </li>
+                                <li><i class="fas fa-check text-extra-medium-gray"></i>Team Scalability
+                                    <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
+                                </li>
+                                <li><i class="fas fa-check text-extra-medium-gray"></i>Spend up to 30% less
+                                    <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
+                                </li>
+                                <li><i class="fas fa-check text-extra-medium-gray"></i>Kick off in 5 days or less
+                                    <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
+                                </li>
+                                <li><i class="fas fa-check text-extra-medium-gray"></i>Wide tech expertise
+                                    <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
+                                </li>
+                                <li><i class="fas fa-check text-extra-medium-gray"></i>Radical Efficiency
+                                    <span class="list-hover bg-white box-shadow-small border-radius-5px"></span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end section -->
+    <!--  -->
+
     <!-- start footer -->
     <footer class="footer-dark ">
         <div class="footer-top padding-five-tb lg-padding-eight-tb md-padding-50px-tb">
@@ -1043,26 +1489,26 @@ style="background-image:url('images/home-corporate-img-05.jpg');">
                         </ul>
                         <div class="social-icon-style-12">
                             <ul class="extra-small-icon light">
-                                <li><a class="facebook" href="https://www.facebook.com/" target="_blank"><i
+                                <li><a class="facebook" href="http://facebook.com/mitroztech" target="_blank"><i
                                             class="fab fa-facebook-f"></i></a></li>
-                                <li><a class="dribbble" href="http:/www.linkedin.com/" target="_blank"><i
-                                            class="fab fa-linkedin-in"></i></a></li>
-                                <li><a class="twitter" href="http://www.twitter.com/" target="_blank"><i
+                                <li><a class="dribbble" href="https://www.linkedin.com/company/mitroz-technologies/"
+                                        target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+                                <li><a class="twitter" href="http://twitter.com/mitroztech" target="_blank"><i
                                             class="fab fa-twitter"></i></a></li>
-                                
+
                             </ul>
                         </div>
                         <div><br>
                             <span class="">Drop us a line:</span><br>
                             <a href="#">info@mitroztech.com <img class="img-fluid" src="images/new/mail-icon.jpg"
                                     width="25px" alt=""></a>
-                                    <div>
-                                        <span >Contact :</span>
-                                        <span> +91-8793726418</span> ,
-                                        <span class="contact-margin ">+91-7066734606</span>
-                                    </div>
-                                    
-                                   
+                            <div>
+                                <span>Contact :</span>
+                                <span> +91-8793726418</span> ,
+                                <span class="contact-margin ">+91-7066734606</span>
+                            </div>
+
+
                         </div>
                     </div>
                     <!-- start footer column -->
@@ -1135,17 +1581,19 @@ style="background-image:url('images/home-corporate-img-05.jpg');">
                     <!-- end footer column -->
                     <!-- start footer column -->
                     <div class="col-12 col-lg-8 col-sm-6 order-sm-3 order-lg-0 xs-margin-25px-bottom">
-                        <span class="alt-font font-weight-700 d-block text-dark-gray margin-20px-bottom xs-margin-10px-bottom">
+                        <span
+                            class="alt-font font-weight-700 d-block text-dark-gray margin-20px-bottom xs-margin-10px-bottom">
                             Headquarters</span>
-                            Office No. 1, Prime 12, H-1, Near PCMC Swimming Pool Complex, Akurdi District Center, Pradhikaran, Pimpri-Chinchwad, Maharashtra - 411044.
+                        Office No. 1, Prime 12, H-1, Near PCMC Swimming Pool Complex, Akurdi District Center,
+                        Pradhikaran, Pimpri-Chinchwad, Maharashtra - 411044.
                     </div>
                     <!-- end footer column -->
                     <!-- start footer column -->
-                   
+
                     <!-- end footer column -->
                     <!-- start footer column -->
                     <div class="col-12 col-lg-2 col-sm-6 order-sm-5 order-lg-0 xs-margin-25px-bottom">
-                        
+
                     </div>
                     <!-- end footer column -->
                 </div>
