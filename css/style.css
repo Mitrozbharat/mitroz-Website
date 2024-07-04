@@ -19677,3 +19677,13 @@ footer ul li.twt{
     width:32px;
     height: 32px;
 }
+
+/* Industry Section CSS */
+.headingfont{
+    font-weight: 600 !important;
+    font-size: 17px;
+}
+
+.margin-one-bottom {
+    margin-bottom: 3%;
+}
