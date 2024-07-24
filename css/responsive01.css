@@ -1,6 +1,7 @@
 /* Styles for screens from 320px to 479px */
 @media screen and (min-width: 320px) and (max-width: 479px)
 {
+  
   .decade-size{
     font-size: 18px;
   }
