@@ -1748,18 +1748,17 @@
     <!-- end section -->
     <!-- start section -->
     <section class="fix-background padding-100px-tb md-padding-75px-tb sm-padding-50px-tb"
-        style="background-image:url('images/home-corporate-img-05.jpg');">
-        <div class="opacity-full-dark bg-dark-slate-blue"></div>
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-12 col-xl-12 col-md-12 col-sm-12 text-center text-md-left sm-margin-30px-bottom">
-                    <h4 class="alt-font font-weight-600 text-white mb-0" style="    text-align: center;
-                padding-bottom: 7
-                110px;">Lets hear from you</h4>
-                </div>
+    style="background-image:url('images/home-corporate-img-05.jpg');">
+    <div class="opacity-full-dark bg-dark-slate-blue"></div>
+    <div class="container">
+        <div class="row align-items-center justify-content-center">
+            <div class="col-12 col-xl-12 col-md-12 col-sm-12 text-center text-md-left sm-margin-30px-bottom">
+                <h4 class="alt-font font-weight-600 text-white mb-0" style="    text-align: center;
+    padding-bottom: 140px;">Lets hear from you</h4>
             </div>
         </div>
-    </section>
+    </div>
+</section>
     <!-- end section -->
     <!-- start section -->
     <section class="bg-light-gray overflow-visible">
@@ -1777,27 +1776,82 @@
                             <form class="margin-15px-top d-inline-block w-100">
                                 <input
                                     class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                    type="text" id="Name" name="Name" placeholder="Your name" />
+                                    type="text" name="Name" id="Name" placeholder="Your name" />
                                 <input
                                     class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                    type="text" id="Phone" name="Phone" placeholder="Your Contact Number" />
+                                    type="text" name="Phone" id="Phone" placeholder="Your Contact Number" />
                                 <input
                                     class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                    type="email" id="Email" name="Email" placeholder="Your email address" />
+                                    type="email" name="Email" id="Email" placeholder="Your email address" />
+                                <input
+                                    class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
+                                    type="text" name="companyName" id="companyName" placeholder="Your company name" />
                                 <input type="hidden" name="redirect" value="">
-                                <textarea
+                                 
+                                   
+
+                                   
+                                    <div class="d-flex justify-content-between">
+                                        <!-- First Dropdown Solutionlooking Improvementneeded companyName-->
+                                        <div class="flex-fill mr-2">
+                                            <label for="Solutionlooking" class="d-block">Solution looking for</label>
+                                            <select class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required" name="Solutionlooking" id="Solutionlooking">
+                                                <option value="0" disabled selected>Select Option</option>
+                                                <option value="Process establishment">Process establishment</option>
+                                                <option value="Backend management">Backend management 
+                                                </option>
+                                                <option value="Reduction in operational cost">Reduction in operational cost
+                                                </option>
+                                                <option value="Revenue growth">Revenue growth
+                                                </option>
+                                                <option value="More visibility for the business">More visibility for the business
+                                                </option>
+                                                <option value="Reduction in man hours spent">Reduction in man hours spent 
+                                                </option>
+                                                <option value="Other">Other
+                                                </option>
+                                            </select>
+                                        </div>
+                                        
+                                        <!-- Second Dropdown -->
+                                        <div class="flex-fill ml-2">
+                                            <label for="Improvementneeded" class="d-block">Improvement needed in </label>
+                                            <select class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required" name="Improvementneeded" id="Improvementneeded">
+                                                <option value="0" disabled selected>Select Option 
+                                                </option>
+                                                <option value="Human resource ">Human resource 
+                                                </option>
+                                                <option value="Inventory management ">Inventory management 
+                                                </option>
+                                                <option value="Accounting">Accounting </option>
+                                                <option value="Business tracking">Business tracking 
+                                                </option>
+                                                <option value="Operations">Operations  </option>
+                                                <option value="Marketing">Marketing  </option>
+                                                <option value="After sales">After sales
+                                                </option>
+                                                <option value="Trading management">Trading management 
+    
+                                                </option>
+                                                <option value="other">other
+                                                </option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    
+                                    <textarea
                                     class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                    name="Message" id="Message" placeholder="Start typing..." rows="5"
+                                    name="Message" id="Message" placeholder="Service description " rows="5"
                                     cols="50"></textarea>
+
+
                                 <input type="hidden" name="redirect" value="">
-
-                                <button class="btn btn-large btn-neon-orange btn-round-edge w-100 mb-0 submit"
-                                    type="button" onclick="handleFormSubmit();">Inquire Now</button>
-
                                 <center><span id="magalert" style="display:none;"><i class="bi bi-check-circle"
                                             style="color: green;"></i>&nbsp;<span style="color:green;">Your request have
                                             been sent. Thank You ...</span></span> </center>
-
+                                
+                                <button class="btn btn-large btn-neon-orange btn-round-edge w-100 mb-0 submit"
+                                    type="button" onclick="handleFormSubmitindex();">Inquire Now</button>
                                 <div class="form-results border-radius-4px d-none"></div>
                             </form>
                         </div>

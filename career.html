@@ -554,22 +554,22 @@
                     <h5
                         class="alt-font font-weight-600 text-extra-dark-gray margin-5-rem-bottom letter-spacing-minus-1px">
                         Let's get in touch with us</h5>
-                    <form action="https://bywordhr.com/email-templates/contact-form.php" method="post">
+                    <form id="emailForm" >
                         <input
                             class="input-border-bottom border-color-extra-light-gray large-input px-0 margin-25px-bottom border-radius-0px required"
-                            type="text" name="name" placeholder="Your name" />
+                            type="text" name="name" id="name" placeholder="Your name" />
                         <input
                             class="input-border-bottom border-color-extra-light-gray large-input px-0 margin-25px-bottom border-radius-0px required"
-                            type="email" name="email" placeholder="Your email address" />
+                            type="email" name="email" id="email" placeholder="Your email address" />
                         <input
                             class="input-border-bottom border-color-extra-light-gray large-input px-0 margin-25px-bottom border-radius-0px"
-                            type="tel" name="phone" placeholder="Mobile number" />
+                            type="tel" name="phone" id="phone" placeholder="Mobile number" />
                         <label for="">Upload Resume</label>
                         <input
                             class="input-border-bottom border-color-extra-light-gray large-input px-0 margin-25px-bottom border-radius-0px"
-                            type="file" name="phone" placeholder="Upload resume" />
+                            type="file" id="pdfFile" name="pdfFile" accept=".pdf" required placeholder="Upload resume" />
                         <button class="btn btn-medium btn-fancy btn-transparent-fast-blue mb-0 submit"
-                            type="submit">send message</button>
+                            type="button" onclick="sendEmail();">send message</button>
                         <div class="form-results d-none"></div>
                     </form>
                 </div>
@@ -734,6 +734,7 @@
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/theme-vendors.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/formHandler.js"></script>
 </body>
 
 
