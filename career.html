@@ -568,6 +568,10 @@
                         <input
                             class="input-border-bottom border-color-extra-light-gray large-input px-0 margin-25px-bottom border-radius-0px"
                             type="file" id="pdfFile" name="pdfFile" accept=".pdf" required placeholder="Upload resume" />
+                            <input type="hidden" name="redirect" value="">
+                            <center><span id="megalert" style="display:none;"><i class="bi bi-check-circle"
+                                        style="color: green;"></i>&nbsp;<span style="color:green;">Your application has
+                                        been sent. Thank You ...</span></span> </center>
                         <button class="btn btn-medium btn-fancy btn-transparent-fast-blue mb-0 submit"
                             type="button" onclick="sendEmail();">send message</button>
                         <div class="form-results d-none"></div>

@@ -89,6 +89,8 @@ function handleFormSubmitindex() {
     document.getElementsByName('Phone')[0].value="";
     document.getElementsByName('Email')[0].value="";
     document.getElementsByName('Message')[0].value="";
+    document.getElementsByName('companyName')[0].value="";
+
     document.getElementsByName('Solutionlookingselect')[0].value="";
     document.getElementsByName('Improvementneededselect')[0].value="";
 
@@ -142,8 +144,22 @@ function sendEmail() {
       contentType: false,
       success: function(response) {
         // Handle success
-        console.log('Email sent successfully:', response);
-        alert('Email sent successfully');
+        // console.log('Email sent successfully:', response);
+        // alert('Email sent successfully');
+        
+        // Clear the input fields
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('phone').value = '';
+        document.getElementById('pdfFile').value = '';
+
+        // Show megaalert
+        document.getElementById("megalert").style.display = "block";
+
+        // Hide megaalert after 6 seconds
+        setTimeout(function () {
+          document.getElementById("megalert").style.display = "none";
+        }, 6000);
       },
       error: function(xhr, status, error) {
         // Handle error
