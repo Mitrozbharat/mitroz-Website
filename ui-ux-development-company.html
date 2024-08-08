@@ -57,6 +57,49 @@
         .bg-gradient-shamrock-green-light-orange {
             background-image: linear-gradient(20deg, #3d58f3 0, #3d58f3 100%);
         }
+        .dropdown-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        .dropdown-button {
+            width: 100%;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            cursor: pointer;
+            text-align: left;
+        }
+        .checkbox-container {
+            display: none;
+            position: absolute;
+            width: 100%;
+            max-height: 150px; /* Set the height as per your preference */
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            z-index: 1;
+            overflow-y: auto; /* Add scrollbar when content exceeds the height */
+        }
+        .checkbox-container.active {
+            display: block;
+        }
+        .checkbox-container div {
+            margin: 5px 0;
+            /* display: flex; */
+            align-items: center;
+            white-space: nowrap; /* Prevent text from wrapping */
+        }
+        .checkbox-container div input[type="checkbox"] {
+            margin-right: 10px; /* Add space between checkbox and label */
+        }
+        .dropdown-button::after {
+            content: '\25BC'; /* Add down arrow */
+            float: right;
+            margin-right: 10px;
+        }
     </style>
 </head>
 
@@ -1308,12 +1351,14 @@
                             <p class="w-90 lg-w-100">Our personal trainers are on hand to assist you with your training
                                 and inductions.</p>
                             <form class="margin-15px-top d-inline-block w-100">
-                                <input
-                                    class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                    type="text" name="Name" id="Name" placeholder="Your name" />
-                                <input
-                                    class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                    type="text" name="Phone" id="Phone" placeholder="Your Contact Number" />
+                                <div class="d-flex justify-content-between">
+                                    <input
+                                        class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required flex-fill mr-2"
+                                        type="text" name="Name" id="Name" placeholder="Your name" />
+                                    <input
+                                        class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required flex-fill ml-2"
+                                        type="text" name="Phone" id="Phone" placeholder="Your Contact Number" />
+                                </div>
                                 <input
                                     class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
                                     type="email" name="Email" id="Email" placeholder="Your email address" />
@@ -1325,53 +1370,39 @@
                                    
 
                                    
-                                    <div class="d-flex justify-content-between">
-                                        <!-- First Dropdown Solutionlooking Improvementneeded companyName-->
-                                        <div class="flex-fill mr-2">
-                                            <label for="Solutionlooking" class="d-block">Solution looking for</label>
-                                            <select class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required" name="Solutionlooking" id="Solutionlooking">
-                                                <option value="0" disabled selected>Select Option</option>
-                                                <option value="Process establishment">Process establishment</option>
-                                                <option value="Backend management">Backend management 
-                                                </option>
-                                                <option value="Reduction in operational cost">Reduction in operational cost
-                                                </option>
-                                                <option value="Revenue growth">Revenue growth
-                                                </option>
-                                                <option value="More visibility for the business">More visibility for the business
-                                                </option>
-                                                <option value="Reduction in man hours spent">Reduction in man hours spent 
-                                                </option>
-                                                <option value="Other">Other
-                                                </option>
-                                            </select>
-                                        </div>
-                                        
-                                        <!-- Second Dropdown -->
-                                        <div class="flex-fill ml-2">
-                                            <label for="Improvementneeded" class="d-block">Improvement needed in </label>
-                                            <select class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required" name="Improvementneeded" id="Improvementneeded">
-                                                <option value="0" disabled selected>Select Option 
-                                                </option>
-                                                <option value="Human resource ">Human resource 
-                                                </option>
-                                                <option value="Inventory management ">Inventory management 
-                                                </option>
-                                                <option value="Accounting">Accounting </option>
-                                                <option value="Business tracking">Business tracking 
-                                                </option>
-                                                <option value="Operations">Operations  </option>
-                                                <option value="Marketing">Marketing  </option>
-                                                <option value="After sales">After sales
-                                                </option>
-                                                <option value="Trading management">Trading management 
-    
-                                                </option>
-                                                <option value="other">other
-                                                </option>
-                                            </select>
+                                <div class="d-flex justify-content-between ">
+                                    <!-- First Dropdown Solutionlooking Improvementneeded companyName-->
+                                    <div class="flex-fill mr-2 dropdown-container ">
+                                        <label for="Solutionlooking" class="d-block">Solution looking for</label>
+                                        <div id="solutionButton" class="dropdown-button bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required" onclick="toggleCheckboxes('solutionCheckboxes')">Select Option</div>
+                                        <div id="solutionCheckboxes" class="checkbox-container">
+                                            <div><input type="checkbox" id="ProcessEstablishment" name="Solutionlooking" value="Process establishment"><label for="ProcessEstablishment"> Process establishment</label></div>
+                                            <div><input type="checkbox" id="BackendManagement" name="Solutionlooking" value="Backend management"><label for="BackendManagement"> Backend management</label></div>
+                                            <div><input type="checkbox" id="ReductionOperationalCost" name="Solutionlooking" value="Reduction in operational cost"><label for="ReductionOperationalCost"> Reduction in operational cost</label></div>
+                                            <div><input type="checkbox" id="RevenueGrowth" name="Solutionlooking" value="Revenue growth"><label for="RevenueGrowth"> Revenue growth</label></div>
+                                            <div><input type="checkbox" id="MoreVisibilityBusiness" name="Solutionlooking" value="More visibility for the business"><label for="MoreVisibilityBusiness"> More visibility for the business</label></div>
+                                            <div><input type="checkbox" id="ReductionManHours" name="Solutionlooking" value="Reduction in man hours spent"><label for="ReductionManHours"> Reduction in man hours spent</label></div>
+                                            <div><input type="checkbox" id="Other" name="Solutionlooking" value="Other"><label for="Other"> Other</label></div>
                                         </div>
                                     </div>
+                            
+                                    <!-- Second Dropdown -->
+                                    <div class="flex-fill ml-2 dropdown-container">
+                                        <label for="Improvementneeded" class="d-block">Improvement needed in</label>
+                                        <div id="improvementButton" class="dropdown-button bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required" onclick="toggleCheckboxes('improvementCheckboxes')">Select Option</div>
+                                        <div id="improvementCheckboxes" class="checkbox-container">
+                                            <div><input type="checkbox" id="HumanResource" name="Improvementneeded" value="Human resource"><label for="HumanResource"> Human resource</label></div>
+                                            <div><input type="checkbox" id="InventoryManagement" name="Improvementneeded" value="Inventory management"><label for="InventoryManagement"> Inventory management</label></div>
+                                            <div><input type="checkbox" id="Accounting" name="Improvementneeded" value="Accounting"><label for="Accounting"> Accounting</label></div>
+                                            <div><input type="checkbox" id="BusinessTracking" name="Improvementneeded" value="Business tracking"><label for="BusinessTracking"> Business tracking</label></div>
+                                            <div><input type="checkbox" id="Operations" name="Improvementneeded" value="Operations"><label for="Operations"> Operations</label></div>
+                                            <div><input type="checkbox" id="Marketing" name="Improvementneeded" value="Marketing"><label for="Marketing"> Marketing</label></div>
+                                            <div><input type="checkbox" id="AfterSales" name="Improvementneeded" value="After sales"><label for="AfterSales"> After sales</label></div>
+                                            <div><input type="checkbox" id="TradingManagement" name="Improvementneeded" value="Trading management"><label for="TradingManagement"> Trading management</label></div>
+                                            <div><input type="checkbox" id="OtherImprovement" name="Improvementneeded" value="Other"><label for="OtherImprovement"> Other</label></div>
+                                        </div>
+                                    </div>
+                                </div>
                                     
                                     <textarea
                                     class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
