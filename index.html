@@ -27,6 +27,7 @@
     <link rel="stylesheet" type="text/css" href="revolution/css/settings.css">
     <link rel="stylesheet" type="text/css" href="revolution/css/layers.css">
     <link rel="stylesheet" type="text/css" href="revolution/css/navigation.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
     <script type="text/javascript" src="js/contactDraft.js"></script>
@@ -1764,7 +1765,15 @@
             ; /* END OF ON LOAD FUNCTION */
         }()); /* END OF WRAPPING FUNCTION */
     </script>
-    
+      <script>
+        const text = document.querySelector(".text");
+        text.innerHTML = text.innerText
+            .split("")
+            .map(
+                (char, i) => `<span style="transform:rotate(${i * 10.3}deg)">${char}</span>`
+            )
+            .join("");
+    </script>
     
 </body>
 <!-- Mirrored from bywordhr.com/home-startup.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 27 Apr 2024 14:33:38 GMT -->
