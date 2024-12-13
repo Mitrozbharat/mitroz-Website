@@ -16,13 +16,14 @@
     <meta name="distribution" content="Global" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- favicon icon -->
-    <link rel="shortcut icon" href="images/home/Mitroz-favicon.png">
+    <link rel="shortcut icon" href="images/favicon_io/Mitroz-favicon.png">
 
     <!-- style sheets and font icons  -->
     <link rel="stylesheet" type="text/css" href="css/font-icons.min.css">
     <link rel="stylesheet" type="text/css" href="css/theme-vendors.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <script type="text/javascript" src="js/contactDraft.js"></script>
     <link rel="stylesheet" type="text/css" href="css/responsive01.css">
     <link rel="stylesheet" type="text/css" href="css/mycss.css" />
     <!-- revolution slider -->
@@ -64,7 +65,67 @@
             font-size: 19px;
             font-weight: 700 !important;
         }
+        .dropdown-container {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        .dropdown-button {
+            width: 100%;
+            background-color: #f0f0f0;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            cursor: pointer;
+            text-align: left;
+        }
+        .checkbox-container {
+            display: none;
+            position: absolute;
+            width: 100%;
+            max-height: 150px; /* Set the height as per your preference */
+            background-color: #fff;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 10px;
+            z-index: 1;
+            overflow-y: auto; /* Add scrollbar when content exceeds the height */
+        }
+        .checkbox-container.active {
+            display: block;
+        }
+        .checkbox-container div {
+            margin: 5px 0;
+            /* display: flex; */
+            align-items: center;
+            white-space: nowrap; /* Prevent text from wrapping */
+        }
+        .checkbox-container div input[type="checkbox"] {
+            margin-right: 10px; /* Add space between checkbox and label */
+        }
+        .dropdown-button::after {
+            content: '\25BC'; /* Add down arrow */
+            float: right;
+            margin-right: 10px;
+        }
     </style>
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1472303067497738');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1472303067497738&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body data-mobile-nav-style="classic">
@@ -211,7 +272,7 @@
                                                 <a href="hire-aws-developer.html" style="margin-left: 40%;">AWs</a>
                                             </div>
                                             <div class="row">
-                                                <a href="hire-docker-developer.html" style="margin-left: 10%;">Doker</a>
+                                               <a href="hire-docker-developer.html" style="margin-left: 10%;">Docker</a>
                                             </div>
                                             <li class="dropdown-header"><a href="hire-ui-ux-developer.html"
                                                     class="megamenu-heading">UI / UX
@@ -398,8 +459,8 @@
                     <div
                         class="interactive-banners-sub padding-6-rem-tb padding-5-half-rem-lr xl-padding-3-rem-tb xl-padding-3-half-rem-lr lg-padding-6-rem-tb lg-padding-6-half-rem-lr">
                         <div class="feature-box-icon">
-                            <i
-                                class="line-icon-Globe icon-large text-neon-blue margin-35px-bottom md-margin-15px-bottom"></i>
+                            <i class="line-icon-Computer-2
+                                icon-large text-neon-blue margin-35px-bottom md-margin-15px-bottom"></i>
                         </div>
                         <h6 class="alt-font font-weight-600 w-70 d-block margin-20px-bottom xl-w-100"><a
                                 class="text-extra-dark-gray" href="#">Full-Stack Developer</a></h6>
@@ -422,8 +483,8 @@
                     <div
                         class="interactive-banners-sub padding-6-rem-tb padding-5-half-rem-lr xl-padding-3-rem-tb xl-padding-3-half-rem-lr lg-padding-6-rem-tb lg-padding-6-half-rem-lr">
                         <div class="feature-box-icon">
-                            <i
-                                class="line-icon-Full-Cart icon-large text-neon-blue margin-35px-bottom md-margin-15px-bottom"></i>
+                            <i class="line-icon-URL-Window
+                                icon-large text-neon-blue margin-35px-bottom md-margin-15px-bottom"></i>
                         </div>
                         <h6 class="alt-font font-weight-600 w-70 d-block margin-20px-bottom xl-w-100"><a
                                 class="text-extra-dark-gray" href="#">Front-end Developer</a></h6>
@@ -446,8 +507,8 @@
                     <div
                         class="interactive-banners-sub padding-6-rem-tb padding-5-half-rem-lr xl-padding-3-rem-tb xl-padding-3-half-rem-lr lg-padding-6-rem-tb lg-padding-6-half-rem-lr">
                         <div class="feature-box-icon">
-                            <i
-                                class="line-icon-Add-Window icon-large text-neon-blue margin-35px-bottom md-margin-15px-bottom"></i>
+                            <i class="line-icon-Coding
+                                icon-large text-neon-blue margin-35px-bottom md-margin-15px-bottom"></i>
                         </div>
                         <h6 class="alt-font font-weight-600 w-70 d-block margin-20px-bottom xl-w-100">
                             <a class="text-extra-dark-gray" href="#">Back-end Developer</a>
@@ -472,8 +533,8 @@
                     <div
                         class="interactive-banners-sub padding-6-rem-tb padding-5-half-rem-lr xl-padding-3-rem-tb xl-padding-3-half-rem-lr lg-padding-6-rem-tb lg-padding-6-half-rem-lr">
                         <div class="feature-box-icon">
-                            <i
-                                class="line-icon-Cloud-Computer icon-large text-neon-blue margin-35px-bottom md-margin-15px-bottom"></i>
+                            <i class="line-icon-Servers
+                                icon-large text-neon-blue margin-35px-bottom md-margin-15px-bottom"></i>
                         </div>
                         <h6 class="alt-font font-weight-600 w-70 d-block margin-20px-bottom xl-w-100"><a
                                 class="text-extra-dark-gray" href="#">Database Developer</a></h6>
@@ -497,8 +558,8 @@
                     <div
                         class="interactive-banners-sub padding-6-rem-tb padding-5-half-rem-lr xl-padding-3-rem-tb xl-padding-3-half-rem-lr lg-padding-6-rem-tb lg-padding-6-half-rem-lr">
                         <div class="feature-box-icon">
-                            <i
-                                class="line-icon-Coding icon-large text-neon-blue margin-35px-bottom md-margin-15px-bottom"></i>
+                            <i class="line-icon-Smartphone-Secure
+                                icon-large text-neon-blue margin-35px-bottom md-margin-15px-bottom"></i>
                         </div>
                         <h6 class="alt-font font-weight-600 w-70 d-block margin-20px-bottom xl-w-100"><a
                                 class="text-extra-dark-gray" href="#">Mobile Developer</a></h6>
@@ -596,8 +657,8 @@
                     <div
                         class="interactive-banners-sub padding-6-rem-tb padding-5-half-rem-lr xl-padding-3-rem-tb xl-padding-3-half-rem-lr lg-padding-6-rem-tb lg-padding-6-half-rem-lr">
                         <div class="feature-box-icon">
-                            <i
-                                class="line-icon-Android-Store icon-large text-neon-blue margin-35px-bottom md-margin-15px-bottom"></i>
+                            <i class="line-icon-Cloud-Computer
+                                icon-large text-neon-blue margin-35px-bottom md-margin-15px-bottom"></i>
                         </div>
                         <h6 class="alt-font font-weight-600 w-70 d-block margin-20px-bottom xl-w-100"><a
                                 class="text-extra-dark-gray" href="#">DevOps Engineer</a></h6>
@@ -1141,7 +1202,7 @@
                     data-wow-delay="0.4s">
                     <div class="feature-box feature-box-left-icon">
                         <div class="feature-box-icon margin-5px-top">
-                            <i class="line-icon-Geo2-Love icon-extra-medium text-white d-block"></i>
+                            <i class="line-icon-Money icon-extra-medium text-white d-block"></i>
                         </div>
                         <div class="feature-box-content">
                             <span
@@ -1164,7 +1225,7 @@
                             <span
                                 class="text-dark-purple text-medium font-weight-500 alt-font margin-5px-bottom d-block text-white sizeoftext">
                                 Expertise on Legacy and Modern Tech</span>
-                            <p class="m-0 text-white">Agile or waterfall systems -Radixweb has expertise in all
+                            <p class="m-0 text-white">Agile or waterfall systems -Mitroz has expertise in all
                                 development methods</p>
                         </div>
                     </div>
@@ -1194,7 +1255,7 @@
                     data-wow-delay="0.6s">
                     <div class="feature-box feature-box-left-icon">
                         <div class="feature-box-icon margin-5px-top">
-                            <i class="line-icon-Full-Cart icon-extra-medium text-white d-block   "></i>
+                            <i class="line-icon-Gear-2 icon-extra-medium text-white d-block   "></i>
                         </div>
                         <div class="feature-box-content">
                             <span
@@ -1212,7 +1273,8 @@
                     data-wow-delay="0.4s">
                     <div class="feature-box feature-box-left-icon">
                         <div class="feature-box-icon margin-5px-top">
-                            <i class="line-icon-Cursor-Click2 icon-extra-medium text-white d-block"></i>
+                            <i class="line-icon-Business-ManWoman
+                            icon-extra-medium text-white d-block"></i>
                         </div>
                         <div class="feature-box-content">
                             <span
@@ -1229,7 +1291,8 @@
                     data-wow-delay="0.6s">
                     <div class="feature-box feature-box-left-icon">
                         <div class="feature-box-icon margin-5px-top">
-                            <i class="line-icon-Arrow-OutRight icon-extra-medium text-white d-block"></i>
+                            <i class="line-icon-Professor
+                            icon-extra-medium text-white d-block"></i>
                         </div>
                         <div class="feature-box-content">
                             <span
@@ -1268,13 +1331,14 @@
                     <div
                         class="feature-box feature-box-show-hover box-shadow-large-hover border-radius-6px feature-box-bg-white-hover border-all border-color-medium-gray overflow-hidden last-paragraph-no-margin">
                         <div class="feature-box-move-bottom-top padding-1-rem-all">
-                            <i class="line-icon-Archery-2 icon-medium text-neon-blue margin-25px-bottom"></i>
+                            <i class="line-icon-Boy
+                            icon-medium text-neon-blue margin-25px-bottom"></i>
                             <div class="feature-box-content last-paragraph-no-margin">
                                 <span class="text-extra-dark-gray font-weight-500 d-block margin-10px-bottom alt-font">
                                     Junior Developers: </span>
                                 <p>1-3 years of experience, able to handle routine tasks and support senior developers.
-                                    tenuous support to seanior developers in carrying out routine tasks.
-                                    
+                                    tenuous support to senior developers in carrying out routine tasks.
+                                    <br><br>
                                 </p>
                             </div>
                             <div class="move-bottom-top margin-15px-top">
@@ -1291,13 +1355,16 @@
                     <div
                         class="feature-box feature-box-show-hover box-shadow-large-hover border-radius-6px feature-box-bg-white-hover border-all border-color-medium-gray overflow-hidden last-paragraph-no-margin">
                         <div class="feature-box-move-bottom-top padding-1-rem-all">
-                            <i class="line-icon-Archery-2 icon-medium text-neon-blue margin-25px-bottom"></i>
+                            <i class="line-icon-Target-Market
+                            icon-medium text-neon-blue margin-25px-bottom"></i>
                             <div class="feature-box-content last-paragraph-no-margin">
                                 <span
                                     class="text-extra-dark-gray font-weight-500 d-block margin-10px-bottom alt-font">Mid-Level
                                     Developers
                                 </span>
-                                <p> 3 - 5 years of experience, able to run projects and complex tasks independently.  <br><br><br></p>
+                                <p> 3 - 5 years of experience, able to run projects and complex tasks independently.
+                                    <br><br><br>
+                                </p><br>
                             </div>
                             <div class="move-bottom-top margin-15px-top">
                                 <!-- <a href="what-we-offers.html" class="btn btn-link thin btn-large text-green">Read
@@ -1312,12 +1379,15 @@
                     <div
                         class="feature-box feature-box-show-hover box-shadow-large-hover border-radius-6px feature-box-bg-white-hover border-all border-color-medium-gray overflow-hidden last-paragraph-no-margin">
                         <div class="feature-box-move-bottom-top padding-1-rem-all">
-                            <i class="line-icon-Archery-2 icon-medium text-neon-blue margin-25px-bottom"></i>
+                            <i class="line-icon-Professor
+                            icon-medium text-neon-blue margin-25px-bottom"></i>
                             <div class="feature-box-content last-paragraph-no-margin">
                                 <span class="text-extra-dark-gray font-weight-500 d-block margin-10px-bottom alt-font">
                                     Senior Developers</span>
-                                <p>5+ years of experience, advanced in their field, possessing broad knowledge and leading teams to complete projects.<br><br>
-                                </p>
+                                <p>5+ years of experience, advanced in their field, possessing broad knowledge and
+                                    leading teams to complete projects.
+                                    <br><br>
+                                </p><br>
                             </div>
                             <div class="move-bottom-top margin-15px-top">
                                 <!-- <a href="what-we-offers.html" class="btn btn-link thin btn-large text-green">Read
@@ -1361,9 +1431,9 @@
                                 </a>
                             </div>
                             <div id="collapseOne" class="panel-collapse collapse show" data-parent="#accordion2">
-                                <div class="panel-body">Customized software development involves creating software
-                                    solutions tailored specifically to meet the unique needs and requirements of your
-                                    business, unlike off-the-shelf software which offers generic features.
+                                <div class="panel-body">Custom software development is the type of software creation
+                                    specifically tailored to realize the particular business needs, unlike off-the-shelf
+                                    software that offers generic features.
                                 </div>
                             </div>
                         </div>
@@ -1375,15 +1445,17 @@
                                     href="#collapseTwo" aria-expanded="false">
                                     <div class="panel-title">
                                         <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500">Why
-                                            should I choose customized software over off-the-shelf software?</span>
+                                            custom software over off-the-shelf products?
+                                        </span>
                                         <i class="indicator fas fa-angle-right text-neon-blue icon-extra-small"></i>
                                     </div>
                                 </a>
                             </div>
                             <div id="collapseTwo" class="panel-collapse collapse" data-parent="#accordion2">
-                                <div class="panel-body">Customized software is designed to fit your specific business
-                                    processes, providing greater efficiency, scalability and integration capabilities
-                                    compared to generic off-the-shelf solutions.
+                                <div class="panel-body">With custom software, it will fit your specific business
+                                    processes, give more efficiency, scaleability and integration capabilities as
+                                    compared to the generic off-the-shelf solutions.
+
                                 </div>
                             </div>
                         </div>
@@ -1394,16 +1466,18 @@
                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion2"
                                     href="#collapseThree" aria-expanded="false">
                                     <div class="panel-title">
-                                        <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500">How
-                                            does the customized software development process work?</span>
+                                        <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500">What
+                                            is the custom software development process?
+                                        </span>
                                         <i class="indicator fas fa-angle-right text-neon-blue icon-extra-small"></i>
                                     </div>
                                 </a>
                             </div>
                             <div id="collapseThree" class="panel-collapse collapse" data-parent="#accordion2">
-                                <div class="panel-body">Our process includes requirement analysis, planning, design and
-                                    prototyping, MVP development, iterative development, rigorous testing, deployment,
-                                    and ongoing maintenance and support.
+                                <div class="panel-body">That definitely includes requirements analysis, planning,
+                                    design and prototyping of MVP development; iterative development; rigorous testing;
+                                    and deployment, support and system maintenance.
+
                                 </div>
                             </div>
                         </div>
@@ -1459,16 +1533,18 @@
                                 <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordionTwo"
                                     href="#collapseSeven" aria-expanded="false">
                                     <div class="panel-title">
-                                        <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500"> What
-                                            kind of support do you offer after the software is deployed?</span>
+                                        <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500"> Why
+                                            is custom software better than obsolete products?
+                                        </span>
                                         <i class="indicator fas fa-angle-right text-neon-blue icon-extra-small"></i>
                                     </div>
                                 </a>
                             </div>
                             <div id="collapseFive" class="panel-collapse collapse" data-parent="#accordion2">
-                                <div class="panel-body">We provide ongoing maintenance and support services, including
-                                    performance monitoring, security updates, bug fixes and feature enhancements to
-                                    ensure your software remains up-to-date and functions smoothly.
+                                <div class="panel-body">With customized software, it will fit your specific business
+                                    processes, providing greater efficiency, scalability and integration compared to
+                                    conventional off-the-shelf solutions
+
                                 </div>
                             </div>
                         </div>
@@ -1478,16 +1554,17 @@
                                     href="#collapseEighet" aria-expanded="false">
                                     <div class="panel-title">
                                         <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500"> How
-                                            do I get started with Mitroz Technologies for my software development
-                                            project?</span>
+                                            do I start my software program development process with Mitroz Technologies?
+                                        </span>
                                         <i class="indicator fas fa-angle-right text-neon-blue icon-extra-small"></i>
                                     </div>
                                 </a>
                             </div>
                             <div id="collapseFive" class="panel-collapse collapse" data-parent="#accordion2">
-                                <div class="panel-body">Getting started is easy! Contact us through our website or call
-                                    us directly. We will schedule a consultation to discuss your project requirements,
-                                    provide a detailed proposal and outline the next steps.
+                                <div class="panel-body">short! You can reach out to us without delay through our online
+                                    or by calling us. We will include the name, assess your needs and agree to detailed
+                                    steps to move your business forward.
+
                                 </div>
                             </div>
                         </div>
@@ -1498,15 +1575,16 @@
                                     href="#collapseNine" aria-expanded="false">
                                     <div class="panel-title">
                                         <span class="alt-font text-extra-dark-gray d-inline-block font-weight-500">What
-                                            industries do you serve?</span>
+                                            services do you offer?
+                                        </span>
                                         <i class="indicator fas fa-angle-right text-neon-blue icon-extra-small"></i>
                                     </div>
                                 </a>
                             </div>
                             <div id="collapseFive" class="panel-collapse collapse" data-parent="#accordion2">
-                                <div class="panel-body">We serve a wide range of industries including Fintech,
-                                    Education, Telecommunication, Retail and E-commerce, Healthcare, Automotive and
-                                    Transport and Property and Real Estate.
+                                <div class="panel-body">Our clients represent different sectors among them fintech,
+                                    edtech, telecoms, retail, e-commerce, healthcare, automotive and distribution.
+
                                 </div>
                             </div>
                         </div>
@@ -1546,7 +1624,7 @@
             <div class="row align-items-center justify-content-center">
                 <div class="col-12 col-xl-12 col-md-12 col-sm-12 text-center text-md-left sm-margin-30px-bottom">
                     <h4 class="alt-font font-weight-600 text-white mb-0"
-                        style="text-align: center; padding-bottom: 110px;">
+                        style="text-align: center; padding-bottom: 140px;">
                         Lets hear from you
                     </h4>
                 </div>
@@ -1571,29 +1649,72 @@
                             <p class="w-90 lg-w-100">Our personal trainers are on hand to assist you with your training
                                 and inductions.</p>
                             <form class="margin-15px-top d-inline-block w-100">
+                                <div class="d-flex justify-content-between">
+                                    <input
+                                        class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required flex-fill mr-2"
+                                        type="text" name="Name" id="Name" placeholder="Your name" />
+                                    <input
+                                        class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required flex-fill ml-2"
+                                        type="text" name="Phone" id="Phone" placeholder="Your Contact Number" />
+                                </div>
                                 <input
                                     class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                    type="text" id="Name" name="Name" placeholder="Your name" />
+                                    type="email" name="Email" id="Email" placeholder="Your email address" />
                                 <input
                                     class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                    type="text" id="Phone" name="Phone" placeholder="Your Contact Number" />
-                                <input
-                                    class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                    type="email" id="Email" name="Email" placeholder="Your email address" />
+                                    type="text" name="companyName" id="companyName" placeholder="Your company name" />
                                 <input type="hidden" name="redirect" value="">
-                                <textarea
+                                 
+                                   
+
+                                   
+                                <div class="d-flex justify-content-between ">
+                                    <!-- First Dropdown Solutionlooking Improvementneeded companyName-->
+                                    <div class="flex-fill mr-2 dropdown-container ">
+                                        <label for="Solutionlooking" class="d-block">Solution looking for</label>
+                                        <div id="solutionButton" class="dropdown-button bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required" onclick="toggleCheckboxes('solutionCheckboxes')">Select Option</div>
+                                        <div id="solutionCheckboxes" class="checkbox-container">
+                                            <div><input type="checkbox" id="ProcessEstablishment" name="Solutionlooking" value="Process establishment"><label for="ProcessEstablishment"> Process establishment</label></div>
+                                            <div><input type="checkbox" id="BackendManagement" name="Solutionlooking" value="Backend management"><label for="BackendManagement"> Backend management</label></div>
+                                            <div><input type="checkbox" id="ReductionOperationalCost" name="Solutionlooking" value="Reduction in operational cost"><label for="ReductionOperationalCost"> Reduction in operational cost</label></div>
+                                            <div><input type="checkbox" id="RevenueGrowth" name="Solutionlooking" value="Revenue growth"><label for="RevenueGrowth"> Revenue growth</label></div>
+                                            <div><input type="checkbox" id="MoreVisibilityBusiness" name="Solutionlooking" value="More visibility for the business"><label for="MoreVisibilityBusiness"> More visibility for the business</label></div>
+                                            <div><input type="checkbox" id="ReductionManHours" name="Solutionlooking" value="Reduction in man hours spent"><label for="ReductionManHours"> Reduction in man hours spent</label></div>
+                                            <div><input type="checkbox" id="Other" name="Solutionlooking" value="Other"><label for="Other"> Other</label></div>
+                                        </div>
+                                    </div>
+                            
+                                    <!-- Second Dropdown -->
+                                    <div class="flex-fill ml-2 dropdown-container">
+                                        <label for="Improvementneeded" class="d-block">Improvement needed in</label>
+                                        <div id="improvementButton" class="dropdown-button bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required" onclick="toggleCheckboxes('improvementCheckboxes')">Select Option</div>
+                                        <div id="improvementCheckboxes" class="checkbox-container">
+                                            <div><input type="checkbox" id="HumanResource" name="Improvementneeded" value="Human resource"><label for="HumanResource"> Human resource</label></div>
+                                            <div><input type="checkbox" id="InventoryManagement" name="Improvementneeded" value="Inventory management"><label for="InventoryManagement"> Inventory management</label></div>
+                                            <div><input type="checkbox" id="Accounting" name="Improvementneeded" value="Accounting"><label for="Accounting"> Accounting</label></div>
+                                            <div><input type="checkbox" id="BusinessTracking" name="Improvementneeded" value="Business tracking"><label for="BusinessTracking"> Business tracking</label></div>
+                                            <div><input type="checkbox" id="Operations" name="Improvementneeded" value="Operations"><label for="Operations"> Operations</label></div>
+                                            <div><input type="checkbox" id="Marketing" name="Improvementneeded" value="Marketing"><label for="Marketing"> Marketing</label></div>
+                                            <div><input type="checkbox" id="AfterSales" name="Improvementneeded" value="After sales"><label for="AfterSales"> After sales</label></div>
+                                            <div><input type="checkbox" id="TradingManagement" name="Improvementneeded" value="Trading management"><label for="TradingManagement"> Trading management</label></div>
+                                            <div><input type="checkbox" id="OtherImprovement" name="Improvementneeded" value="Other"><label for="OtherImprovement"> Other</label></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                    
+                                    <textarea
                                     class="bg-light-gray border-radius-4px border-0 medium-input margin-20px-bottom required"
-                                    name="Message" id="Message" placeholder="Start typing..." rows="5"
+                                    name="Message" id="Message" placeholder="Service description " rows="5"
                                     cols="50"></textarea>
+
+
                                 <input type="hidden" name="redirect" value="">
-
-                                <button class="btn btn-large btn-neon-orange btn-round-edge w-100 mb-0 submit"
-                                    type="button" onclick="handleFormSubmit();">Inquire Now</button>
-
                                 <center><span id="magalert" style="display:none;"><i class="bi bi-check-circle"
                                             style="color: green;"></i>&nbsp;<span style="color:green;">Your request have
                                             been sent. Thank You ...</span></span> </center>
-
+                                
+                                <button class="btn btn-large btn-neon-orange btn-round-edge w-100 mb-0 submit"
+                                    type="button" onclick="handleFormSubmitindex();">Inquire Now</button>
                                 <div class="form-results border-radius-4px d-none"></div>
                             </form>
                         </div>
@@ -1781,7 +1902,7 @@
                     </div>
                     <div class="col-12 col-md-6 text-left text-sm-center text-md-right last-paragraph-no-margin">
                         <p>&copy; 2024 Made with ❤️ by <a href="https://www.mitroztech.com/" target="_blank"
-                                class="text-decoration-line-bottom text-dark">mitroz tech</a></p>
+                                class="text-decoration-line-bottom text-dark">MITROZ </a></p>
                     </div>
                 </div>
             </div>
