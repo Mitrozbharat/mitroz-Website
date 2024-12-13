@@ -9757,7 +9757,7 @@ header.sticky .navbar.header-dark .navbar-toggler-line {
 	overflow:hidden;
 	position: relative;
 	position: absolute;
-    width: 90%;
+    width: 100%;
     top: 90%;
 }
 	.slide-track {
